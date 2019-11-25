@@ -5,12 +5,12 @@
     <!-- BANNER -->
     <a href="">
         <div class="banner-size jumbotron jumbotron-image hidden-xs">
-            <img src="{{media url="wysiwyg/black-friday/Black-Friday-Landing-Page-banner-dktp.jpg"}}"
+            <img src="{{media url="wysiwyg/black-friday/Black-Friday-Landing-Page-banner-dktp-early-access.jpg"}}"
                 alt="Beauty Works Black Friday Shop" title="Beauty Works Black Friday Shop" />
         </div>
 
         <div class="jumbotron jumbotron-image no-padding visible-xs-block">
-            <img src="{{media url="wysiwyg/black-friday/Black-Friday-Landing-Page-banner-mob.jpg"}}"
+            <img src="{{media url="wysiwyg/black-friday/Black-Friday-Landing-Page-banner-mob-early-access.jpg"}}"
                 alt="Beauty Works Black Friday Shop" title="Beauty Works Black Friday Shop" />
         </div>
     </a>
@@ -212,7 +212,16 @@
 
 <!-- CAROUSEL -->
 <div class="slider container">
-    <div class="xmas-subheading">TOP PICKS</div>
+    <div class="row">
+        <div class="col">
+            <span class="xmas-subheading">TOP PICKS</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p id="blackFridayCode">USE CODE: <span>EARLYACCESS</span></p>
+        </div>
+    </div>
     <div class="block widget block-carousel">
         <div class="block-content">
             <div class="slick-slider"
@@ -229,8 +238,7 @@
                         <a href="/22-double-hair-set-iced-blonde-613-18a.html">
                             <h5 class="slider-heading">22" Double Hair Set - Iced Blonde</h5>
                         </a>
-                        <p class="slider-price">£184.00 <span style="text-decoration: line-through;">£229.99</span>
-                        </p>
+                        <p class="slider-price">£229.99</p>
                     </div>
                 </div>
 
@@ -246,8 +254,7 @@
                         <a href="/22-double-hair-set-scandinavian-blonde.html">
                             <h5 class="slider-heading">22" Double Hair Set - Scandinavian Blonde</h5>
                         </a>
-                        <p class="slider-price">£256.79 <span style="text-decoration: line-through;">£320.99</span>
-                        </p>
+                        <p class="slider-price">£320.99</p>
                     </div>
                 </div>
 
@@ -262,8 +269,7 @@
                         <a href="/catalog/product/view/id/1595/s/the-professional-styler/category/596/">
                             <h5 class="slider-heading">The Professional Styler</h5>
                         </a>
-                        <p class="slider-price">£55.99 <span style="text-decoration: line-through;">£70.00</span>
-                        </p>
+                        <p class="slider-price">£70.00</p>
                     </div>
                 </div>
 
@@ -278,8 +284,7 @@
                         <a href="/catalog/product/view/id/1594/s/the-waver/category/595/">
                             <h5 class="slider-heading">The Waver</h5>
                         </a>
-                        <p class="slider-price">£55.99 <span style="text-decoration: line-through;">£70.00</span>
-                        </p>
+                        <p class="slider-price">£70.00</p>
                     </div>
                 </div>
 
@@ -295,8 +300,7 @@
                         <a href="/22-beach-wave-double-hair-set-pure-platinum.html">
                             <h5 class="slider-heading">22" Beach Wave Double Hair Set - Pure Platinum</h5>
                         </a>
-                        <p class="slider-price">£168.74 <span style="text-decoration: line-through;">£225.00</span>
-                        </p>
+                        <p class="slider-price">£225.00</p>
                     </div>
                 </div>
 
@@ -311,8 +315,7 @@
                         <a href="/22-double-hair-set-mocha-melt-2877.html">
                             <h5 class="slider-heading">22" Double Hair Set - Mocha Melt</h5>
                         </a>
-                        <p class="slider-price">£256.79 <span style="text-decoration: line-through;">£320.99</span>
-                        </p>
+                        <p class="slider-price">£320.99</p>
                     </div>
                 </div>
 
@@ -328,8 +331,7 @@
                         <a href="/beauty-works-flat-iron-wave-bar-25mm.html">
                             <h5 class="slider-heading">Beauty Works Flat Iron Wave Bar 25mm</h5>
                         </a>
-                        <p class="slider-price">£55.99 <span style="text-decoration: line-through;">£74.99</span>
-                        </p>
+                        <p class="slider-price">£74.99</p>
                     </div>
                 </div>
 
@@ -344,8 +346,7 @@
                         <a href="/22-double-hair-set-2-raven.html">
                             <h5 class="slider-heading">22" Double Hair Set - Raven</h5>
                         </a>
-                        <p class="slider-price">£165.74 <span style="text-decoration: line-through;">£223.00</span>
-                        </p>
+                        <p class="slider-price">£223.00</p>
                     </div>
                 </div>
 
@@ -452,6 +453,19 @@
         font-family: 'Montserrat', sans-serif;
     }
 
+    #blackFridayCode {
+        color: black;
+        border: solid .5px;
+        width: 200px;
+        padding: 5px;
+        margin: 10px auto;
+        font-size: 1.3rem;
+    }
+
+    #blackFridayCode span {
+        font-family: 'Montserrat', sans-serif;
+    }
+
     @media only screen and (max-width: 1024px) {
 
         /* DESCRIPTION */
@@ -497,7 +511,14 @@
         }
 
         .xmas-subheading {
-            font-size: 3rem;
+            font-size: 4rem;
+        }
+
+        /* SLIDER */
+        #blackFridayCode {
+            width: 150px;
+            padding: 3px;
+            font-size: 1rem;
         }
     }
 
@@ -541,11 +562,16 @@
         }
 
         .xmas-subheading {
-            font-size: 1.8rem;
+            font-size: 3rem;
             letter-spacing: 0px;
             margin: 5px;
             padding: 15px;
-            /* text-shadow: 1px 1px #E3CCAD; */
+        }
+
+        #blackFridayCode {
+            width: 120px;
+            padding: 1px;
+            font-size: .8rem;
         }
     }
 
@@ -565,10 +591,6 @@
         #mobStylers {
             margin: 15px;
         }
-
-        .xmas-subheading {
-            font-size: 1.7rem;
-        }
     }
 
     @media only screen and (max-width: 320px) {
@@ -576,15 +598,6 @@
         /* DESCRIPTION */
         .description {
             line-height: 17px;
-        }
-
-        /* FEATURED BLOCKS */
-        #metome {
-            padding: 5px;
-        }
-
-        .xmas-subheading {
-            font-size: 1.3rem;
         }
     }
 </style>
