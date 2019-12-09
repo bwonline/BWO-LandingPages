@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css?family=Poppins|Playfair+Display&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Baskervville|Poppins&display=swap" rel="stylesheet">
 
 <!-- BANNER -->
 <div class="container">
@@ -14,39 +14,44 @@
 
 <!-- LOGO SLIDER -->
 <div class="container">
-    <div class="block widget block-carousel">
-        <div class="block-content">
-            <div class="slick-slider"
-                data-mage-init='{"slick": {"slidesToShow": 2,"slidesToScroll": 1,"autoplay": true,"arrows": true,"mobileFirst": true,"responsive": [{"breakpoint": 600,"settings": {"slidesToShow": 4,"slidesToScroll": 1,"infinite": true,"dots": false}},{"breakpoint":480,"settings": {"slidesToShow": 2,"slidesToScroll": 2}}]}}'>
-                <a href="#">
-                    <img src="{{media url="wysiwyg/bw-home-201808/brands/cosmopolitan.png"}}" alt="Cosmopolitan"
-                        title="Cosmopolitan" width="217" height="72" />
-                </a>
-                <a href="#">
-                    <img src="{{media url="wysiwyg/bw-home-201808/brands/elle.png"}}" alt="Elle" title="Elle"
-                        width="217" height="72" />
-                </a>
-                <a href="#">
-                    <img src="{{media url="wysiwyg/bw-home-201808/brands/glamour.png"}}" alt="Glamour" title="Glamour"
-                        width="217" height="72" />
-                </a>
-                <a href="#">
-                    <img src="{{media url="wysiwyg/bw-home-201808/brands/grazia.png"}}" alt="Grazia" title="Grazia"
-                        width="217" height="72" />
-                </a>
-                <a href="#">
-                    <img src="{{media url="wysiwyg/bw-home-201808/brands/look.png"}}" alt="Look" title="Look"
-                        width="217" height="72" />
-                </a>
-                <a href="#">
-                    <img src="{{media url="wysiwyg/bw-home-201808/brands/marie-claire.png"}}" alt="Marie Claire"
-                        title="Marie Claire" width="217" height="72" />
-                </a>
-                <a href="#">
-                    <img src="{{media url="wysiwyg/bw-home-201808/brands/teen-vogue.png"}}" alt="Teen Vogue"
-                        title="Teen Vogue" width="217" height="72" />
-                </a>
+    <div class="row a-center" style="font-family: 'Baskervville', serif;">
+        <h1 id="asSeenIn">AS SEEN IN...</h1>
+    </div>
+    <div class="row">
+        <div class="block widget block-carousel">
+            <div class="block-content">
+                <div class="slick-slider"
+                    data-mage-init='{"slick": {"slidesToShow": 2,"slidesToScroll": 1,"autoplay": true,"arrows": true,"mobileFirst": true,"responsive": [{"breakpoint": 600,"settings": {"slidesToShow": 4,"slidesToScroll": 1,"infinite": true,"dots": false}},{"breakpoint":480,"settings": {"slidesToShow": 2,"slidesToScroll": 2}}]}}'>
+                    <a href="#">
+                        <img src="{{media url="wysiwyg/bw-home-201808/brands/cosmopolitan.png"}}" alt="Cosmopolitan"
+                            title="Cosmopolitan" width="217" height="72" />
+                    </a>
+                    <a href="#">
+                        <img src="{{media url="wysiwyg/bw-home-201808/brands/elle.png"}}" alt="Elle" title="Elle"
+                            width="217" height="72" />
+                    </a>
+                    <a href="#">
+                        <img src="{{media url="wysiwyg/bw-home-201808/brands/glamour.png"}}" alt="Glamour"
+                            title="Glamour" width="217" height="72" />
+                    </a>
+                    <a href="#">
+                        <img src="{{media url="wysiwyg/bw-home-201808/brands/grazia.png"}}" alt="Grazia" title="Grazia"
+                            width="217" height="72" />
+                    </a>
+                    <a href="#">
+                        <img src="{{media url="wysiwyg/bw-home-201808/brands/look.png"}}" alt="Look" title="Look"
+                            width="217" height="72" />
+                    </a>
+                    <a href="#">
+                        <img src="{{media url="wysiwyg/bw-home-201808/brands/marie-claire.png"}}" alt="Marie Claire"
+                            title="Marie Claire" width="217" height="72" />
+                    </a>
+                    <a href="#">
+                        <img src="{{media url="wysiwyg/bw-home-201808/brands/teen-vogue.png"}}" alt="Teen Vogue"
+                            title="Teen Vogue" width="217" height="72" />
+                    </a>
 
+                </div>
             </div>
         </div>
     </div>
@@ -440,21 +445,32 @@
         padding-top: 0 !important;
     }
 
-    /* LOGO SLIDER */
-
-    .slide-container {
-        padding-right: 70px;
-        padding-left: 70px;
-    }
-
-    .slider-text {
-        color: grey;
-        text-align: center;
-        text-transform: uppercase;
+    #asSeenIn {
+        font-size: 26px;
+        margin: 10px;
+        font-weight: 100;
         letter-spacing: 10px;
-        font-family: 'Playfair Display', serif;
-        font-size: 18px;
     }
+
+    @media only screen and (max-width: 768px) {
+        #asSeenIn {
+            font-size: 18px;
+            letter-spacing: 8px
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        #asSeenIn {
+            font-size: 15px;
+            letter-spacing: 3px;
+        }
+    }
+
+    .columns .column.main {
+        padding-bottom: 0px;
+    }
+
+    /* LOGO SLIDER */
 
     .slick-slider {
         display: flex;
@@ -591,11 +607,11 @@
         }
 
         .lightWeightText {
-            font-size: 1rem !important;
+            font-size: 1.1rem !important;
         }
 
         #reviews p {
-            font-size: 10px;
+            font-size: 10.5px;
             line-height: 15px;
             font-weight: 500;
         }
@@ -603,6 +619,21 @@
         #reviews a {
             letter-spacing: 2px;
             font-size: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .lightWeightText {
+            font-size: 1.2rem !important;
+        }
+
+        #reviews p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        #reviews a {
+            font-size: 12px;
         }
     }
 </style>
