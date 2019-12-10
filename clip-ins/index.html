@@ -37,8 +37,9 @@
                 alt="Double Hair Set Collection" title="Double Hair Set Collection" />
         </div>
         <div class="col-md-6 col-xs-12 product-description">
-            <img class="hidden-xs northwellText" src="{{media url="wysiwyg/clip-in-2019/Double-Hair-Set-title.jpg"}}"
-                alt="The Shine Is Real" title="The Shine Is Real" />
+            <img id="shineIsReal" class="hidden-xs northwellText"
+                src="{{media url="wysiwyg/clip-in-2019/Double-Hair-Set-title.jpg"}}" alt="The Shine Is Real"
+                title="The Shine Is Real" />
             <h1>Double Hair Set <span class="h1-Alt">Collection</span></h1>
             <ul>
                 <li>Double Wefted</li>
@@ -85,9 +86,10 @@
                 alt="Double Hair Set Weft Collection" title="Double Hair Set Weft Collection" />
         </div>
         <div class="col-md-6 col-xs-12 product-description">
-            <img class="hidden-xs northwellText" src="{{media url="wysiwyg/clip-in-2019/Double-Hair-Weft-title.jpg"}}"
-                alt="Enhance Natrual Lengths" title="Enhance Natrual Lengths" />
-            <h1>Double Hair Set Weft<span class="h1-Alt">Collection</span></h1>
+            <img id="enhanceNatrualLengths" class="hidden-xs northwellText"
+                src="{{media url="wysiwyg/clip-in-2019/Double-Hair-Weft-title.jpg"}}" alt="Enhance Natrual Lengths"
+                title="Enhance Natrual Lengths" />
+            <h1>Double Hair Set Weft <span class="h1-Alt">Collection</span></h1>
             <ul>
                 <li>PU Seamless Wefts</li>
                 <li>Pre Curled</li>
@@ -147,7 +149,7 @@
     }
 
     .product-description {
-        padding: 40px;
+        padding: 30px;
     }
 
     .product-description h1 {
@@ -179,6 +181,14 @@
     .product-description button:hover {
         color: #575853;
         background-color: white;
+    }
+
+    #shineIsReal {
+        max-width: 75%;
+    }
+
+    #enhanceNatrualLengths {
+        max-width: 90%;
     }
 
     @media only screen and (max-width: 1024px) {
@@ -230,7 +240,7 @@
         }
 
         .product-description h1 {
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 10px;
             letter-spacing: 8px;
         }
@@ -244,9 +254,17 @@
         }
 
         .product-description button {
-            padding: 7px 20px;
+            padding: 5px 20px;
             font-size: .9rem;
             margin: 5px;
+        }
+
+        #shineIsReal {
+            max-width: 55%;
+        }
+
+        #enhanceNatrualLengths {
+            max-width: 80%;
         }
     }
 
