@@ -816,12 +816,26 @@
                 </a>
             </div>
             <div class="row">
-                <div class="col">
+                <!-- <div class="col">
                     <a href="mailto:customerservice@beautyworks.co.uk?Subject=Find%20my%20shade">
                         <img src="{{media url="wysiwyg/colour-chart-2019/email-customer-service-desktop.jpg"}}"
                             alt="Still not sure on the right extensions? - We're here to help! Please email our team at Customerservice@beautyworks.co.uk with a recent selfie taken in natural lighting with no filter, we will need to see your hair from roots to tip."
                             title="Still not sure on the right extensions? - Send a hair selfie to Customerservice@beautyworks.co.uk">
                     </a>
+                </div> -->
+                <div id="stillNotSure" class="col-md-12 a-center">
+                    <h3 style="color: white; font-size: 2rem;">STILL NOT SURE?</h3>
+                    <p>
+                        Hey Girl, confused by hair extension still? Don't worry, our team of #BeautyWorks hair experts
+                        are here to help. Just click through to contact us and fill in your details below, simply attach
+                        an image in natural lighting and let us know what type of hair extensions you are interested in.
+                        Our team of experts will get back to you with in 48 hours with the closest colour match and best
+                        options to suit your natural hair.
+                        <br><br>
+                        <a style="font-size: 18px; padding: 10px 50px;"
+                            href="mailto:customerservice@beautyworks.co.uk?Subject=Find%20my%20shade">CONTACT US</a>
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -843,22 +857,20 @@
                     </a>
                 </div>
 
-                <div class="row discover-row"
-                    style="background-image: linear-gradient(to bottom right, #B0AEAF, #EDECF1); color: white;">
-                    <span>Still not sure on the right extensions?</span>
+                <div id="stillNotSure" class="row discover-row">
+                    <span>STILL NOT SURE?</span>
                     <br><br>
                     <p>
-                        We're here to help! Please email our team at Customerservice@beautyworks.co.uk with a recent
-                        selfie taken in natural lighting with no filter, we will need to see your hair from roots to
-                        tip. Plus the extension method and desired results you wish to achieve.
+                        Hey Girl, confused by hair extension still? Don't worry, our team of #BeautyWorks hair experts
+                        are here to help. Just click through to contact us and fill in your details below, simply attach
+                        an image in natural lighting and let us know what type of hair extensions you are interested in.
+                        <br>
+                        Our team of experts will get back to you with in 48 hours with the closest colour match and best
+                        options to suit your natural hair.
+                        <br><br>
+                        <a href="mailto:customerservice@beautyworks.co.uk?Subject=Find%20my%20shade">CONTACT US</a>
                     </p>
 
-                    <a href="mailto:customerservice@beautyworks.co.uk?Subject=Find%20my%20shade" style="text-decoration: none;
-                    border: solid 1px #6d6d6d;
-                    padding: 10px;
-                    background: #6d6d6d;
-                    color: white;
-                    box-shadow: black 1px 1px;">Contact Us</a>
 
                 </div>
             </div>
@@ -952,6 +964,22 @@
         cursor: pointer;
     }
 
+    #stillNotSure {
+        background-image: linear-gradient(to bottom right, #B0AEAF, rgb(234, 232, 240));
+        color: white;
+        padding: 4px
+    }
+
+    #stillNotSure a {
+        text-decoration: none;
+        border: solid 1px #6d6d6d;
+        padding: 10px 20px;
+        background: #6d6d6d;
+        color: white;
+        box-shadow: black 1px 1px;
+        font-weight: 600;
+    }
+
     @media only screen and (max-width: 1024px) {
         .discover-your-shade {
             width: 500px;
@@ -1005,6 +1033,11 @@
     }
 
     @media only screen and (max-width: 425px) {
+        p {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
         .tone-title {
             margin: 0;
             padding: 0;
