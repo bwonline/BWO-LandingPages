@@ -1,10 +1,8 @@
 <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
 <div class="container">
-
     <div class="row a-center">
         <h1>Beauty Works<br><span class="h1-Alt">Clip-In Collection</span></h1>
     </div>
-
     <div class="row product-row">
         <img class="visible-xs-block" src="{{media url="wysiwyg/clip-in-2019/Deluxe-Clip-In-Collection-mob.jpg"}}"
             alt="Want fuller, thicker hair?" title="Want fuller, thicker hair?" />
@@ -28,7 +26,6 @@
             </a>
         </div>
     </div>
-
     <div class="row product-row">
         <img class="visible-xs-block" src="{{media url="wysiwyg/clip-in-2019/Double-Hair-Set-mob.jpg"}}"
             alt="The Shine Is Real" title="The Shine Is Real" />
@@ -53,7 +50,6 @@
             </a>
         </div>
     </div>
-
     <div class="row product-row">
         <img class="visible-xs-block" src="{{media url="wysiwyg/clip-in-2019/Beach-Wave-mob.jpg"}}"
             alt="The Ultimate Beach Wave" title="The Ultimate Beach Wave" />
@@ -77,7 +73,6 @@
             </a>
         </div>
     </div>
-
     <div class="row product-row">
         <img class="visible-xs-block" src="{{media url="wysiwyg/clip-in-2019/Double-Hair-Weft-mob.jpg"}}"
             alt="Enhance Natrual Lengths" title="Enhance Natrual Lengths" />
@@ -94,7 +89,6 @@
                 <li>PU Seamless Wefts</li>
                 <li>Silky Straight Texture</li>
                 <li>50g or 60g</li>
-                <li>Beach Wave Texture</li>
                 <li>Lengths 18" or 20"</li>
             </ul>
             <a href="/clip-in-hair-extensions/double-hairset-weft-half-weft.html">
@@ -102,7 +96,6 @@
             </a>
         </div>
     </div>
-
     <div class="row a-center">
         <h1 class="hidden-xs">Not sure how to put<br> in clip-in hair<br> extensions?</h1>
         <h1 style="font-size: 22px;" class="h1-Alt visible-xs-block">Not sure how to put in clip-in hair extensions?
@@ -116,10 +109,10 @@
             Watch our how to:
         </p>
     </div>
-    <div class="row">
-        <a href="">
-            <img src="{{media url="wysiwyg/clip-in-2019/video-placeholder.jpg"}}" alt="" title="" />
-        </a>
+    <div style="--aspect-ratio: 16/9;">
+        <iframe width="1600" height="900" src="https://www.youtube.com/embed/o9cUutvVico" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
     </div>
 </div>
 
@@ -195,6 +188,35 @@
 
     #enhanceNatrualLengths {
         max-width: 90%;
+    }
+
+    /* VIDEO */
+
+    [style*="--aspect-ratio"]> :first-child {
+        width: 100%;
+    }
+
+    [style*="--aspect-ratio"]>img {
+        height: auto;
+    }
+
+    @supports (--custom:property) {
+        [style*="--aspect-ratio"] {
+            position: relative;
+        }
+
+        [style*="--aspect-ratio"]::before {
+            content: "";
+            display: block;
+            padding-bottom: calc(100% / (var(--aspect-ratio)));
+        }
+
+        [style*="--aspect-ratio"]> :first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
     }
 
     @media only screen and (max-width: 1024px) {
