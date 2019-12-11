@@ -59,7 +59,6 @@
         </div>
     </div>
 
-
     <div class="jumbotron no-padding">
         <div class="container">
             <div class="row">
@@ -104,46 +103,34 @@
         </div>
     </div>
 
-
     <div class="jumbotron half-padding">
         <div class="container">
             <div class="row a-center">
-                <center>
-                    <h2>As Featured On...</h2>
-                    <center>
-                        <img src="{{media url="wysiwyg/about/beautyworks-as-featured-in-magazines-tv.jpg"}}"
-                            alt="Featured in Cosmopolitan, Glamour & Vogue"
-                            title="Featured in Cosmopolitan, Glamour & Vogue" />
+                <h2>As Featured On...</h2>
+                <img src="{{media url="wysiwyg/about/beautyworks-as-featured-in-magazines-tv.jpg"}}"
+                    alt="Featured in Cosmopolitan, Glamour & Vogue" title="Featured in Cosmopolitan, Glamour & Vogue" />
             </div>
         </div>
     </div>
 
-
     <div class="jumbotron half-padding">
         <div class="container">
             <div class="row a-center">
-
-                <center>
-                    <h2>As Seen On...</h2>
-                    <center>
-                        <h4>Tag a photo for a chance to be featured in our gallery</h4>
-                        <a href="/shop-social" alt="Shop for Hair Extensions by Influencer or Model">
-                            <img class="hidden-xs"
-                                src="{{media url="wysiwyg/about/beautyworks-hair-celebrity-favourite.jpg"}}"
-                                alt="Beauty Works Instagram Fans" title="Beauty Works Instagram Fans" />
-                            <img class="hidden-sm hidden-md hidden-lg"
-                                src="{{media url="wysiwyg/about/beautyworks-hair-celebrity-favourite-mob.jpg"}}"
-                                alt="Beauty Works Instagram Fans" title="Beauty Works Instagram Fans" />
-                        </a>
-                        <button onclick="location.href='/shop-social'" type="button"
-                            class="btn btn-alt social-btn">#BeautyWorks</button>
-
+                <h2>As Seen On...</h2>
+                <h4>Tag a photo for a chance to be featured in our gallery</h4>
+                <a href="/shop-social" alt="Shop for Hair Extensions by Influencer or Model">
+                    <img class="hidden-xs" src="{{media url="wysiwyg/about/beautyworks-hair-celebrity-favourite.jpg"}}"
+                        alt="Beauty Works Instagram Fans" title="Beauty Works Instagram Fans" />
+                    <img class="hidden-sm hidden-md hidden-lg"
+                        src="{{media url="wysiwyg/about/beautyworks-hair-celebrity-favourite-mob.jpg"}}"
+                        alt="Beauty Works Instagram Fans" title="Beauty Works Instagram Fans" />
+                </a>
+                <button onclick="location.href='/shop-social'" type="button" class="btn btn-alt social-btn">
+                    #BeautyWorks
+                </button>
             </div>
         </div>
     </div>
-
-
-
 
     <div class="jumbotron half-padding stockist-block">
         <div class="container">
@@ -163,98 +150,104 @@
             </div>
         </div>
     </div>
+</div>
 
-
-
-    <style>
-        @media only screen and (max-width: 480px) {
-            section {
-                margin-bottom: 20px;
-            }
-
-            .inf-grid {
-                padding-bottom: 40px;
-            }
+<style>
+    @media only screen and (max-width: 480px) {
+        section {
+            margin-bottom: 20px;
         }
 
-        @media (min-width: 481px) {
-            section {
-                margin-bottom: 40px;
-            }
+        .inf-grid {
+            padding-bottom: 40px;
+        }
+    }
 
-            .inf-grid {
-                padding-bottom: 40px;
-            }
-
-            .stockist-block {
-                padding-top: 40px !important;
-            }
+    @media (min-width: 481px) {
+        section {
+            margin-bottom: 40px;
         }
 
-        .shop-social-cta {
-            padding-top: 20px;
+        .inf-grid {
+            padding-bottom: 40px;
         }
 
-        .social-btn {
-            margin-top: 20px;
+        .stockist-block {
+            padding-top: 40px !important;
         }
+    }
 
-        .half-padding {
-            padding: 20px 0;
-        }
+    .shop-social-cta {
+        padding-top: 20px;
+    }
 
-        h4 {
-            font-size: 1.4rem;
-        }
+    .social-btn {
+        margin-top: 20px;
+    }
 
-        #about-masthead-logo {
-            padding: 10px 10px;
-            position: absolute;
-            z-index: 99;
-            color: #FFFFFF;
-            text-align: center;
-            top: 110px;
-            right: 1px;
-            width: 50%;
-        }
+    .half-padding {
+        padding: 20px 0;
+    }
 
-        #about-masthead-txt {
-            padding: 20px 40px;
-            position: absolute;
-            z-index: 99;
-            color: #FFFFFF;
-            text-align: center;
-            top: 240px;
-            right: 1px;
-            width: 50%;
-        }
+    h4 {
+        font-size: 1.4rem;
+    }
 
-        #about-masthead-txt-ipad {
-            padding: 0px 10px;
-            position: absolute;
-            z-index: 99;
-            color: #FFFFFF;
-            text-align: center;
-            bottom: 0px;
-            right: 1px;
-        }
+    #about-masthead-logo {
+        padding: 10px 10px;
+        position: absolute;
+        z-index: 99;
+        color: #FFFFFF;
+        text-align: center;
+        top: 110px;
+        right: 1px;
+        width: 50%;
+    }
 
-        #about-masthead-txt-ipad p {
-            margin-bottom: 0.6em;
-        }
+    #about-masthead-txt {
+        padding: 20px 40px;
+        position: absolute;
+        z-index: 99;
+        color: #FFFFFF;
+        text-align: center;
+        top: 240px;
+        right: 1px;
+        width: 50%;
+    }
 
-        #about-masthead-txt-mob {
-            padding: 10px 10px;
-            color: #000000;
-            text-align: center;
-        }
+    #about-masthead-txt-ipad {
+        padding: 0px 10px;
+        position: absolute;
+        z-index: 99;
+        color: #FFFFFF;
+        text-align: center;
+        bottom: 0px;
+        right: 1px;
+    }
 
-        .page-main {
-            padding-top: 0 !important;
-        }
+    #about-masthead-txt-ipad p {
+        margin-bottom: 0.6em;
+    }
 
-        a.linkwh,
-        a:visited.linkwh {
-            color: #FFFFFF;
-        }
-    </style>
+    #about-masthead-txt-mob {
+        padding: 10px 10px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .page-main {
+        padding-top: 0 !important;
+    }
+
+    a.linkwh,
+    a:visited.linkwh {
+        color: #FFFFFF;
+    }
+
+    h2::after,
+    .h2::after,
+    .block-title strong:after {
+        margin: auto;
+        margin-top: 16px;
+    }
+</style>
