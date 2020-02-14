@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div class="row" style="margin-bottom: 12rem;">
+    <div class="row">
 
         <div class="essentialAftercare-col col-md-4 col-xs-6">
             <a href="/pearl-nourishing-argan-oil-shampoo-250ml.html">
@@ -347,7 +347,7 @@
         </div>
     </div>
 
-    <div class="row" style="margin-bottom: 12rem;">
+    <div class="row">
 
         <div class="brushCollection-col col-md-4 col-xs-12">
             <a href="/large-paddle-brush.html">
@@ -436,8 +436,9 @@
         </div>
         <div class="col-md-6 col-xs-12 aftercareColPadding"
             style="background-image: url('/media/wysiwyg/aftercare-2020/ten-rules/numbers/1.png');background-repeat: no-repeat; background-position: top;">
-            <h2 class="aftercare-SubHeader">Rule Number One<br> <span style="font-weight: 100;">Detangle</span></h2>
-            <p class="read-more-wrap">
+            <h2 class="aftercare-SubHeader cGothic">Rule Number One<br> <span style="font-weight: 100;">Detangle</span>
+            </h2>
+            <p class="read-more-wrap cGothic">
                 Detangle your hair extensions before washing, this will avoid hair becoming tangled and lift away dirt.
                 Do this before beginning to wash in order to give them a proper cleanse. Use a wide tooth comb or Beauty
                 Works Boar Bristle brush to glide through hair.
@@ -738,13 +739,12 @@
 <style>
     /* GENERAL STYLING */
     .cGothic {
-        font-family: 'Century Gothic';
+        font-family: 'Muli', sans-serif;
     }
 
     p {
         font-size: 20px;
         color: #373737;
-        font-family: 'Century Gothic';
     }
 
     #aftercareLine {
@@ -759,7 +759,6 @@
 
     a .aftercareButton {
         color: white;
-        font-family: 'Century Gothic';
         text-decoration: none;
         text-transform: uppercase;
     }
@@ -781,7 +780,6 @@
     .aftercare-SubHeader {
         text-transform: uppercase;
         font-weight: 600;
-        font-family: 'Century Gothic';
         color: #373737;
         font-size: 3rem;
         padding: 0 5rem;
@@ -849,6 +847,10 @@
         #aftercareLine {
             margin: 2rem;
         }
+
+        .aftercareButton {
+            padding: 10px;
+        }
     }
 
     /* SECTION SPECIFIC STYLING */
@@ -869,7 +871,6 @@
     }
 
     .aftercareProductName {
-        font-family: 'Century Gothic';
         color: #373737;
         text-transform: uppercase;
         margin-bottom: 2.5rem;
@@ -894,6 +895,10 @@
     @media only screen and (max-width: 425px) {
         .aftercare-description {
             line-height: 25px;
+        }
+
+        .aftercareProductName {
+            font-size: 1.3rem;
         }
     }
 
@@ -924,17 +929,21 @@
         }
 
         .essentialAftercare-p {
-            height: 25rem;
+            height: 22rem;
         }
     }
 
     @media only screen and (max-width: 768px) {
+        .essentialAftercare-col {
+            height: 65rem;
+        }
+
         .essentialAftercare-h3 {
-            height: 6rem;
+            height: 5.5rem;
         }
 
         .essentialAftercare-p {
-            height: 30rem;
+            height: 28rem;
         }
     }
 
@@ -956,7 +965,7 @@
         }
 
         .essentialAftercare-h3b {
-            height: 6rem;
+            height: 5rem;
         }
 
         .essentialAftercare-p {
@@ -972,49 +981,7 @@
         }
     }
 
-    /* @media only screen and (max-width: 418px) {
-        #arganOilCondtioner-p {
-            height: 28.2rem;
-        }
-
-        #arganOilSerum-p {
-            height: 28.4rem;
-        }
-    } */
-
-    /* @media only screen and (max-width: 411px) {
-        .essentialAftercare-h3 {
-            height: 6rem;
-        }
-
-        #arganOilCondtioner-p {
-            height: 28.2rem;
-        }
-
-        #arganOilSerum-p {
-            height: 28.5rem;
-        }
-    } */
-
-    /* @media only screen and (max-width: 414px) {
-        #arganOilCondtioner-p {
-            height: 28.2rem;
-        }
-
-        #arganOilSerum-p {
-            height: 28.4rem;
-        }
-    } */
-
     @media only screen and (max-width: 375px) {
-        .essentialAftercare-h3 {
-            height: 6rem;
-        }
-
-        .essentialAftercare-h3b {
-            height: 6rem;
-        }
-
         .essentialAftercare-p {
             height: 38rem;
         }
@@ -1048,15 +1015,15 @@
 
     @media only screen and (max-width: 320px) {
         .essentialAftercare-h3 {
-            height: 7rem;
+            height: 5rem;
         }
 
         .essentialAftercare-h3b {
-            height: 9rem;
+            height: 5rem;
         }
 
         .essentialAftercare-p {
-            height: 50rem;
+            height: 45rem;
         }
 
         #arganOilCondtioner-p {
@@ -1090,18 +1057,18 @@
             height: 62rem;
         }
 
+        .brushCollection-h3 {
+            height: 4rem;
+        }
+
         .brushCollection-p {
-            height: 20rem;
+            height: 19.5rem;
         }
     }
 
     @media only screen and (max-width: 768px) {
         .brushCollection-col {
             height: 60rem;
-        }
-
-        .brushCollection-h3 {
-            height: 4rem;
         }
 
         .brushCollection-p {
@@ -1111,7 +1078,15 @@
 
     @media only screen and (max-width: 425px) {
         .brushCollection-col {
-            height: 65rem;
+            height: 62rem;
+        }
+
+        .brushCollection-h3 {
+            height: 3rem;
+        }
+
+        .brushCollection-h3 h3 {
+            font-size: 1.5rem;
         }
 
         .brushCollection-p {
@@ -1147,7 +1122,7 @@
         }
 
         .brushCollection-h3 {
-            height: 4.5rem;
+            height: 3.5rem;
         }
 
         .brushCollection-p {
@@ -1157,7 +1132,6 @@
         #ovalBrush-p {
             height: 12rem;
         }
-
     }
 
     /* Golden Rules Styling */
