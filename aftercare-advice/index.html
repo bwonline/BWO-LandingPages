@@ -27,7 +27,7 @@
 
 <!-- ESSENTIAL AFTERCARE -->
 <!-- desktop -->
-<div class="container a-center hidden-xs" style="display: flow-root;">
+<div class="container a-center" id="essentialAftercare-Desktop">
     <div class="row">
         <div class="col">
             <h2 class="aftercare-SubHeader subheadingSpacing cGothic">ESSENTIAL AFTERCARE</h2>
@@ -910,6 +910,10 @@
         height: 20rem;
     }
 
+    #essentialAftercare-Desktop {
+        display: flow-root;
+    }
+
     #essentialAftercare-Mobile {
         display: none;
     }
@@ -935,6 +939,10 @@
     }
 
     @media only screen and (max-width: 425px) {
+        #essentialAftercare-Desktop {
+            display: none;
+        }
+
         #essentialAftercare-Mobile {
             display: flow-root !important;
         }
@@ -961,6 +969,16 @@
 
         #arganOilSerum-p {
             height: 26rem;
+        }
+    }
+
+    @media only screen and (max-width: 418px) {
+        #arganOilCondtioner-p {
+            height: 28.2rem;
+        }
+
+        #arganOilSerum-p {
+            height: 28.4rem;
         }
     }
 
@@ -1198,6 +1216,8 @@
         opacity: 1;
         font-size: inherit;
         max-height: 999em;
+
+        display: -ms-inline-grid;
     }
 
     .read-more-state~.read-more-trigger:before {
