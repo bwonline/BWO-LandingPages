@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="background-color: #F7F8FC;">
     <div class="row">
         <div class="col-xs-4">
             <div id="bannerText">
@@ -23,17 +23,63 @@
         letter-spacing: 5px;
         text-align: center;
         color: #3F3F3F;
+        margin: 40% 0;
     }
 
     #weftHeading {
         font-family: 'Century Gothic', Bold;
         font-weight: bold;
-        font-size: 5.5rem;
+        font-size: 7.5rem;
     }
 
     #extensionsHeading {
         font-family: 'Muli', sans-serif;
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 4rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #bannerText {
+            letter-spacing: 8px;
+        }
+
+        #weftHeading {
+            font-size: 6rem;
+        }
+
+        #extensionsHeading {
+            font-size: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        #bannerText {
+            letter-spacing: 2px;
+        }
+
+        #weftHeading {
+            font-size: 3.5rem;
+            margin: 0 20%;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        #weftHeading {
+            margin: 0 15%;
+        }
+
+        #extensionsHeading {
+            font-size: 1.7rem;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        #weftHeading {
+            margin: 0 12%;
+        }
+
+        #extensionsHeading {
+            font-size: 1.5rem;
+        }
     }
 </style>
