@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col mothersDaySpacing">
+        <div class="col mothersDaySpacing" id="mothersDayExtraSpacing">
             <h1 class="sidelines"><span class="mothersDayHeading">Mother's Day</span></h1>
         </div>
     </div>
@@ -96,7 +96,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col mothersDaySpacing" style="margin-top: 6rem;">
+        <div class="col mothersDaySpacing" id="giftGuideContainer">
             <h1 class="mothersDayHeading">Gift Guide</h1>
         </div>
     </div>
@@ -291,6 +291,7 @@
     h4::after,
     .block-title strong:after {
         background-color: transparent !important;
+        margin-top: 0;
     }
 
     h1.sidelines {
@@ -308,7 +309,11 @@
     }
 
     .mothersDaySpacing {
-        margin: 4rem auto;
+        margin: 4rem auto -2rem;
+    }
+
+    #mothersDayExtraSpacing {
+        margin-bottom: 7rem;
     }
 
     .mothersDayHeading {
@@ -316,7 +321,7 @@
         font-size: 5.5rem;
         letter-spacing: 1rem;
         text-align: center;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
         color: #373737;
     }
 
@@ -325,7 +330,7 @@
         color: #373737;
         font-weight: 200;
         letter-spacing: .3rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
     }
 
     #topPicks {
@@ -371,6 +376,12 @@
         color: #373737;
     }
 
+    #giftGuideContainer {
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+
+    }
+
     @media only screen and (max-width: 1024px) {
         #luxuryGifts {
             width: 100%;
@@ -393,6 +404,14 @@
     }
 
     @media only screen and (max-width: 425px) {
+        .mothersDaySpacing {
+            margin: 2rem auto;
+        }
+
+        #mothersDayExtraSpacing {
+            margin-bottom: 4rem;
+        }
+
         .mothersDayHeading {
             font-size: 2.5rem;
             letter-spacing: .5rem;
@@ -413,6 +432,10 @@
 
         .giftGuide {
             width: 80% !important;
+        }
+
+        #giftGuideContainer {
+            margin: 3rem 0;
         }
     }
 
