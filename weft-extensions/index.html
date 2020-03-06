@@ -126,10 +126,12 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-1">Discover</div>
-        <div class="col-xs-1">
-            <div class="row">Beautiful</div>
-            <div class="row">Hair</div>
+        <div id="rotatedText">
+            <div class="col-xs-1" style="transform: rotate(270deg);font-size: 3rem;">Discover</div>
+            <div class="col-xs-1" style="font-size: 6rem;">
+                <div class="row" style="transform: rotate(270deg);">Hair</div>
+                <div class="row" style="transform: rotate(270deg);">Beautiful</div>
+            </div>
         </div>
         <div class="col-xs-10">
             <img src="{{media url="wysiwyg/weft-ext2020/video.jpg"}}" alt="" title="" />
@@ -150,18 +152,22 @@
 </div>
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="beforeAfterContainer">
         <div class="col">
-            <h4>Weft Extension</h4>
-            <h3>Transformation</h3>
-            <p>Suitable for Medium Thick and Course Hair</p>
+            <span id="weftExtension">Weft Extension</span><br>
+            <span id="transformation">Transformation</span><br>
+            <span id="beforeAfterSub">Suitable for Medium Thick and Course Hair</span>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-6"><img style="width: 80%;" src="{{media url="wysiwyg/weft-ext2020/before.png"}}" alt=""
-                title="" /></div>
-        <div class="col-xs-6"><img style="width: 80%;" src="{{media url="wysiwyg/weft-ext2020/after.png"}}" alt=""
-                title="" /></div>
+        <div class="col-xs-6">
+            <img id="beforeMargin" class="beforeAfter" src="{{media url="wysiwyg/weft-ext2020/before.png"}}"
+                alt="Before Beauty Works Weft Extensions" title="Before Beauty Works Weft Extensions" />
+        </div>
+        <div class="col-xs-6">
+            <img class="beforeAfter" src="{{media url="wysiwyg/weft-ext2020/after.png"}}"
+                alt="After Beauty Works Weft Extensions" title="After Beauty Works Weft Extensions" />
+        </div>
     </div>
 </div>
 
@@ -242,6 +248,42 @@
         font-size: 2rem;
     }
 
+    #beforeAfterContainer {
+        text-align: center;
+        color: #3F3F3F;
+        text-transform: uppercase;
+        font-family: 'Muli', sans-serif;
+        font-weight: 400;
+        margin-top: 6rem;
+    }
+
+    .beforeAfter {
+        width: 65%;
+    }
+
+    #beforeMargin {
+        margin-left: 40%;
+    }
+
+    #rotatedText {
+        color: #3F3F3F;
+        text-transform: uppercase;
+        font-family: 'Muli', sans-serif;
+    }
+
+    #weftExtension {
+        font-size: 3rem;
+    }
+
+    #transformation {
+        font-size: 6rem;
+    }
+
+    #beforeAfterSub {
+        text-transform: none;
+        font-size: 2.2rem;
+    }
+
     @media only screen and (max-width: 1024px) {
         #description {
             margin: 3rem;
@@ -249,6 +291,10 @@
 
         button {
             padding: 1rem 6rem;
+        }
+
+        #beforeMargin {
+            margin-left: 35%;
         }
     }
 
@@ -306,6 +352,26 @@
 
         .weftTitleHeight {
             height: 2.5rem;
+        }
+
+        #weftExtension {
+            font-size: 1.5rem;
+        }
+
+        #transformation {
+            font-size: 3rem;
+        }
+
+        #beforeAfterSub {
+            font-size: 1.2rem;
+        }
+
+        .beforeAfter {
+            width: 100%;
+        }
+
+        #beforeMargin {
+            margin-left: 5%;
         }
     }
 
