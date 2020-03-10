@@ -1,7 +1,19 @@
 <style>
     /* Shared Styling */
+    .columns .column.main {
+        padding-bottom: 1px;
+    }
+
+    .page-footer {
+        margin-top: auto !important;
+    }
+
     .container {
         display: flex;
+    }
+
+    .weftBackgroundColour {
+        background-color: #EBEBEB;
     }
 
     .weftDescriptionText {
@@ -9,20 +21,12 @@
         font-size: 2rem;
         color: #3F3F3F;
         line-height: 3rem;
-    }
-
-    #decriptionOne {
         margin: 3rem 10rem;
     }
 
-    #decriptionTwo {
-        margin: 3rem;
-    }
-
     #decriptionThree {
-        margin-bottom: 4rem;
+        margin-top: 0;
     }
-
 
     .weftButton {
         display: table;
@@ -44,14 +48,13 @@
         background-color: transparent;
     }
 
-
     @media only screen and (max-width: 1024px) {
-        #decriptionOne {
-            margin: 3rem;
+        #decriptionThree {
+            margin-top: 2rem;
         }
 
-        #decriptionThree {
-            margin: 4rem;
+        .weftDescriptionText {
+            margin: 3rem 5rem;
         }
     }
 
@@ -59,14 +62,6 @@
         .weftDescriptionText {
             font-size: 1.5rem;
             line-height: 2.5rem;
-        }
-
-        #decriptionOne {
-            margin: 1rem 1rem 2rem;
-        }
-
-        #decriptionThree {
-            margin: 2rem;
         }
 
         .weftButton {
@@ -78,17 +73,22 @@
 
     @media only screen and (max-width: 425px) {
         #decriptionTwo {
-            margin: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        #decriptionThree {
+            margin-bottom: 2.5rem;
+        }
+
+        .weftDescriptionText {
+            margin: 3rem;
         }
     }
 
     @media only screen and (max-width: 320px) {
         .weftDescriptionText {
             font-size: 1.3rem;
-        }
-
-        #decriptionOne {
-            margin: 0rem 0rem 2rem;
+            margin: 2rem 1rem;
         }
     }
 
@@ -168,7 +168,9 @@
         text-transform: uppercase;
         font-family: 'Muli', sans-serif;
         font-weight: 400;
-        margin-top: 6rem;
+        background-color: #EBEBEB;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
     }
 
     #beforeAfter-weftExtension {
@@ -185,7 +187,10 @@
     }
 
     .beforeAfterImg {
-        padding: 0 10%;
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 1rem;
     }
 
     @media only screen and (max-width: 1024px) {
@@ -246,6 +251,10 @@
             margin: 6% 0;
             font-size: 3.5rem;
         }
+
+        .beforeAfterImg {
+            width: 70%;
+        }
     }
 
     @media only screen and (max-width: 425px) {
@@ -262,6 +271,10 @@
         #extensionsBannerHeading {
             font-size: 1.5rem;
             letter-spacing: 3px
+        }
+
+        .weftProductImgs {
+            width: 65%;
         }
 
         .weftProductName {
@@ -292,7 +305,7 @@
         }
 
         .beforeAfterImg {
-            padding: 0;
+            width: 100%;
         }
     }
 
@@ -335,7 +348,6 @@
         max-height: 0;
         font-size: 0;
         transition: .25s ease;
-
         display: -ms-flexbox;
     }
 
@@ -343,7 +355,6 @@
         opacity: 1;
         font-size: inherit;
         max-height: 999em;
-
         display: -ms-inline-grid;
     }
 
@@ -389,7 +400,7 @@
     }
 </style>
 
-<!-- Banner -->
+<!-- Banner - BACKGROUND COLOUR FADE-IN: style="background-image: linear-gradient(white 0%, #EBEBEB 95%);"-->
 <div class="container">
     <div class="row">
         <div class="col-md-4 col-xs-3" id="bannerTextMargin">
@@ -401,17 +412,17 @@
             </div>
         </div>
         <div class="col-md-8 col-xs-9">
-            <img src="{{media url="wysiwyg/weft-ext2020/banner.png"}}" alt="Beauty Works Weft Extensions"
-                title="Beauty Works Weft Extensions" />
+            <img src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-weft-banner.png"}}"
+                alt="Beauty Works Weft Extensions" title="Beauty Works Weft Extensions" />
         </div>
     </div>
 </div>
 
 <!-- Description #1 -->
-<div class="container">
+<div class="container weftBackgroundColour">
     <div class="row">
         <div class="col">
-            <p class="weftDescriptionText" id="decriptionOne">
+            <p class="weftDescriptionText">
                 Weft extensions are a salon favorite application method, with no glue, no heat and no damage. Lasting 4
                 to 6 weeks before re-application is needed, the Micro Ring Weft or Braided Weft Hair Extensions
                 applications are a great form of semi permanent hair extensions, adding volume, length and colour to
@@ -424,12 +435,13 @@
 </div>
 
 <!-- Show More Products -->
-<div class="container">
+<div class="container weftBackgroundColour">
     <div class="row">
 
         <div class="col-md-4 col-xs-12">
             <div class="row">
-                <img class="weftProductImgs" src="{{media url="wysiwyg/weft-ext2020/CelebChoice.jpg"}}"
+                <img class="weftProductImgs"
+                    src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-celebrity-choice-weft.jpg"}}"
                     alt="Celebrity Choice Weft" title="Celebrity Choice Weft" />
             </div>
             <div class="row weftProductDescription">
@@ -448,8 +460,9 @@
 
         <div class="col-md-4 col-xs-12">
             <div class="row">
-                <img class="weftProductImgs" src="{{media url="wysiwyg/weft-ext2020/GoldWeft.jpg"}}"
-                    alt="Gold Double Weft" title="Gold Double Weft" />
+                <img class="weftProductImgs"
+                    src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-gold-weft.jpg"}}" alt="Gold Double Weft"
+                    title="Gold Double Weft" />
             </div>
             <div class="row weftProductDescription">
                 <h3 class="weftProductName">Gold Double Weft 150G - 210G</h3>
@@ -467,7 +480,8 @@
 
         <div class="col-md-4 col-xs-12">
             <div class="row">
-                <img class="weftProductImgs" src="{{media url="wysiwyg/weft-ext2020/InvisiWeft.jpg"}}" alt="Invisi-Weft"
+                <img class="weftProductImgs"
+                    src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-invisi-weft.jpg"}}" alt="Invisi-Weft"
                     title="Invisi-Weft" />
             </div>
             <div class="row weftProductDescription">
@@ -487,7 +501,7 @@
 </div>
 
 <!-- Description #2 -->
-<div class="container">
+<div class="container weftBackgroundColour">
     <div class="row">
         <div class="col">
             <p class="weftDescriptionText" id="decriptionTwo">
@@ -501,7 +515,7 @@
 </div>
 
 <!-- Video -->
-<div class="container">
+<div class="container weftBackgroundColour">
     <div class="row">
         <div id="videoText">
             <div class="col-xs-1"></div>
@@ -513,13 +527,15 @@
             </div>
         </div>
         <div class="col-xs-9">
-            <img src="{{media url="wysiwyg/weft-ext2020/video.jpg"}}" alt="" title="" />
+            <a href="">
+                <img src="{{media url="wysiwyg/weftLandingPage2020/video.jpg"}}" alt="" />
+            </a>
         </div>
     </div>
 </div>
 
 <!-- Description #3 -->
-<div class="container">
+<div class="container weftBackgroundColour">
     <div class="row">
         <div class="col">
             <p class="weftDescriptionText" id="decriptionThree">
@@ -532,7 +548,7 @@
 </div>
 
 <!-- Before/After -->
-<div class="container" style="display: block;">
+<div class="container weftBackgroundColour" style="display: block;">
     <div class="row" id="beforeAfterContainer">
         <div class="col">
             <span id="beforeAfter-weftExtension">Weft Extension</span><br>
@@ -541,13 +557,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-6 beforeAfterImg">
-            <img src="{{media url="wysiwyg/weft-ext2020/before.png"}}" alt="Before Beauty Works Weft Extensions"
-                title="Before Beauty Works Weft Extensions" />
-        </div>
-        <div class="col-xs-6 beforeAfterImg">
-            <img src="{{media url="wysiwyg/weft-ext2020/after.png"}}" alt="After Beauty Works Weft Extensions"
-                title="After Beauty Works Weft Extensions" />
+        <div class="col-xs-12 weftBackgroundColour">
+            <img class="beforeAfterImg"
+                src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-weft-before_after.png"}}" alt="" />
         </div>
     </div>
 </div>
