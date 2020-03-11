@@ -22,10 +22,20 @@
         color: #3F3F3F;
         line-height: 3rem;
         margin: 3rem 10rem;
+        padding: 2rem 0;
+    }
+
+    #decriptionTwo {
+        padding: 6rem 0 4rem;
+        margin: 0rem 10rem;
+    }
+
+    #decriptionTwoButton {
+        margin-bottom: 2rem;
     }
 
     #decriptionThree {
-        margin-top: 0;
+        padding: 3rem 0;
     }
 
     .weftButton {
@@ -48,7 +58,16 @@
         background-color: transparent;
     }
 
+    .swoosh {
+        background: #FFFFFF url('/media/wysiwyg/weftLandingPage2020/Swoosh.png') no-repeat center;
+        background-size: 75%;
+    }
+
     @media only screen and (max-width: 1024px) {
+        #decriptionTwoButton {
+            margin-bottom: 3rem;
+        }
+
         #decriptionThree {
             margin-top: 2rem;
         }
@@ -62,6 +81,7 @@
         .weftDescriptionText {
             font-size: 1.5rem;
             line-height: 2.5rem;
+            padding: 1rem 0;
         }
 
         .weftButton {
@@ -69,32 +89,58 @@
             font-size: 1rem;
             letter-spacing: 2px;
         }
+
+        .swoosh {
+            background-size: 100%;
+        }
+
+        #decriptionTwo {
+            padding: 4rem 0 3rem;
+        }
+
+        #decriptionTwoButton {
+            margin-bottom: 1rem;
+        }
+
+        #decriptionThree {
+            margin: 2rem 5rem;
+        }
     }
 
     @media only screen and (max-width: 425px) {
         #decriptionTwo {
-            margin-top: 2rem;
+            margin: 2rem 1rem;
+            padding: 2rem 0;
         }
 
         #decriptionThree {
-            margin-bottom: 2.5rem;
+            margin: 1rem 1rem 1.5rem;
+            padding: 1.5rem 0;
         }
 
         .weftDescriptionText {
-            margin: 3rem;
+            margin: 2rem 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        #decriptionTwo {
+            margin: 2rem 0rem;
+            padding: 1rem 0;
         }
     }
 
     @media only screen and (max-width: 320px) {
         .weftDescriptionText {
             font-size: 1.3rem;
-            margin: 2rem 1rem;
+            margin: 1rem;
         }
     }
 
     /* Component Styling */
     #bannerTextMargin {
-        margin: 15% auto;
+        margin: 14% auto;
+        padding-left: 6rem;
     }
 
     .bannerText {
@@ -109,7 +155,6 @@
         font-weight: bold;
         font-size: 8rem;
         letter-spacing: 15px;
-        margin: 0 25%;
     }
 
     #extensionsBannerHeading {
@@ -121,12 +166,12 @@
 
     .weftProductImgs {
         display: block;
-        margin: 5rem auto 2rem;
+        margin: 3.5rem auto 2rem;
         width: 85%;
     }
 
     .weftProductDescription {
-        margin: 0 5rem 2rem;
+        margin: 0 5rem;
         text-align: center;
     }
 
@@ -153,13 +198,19 @@
     }
 
     #videoText-discover {
-        margin: 20% -50px;
+        margin: 19% -50px;
         font-size: 4rem;
     }
 
     #videoText-beautifulHair {
-        margin: 9% 0;
+        margin: 5% 0;
         font-size: 6rem;
+        font-weight: bold;
+    }
+
+    .youTubeEmbed {
+        width: 100rem;
+        height: 60rem;
     }
 
     #beforeAfterContainer {
@@ -168,7 +219,6 @@
         text-transform: uppercase;
         font-family: 'Muli', sans-serif;
         font-weight: 400;
-        background-color: #EBEBEB;
         padding-top: 4rem;
         padding-bottom: 2rem;
     }
@@ -181,11 +231,6 @@
         font-size: 6rem;
     }
 
-    #beforeAfterSub {
-        text-transform: none;
-        font-size: 2.2rem;
-    }
-
     .beforeAfterImg {
         width: 60%;
         margin: 0 auto;
@@ -194,8 +239,9 @@
     }
 
     @media only screen and (max-width: 1024px) {
-        #weftBannerHeading {
-            margin: 0 20%;
+        #bannerTextMargin {
+            margin: 12% auto;
+            padding-left: 4rem;
         }
 
         #extensionsBannerHeading {
@@ -203,8 +249,13 @@
             letter-spacing: 10px;
         }
 
+        .youTubeEmbed {
+            width: 80rem;
+            height: 50rem;
+        }
+
         #videoText-discover {
-            margin: 16% -50px;
+            margin: 18.5% -50px;
         }
 
         #videoText-beautifulHair {
@@ -214,13 +265,20 @@
     }
 
     @media only screen and (max-width: 768px) {
+        .cms-page-view .page-main {
+            padding-top: 1px;
+        }
+
+        #bannerTextMargin {
+            padding-left: 0;
+        }
+
         .bannerText {
             letter-spacing: 8px;
         }
 
         #weftBannerHeading {
             font-size: 5rem;
-            margin: 0 18%;
         }
 
         #extensionsBannerHeading {
@@ -233,7 +291,7 @@
         }
 
         .weftProductDescription {
-            margin: 0 2rem 1rem;
+            margin: 0 2rem;
         }
 
         .weftProductName {
@@ -242,14 +300,19 @@
         }
 
         #videoText-discover {
-            margin: 14% -35px;
+            margin: 19% -35px;
             font-size: 2.5rem;
             letter-spacing: 5px;
         }
 
         #videoText-beautifulHair {
-            margin: 6% 0;
+            margin: 9.4% 0;
             font-size: 3.5rem;
+        }
+
+        .youTubeEmbed {
+            width: 60rem;
+            height: 40rem;
         }
 
         .beforeAfterImg {
@@ -258,18 +321,22 @@
     }
 
     @media only screen and (max-width: 425px) {
+        #bannerTextMargin {
+            margin: 8% auto;
+            padding-left: 4rem;
+        }
+
         .bannerText {
             letter-spacing: 2px;
         }
 
         #weftBannerHeading {
             letter-spacing: 8px;
-            font-size: 3rem;
-            margin: 0 10%;
+            font-size: 4rem;
         }
 
         #extensionsBannerHeading {
-            font-size: 1.5rem;
+            font-size: 2rem;
             letter-spacing: 3px
         }
 
@@ -282,7 +349,7 @@
         }
 
         #videoText-discover {
-            margin: 15% -15px;
+            margin: 20% -15px;
             font-size: 1rem;
             letter-spacing: 3px;
         }
@@ -290,6 +357,11 @@
         #videoText-beautifulHair {
             margin: 5% 0;
             font-size: 2rem;
+        }
+
+        .youTubeEmbed {
+            width: 30rem;
+            height: 20rem;
         }
 
         #beforeAfter-weftExtension {
@@ -300,41 +372,61 @@
             font-size: 3rem;
         }
 
-        #beforeAfterSub {
-            font-size: 1.2rem;
-        }
-
         .beforeAfterImg {
             width: 100%;
         }
     }
 
     @media only screen and (max-width: 375px) {
+        #bannerTextMargin {
+            margin: 6% auto;
+            padding-left: 2rem;
+        }
+
+        #videoText-discover {
+            margin: 23% -20px;
+        }
+
         #videoText-beautifulHair {
-            margin: 2% 0;
+            margin: 6% 0;
+            padding: 0;
+        }
+
+        .youTubeEmbed {
+            width: 27rem;
         }
     }
 
     @media only screen and (max-width: 320px) {
+        #bannerTextMargin {
+            margin: 5% auto;
+            padding-left: 1rem;
+        }
+
         #weftBannerHeading {
             letter-spacing: 3px;
-            margin: 0 8%;
+            font-size: 3.5rem;
         }
 
         #extensionsBannerHeading {
             letter-spacing: 2px;
-            font-size: 1.2rem;
+            font-size: 2rem;
         }
 
         #videoText-beautifulHair {
-            margin: 4% 0;
+            margin: 6% 0;
             font-size: 1.5rem;
         }
 
         #videoText-discover {
-            margin: 10% -15px;
+            margin: 16% -15px;
             font-size: 1rem;
             letter-spacing: 3px;
+        }
+
+        .youTubeEmbed {
+            width: 22rem;
+            height: 15rem;
         }
     }
 
@@ -400,10 +492,10 @@
     }
 </style>
 
-<!-- Banner - BACKGROUND COLOUR FADE-IN: style="background-image: linear-gradient(white 0%, #EBEBEB 95%);"-->
-<div class="container">
+<!-- Banner -->
+<div class="container weftBackgroundColour">
     <div class="row">
-        <div class="col-md-4 col-xs-3" id="bannerTextMargin">
+        <div class="col-xs-6 col-md-5" id="bannerTextMargin">
             <div class="row bannerText">
                 <span id="weftBannerHeading">Weft</span>
             </div>
@@ -411,7 +503,7 @@
                 <span id="extensionsBannerHeading">Extensions</span>
             </div>
         </div>
-        <div class="col-md-8 col-xs-9">
+        <div class="col-xs-6 col-md-7" style="padding-right: 0;">
             <img src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-weft-banner.png"}}"
                 alt="Beauty Works Weft Extensions" title="Beauty Works Weft Extensions" />
         </div>
@@ -419,7 +511,7 @@
 </div>
 
 <!-- Description #1 -->
-<div class="container weftBackgroundColour">
+<div class="container swoosh">
     <div class="row">
         <div class="col">
             <p class="weftDescriptionText">
@@ -435,7 +527,7 @@
 </div>
 
 <!-- Show More Products -->
-<div class="container weftBackgroundColour">
+<div class="container">
     <div class="row">
 
         <div class="col-md-4 col-xs-12">
@@ -461,7 +553,7 @@
         <div class="col-md-4 col-xs-12">
             <div class="row">
                 <img class="weftProductImgs"
-                    src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-gold-weft.jpg"}}" alt="Gold Double Weft"
+                    src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-gold-weft1.jpg"}}" alt="Gold Double Weft"
                     title="Gold Double Weft" />
             </div>
             <div class="row weftProductDescription">
@@ -501,7 +593,7 @@
 </div>
 
 <!-- Description #2 -->
-<div class="container weftBackgroundColour">
+<div class="container swoosh">
     <div class="row">
         <div class="col">
             <p class="weftDescriptionText" id="decriptionTwo">
@@ -509,13 +601,13 @@
                 signature designs that lead the market, Beauty Works Double Drawn and Double wefted hair extensions uses
                 100% Cuticle retained Remy hair that's collected on strict ethical principles from our hair partners.
             </p>
-            <a href="" class="weftButton">Shop Now</a>
+            <a href="" class="weftButton" id="decriptionTwoButton">Shop Now</a>
         </div>
     </div>
 </div>
 
 <!-- Video -->
-<div class="container weftBackgroundColour">
+<div class="container">
     <div class="row">
         <div id="videoText">
             <div class="col-xs-1"></div>
@@ -527,15 +619,15 @@
             </div>
         </div>
         <div class="col-xs-9">
-            <a href="">
-                <img src="{{media url="wysiwyg/weftLandingPage2020/video.jpg"}}" alt="" />
-            </a>
+            <iframe class="youTubeEmbed" src="https://www.youtube.com/embed/vuihvhG620U" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 </div>
 
 <!-- Description #3 -->
-<div class="container weftBackgroundColour">
+<div class="container swoosh">
     <div class="row">
         <div class="col">
             <p class="weftDescriptionText" id="decriptionThree">
@@ -548,16 +640,15 @@
 </div>
 
 <!-- Before/After -->
-<div class="container weftBackgroundColour" style="display: block;">
+<div class="container" style="display: block;">
     <div class="row" id="beforeAfterContainer">
         <div class="col">
             <span id="beforeAfter-weftExtension">Weft Extension</span><br>
             <span id="beforeAfter-transformation">Transformation</span><br>
-            <span id="beforeAfterSub">Suitable for Medium Thick and Course Hair</span>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 weftBackgroundColour">
+        <div class="col-xs-12">
             <img class="beforeAfterImg"
                 src="{{media url="wysiwyg/weftLandingPage2020/beauty-works-weft-before_after.png"}}" alt="" />
         </div>
