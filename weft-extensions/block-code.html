@@ -1,0 +1,35 @@
+<!-- OLD CODE -->
+<referenceContainer name="content">
+    <block class="Swissup\Easycatalogimg\Block\Widget\SubcategoriesList" name="easycatalogimg">
+        <action method="setTemplate">
+            <argument name="template" xsi:type="string">Swissup_Easycatalogimg::list.phtml</argument>
+        </action>
+        <action method="setCategoryCount">
+            <argument name="category_count" xsi:type="number">5</argument>
+        </action>
+        <action method="setColumnCount">
+            <argument name="column_count" xsi:type="number">4</argument>
+        </action>
+        <action method="setShowImage">
+            <argument name="show_image" xsi:type="boolean">true</argument>
+        </action>
+        <action method="setImageWidth">
+            <argument name="image_width" xsi:type="number">350</argument>
+        </action>
+        <action method="setImageHeight">
+            <argument name="image_height" xsi:type="number">500</argument>
+        </action>
+        <action method="setHideWhenFilterIsUsed">
+            <argument name="hide_when_filter_is_used" xsi:type="boolean">true</argument>
+        </action>
+    </block>
+</referenceContainer>
+
+<!-- NEW CODE -->
+<referenceContainer name="content">
+    <block class="Magento\Cms\Block\Block" name="weftLandingPage">
+        <arguments>
+            <argument name="block_id" xsi:type="string">weftLandingPage</argument>
+        </arguments>
+    </block>
+</referenceContainer>
