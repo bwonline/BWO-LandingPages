@@ -1,0 +1,82 @@
+<div class="hidden-xs" style="text-align: center;">
+    <input type="checkbox" class="read-more-state1" id="postDesktop" />
+
+    <p class="read-more-wrap1">Beauty Works offer a unique range of salon quality weft-in hair extensions. Select from a
+        variation of over 40 stunning colours in a variation of densities to suit medium, thick or long hair. With our
+        signature designs that lead the market, Beauty Works offer only the best in quality and style, with Double Drawn
+        and Double wefted hair extensions using 100% Cuticle retained Remy hair. <span class="read-more-target1">Weft
+            extensions are a salon favourite application method, with no glue, no heat and no damage. Beauty Works
+            salons are certified to attach hair extensions using clever application techniques, ensuring each client is
+            offered a consultation to determine their perfect colour match and blend. Lasting 4 to 6 weeks before
+            re-application is needed, Micro Ring Weft or Braided Weft Hair Extension applications are a great form of
+            semi permanent hair extensions, adding volume, length and colour as a shorter term solution.
+        </span></p>
+
+    <label for="postDesktop" class="read-more-trigger1"></label>
+</div>
+
+<div class="visible-xs-block" style="text-align: center;">
+    <input type="checkbox" class="read-more-state1" id="postMobile" />
+
+    <p class="read-more-wrap1">Beauty Works offer a unique range of salon quality weft-in hair extensions. Select from a
+        variation of over 40 stunning colours in a variation of densities to suit medium, thick or long hair.<span
+            class="read-more-target1"> With our signature designs that lead the market, Beauty Works offer only
+            the best in quality and style, with Double Drawn and Double wefted hair extensions using 100% Cuticle
+            retained Remy hair. Weft extensions are a salon favourite application method, with no glue, no heat and no
+            damage. Beauty Works salons are certified to attach hair extensions using clever application techniques,
+            ensuring each client is offered a consultation to determine their perfect colour match and blend. Lasting 4
+            to 6 weeks before re-application is needed, Micro Ring Weft or Braided Weft Hair Extension applications are
+            a great form of semi permanent hair extensions, adding volume, length and colour as a shorter term solution.
+        </span></p>
+
+    <label for="postMobile" class="read-more-trigger1"></label>
+</div>
+
+<style>
+    .read-more-state1 {
+        display: none;
+    }
+
+    .read-more-target1 {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state1:checked~.read-more-wrap1 .read-more-target1 {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+        text-align: center;
+    }
+
+    .read-more-state1~.read-more-trigger1:before {
+        content: 'Read more';
+    }
+
+    .read-more-state1:checked~.read-more-trigger1:before {
+        content: 'Read less';
+    }
+
+    .read-more-trigger1 {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em;
+    }
+
+    .page-layout-1column.page-with-filter .column.main {
+        padding-top: 10px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        .page-products .columns {
+            padding-top: 10px;
+        }
+    }
+</style>
