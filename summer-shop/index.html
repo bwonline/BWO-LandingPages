@@ -14,6 +14,10 @@
             margin-bottom: 45px;
         }
 
+        .imgShadow {
+            box-shadow: 0px 1px 5px lightgrey;
+        }
+
         .swiper-container-horizontal>.swiper-pagination-bullets {
             position: initial;
         }
@@ -167,10 +171,16 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="hidden-xs summerSldr">
-                        {{widget type="Swissup\EasySlide\Block\Slider" identifier="summerShop"}}
+                        <!-- {{widget type="Swissup\EasySlide\Block\Slider" identifier="summerShop"}} -->
+                        <img src="{{media url="wysiwyg/summerShop2020/Summer-Shop-Beauty-Works-Luxury-Hair-Extensions3.jpg"}}"
+                            alt="Get Exclusive Offers in the Beauty Works Summer Shop"
+                            title="Get Exclusive Offers in the Beauty Works Summer Shop" />
                     </div>
-                    <div class="visible-xs-block summerSldr">
-                        {{widget type="Swissup\EasySlide\Block\Slider" identifier="summerShop-mob"}}
+                    <div class="visible-xs-block summerSldr imgShadow">
+                        <!-- {{widget type="Swissup\EasySlide\Block\Slider" identifier="summerShop-mob"}} -->
+                        <img src="{{media url="wysiwyg/summerShop2020/Beauty-Works-Luxury-Hair-Extensions-Summer-Shop-Mobile2_1_.jpg"}}"
+                            alt="Get Exclusive Offers in the Beauty Works Summer Shop"
+                            title="Get Exclusive Offers in the Beauty Works Summer Shop" />
                     </div>
                 </div>
             </div>
