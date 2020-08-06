@@ -3,9 +3,7 @@
         <div class="row globale-hide">
             <div class="col-xs-12">
 
-                <span class="noticeBanner" id="bg-dark">*Free Delivery over £25</span>
-
-                <!-- <div class="container" id="cta-home-banner">
+                <div class="hidden-xs container" id="cta-home-banner">
                     <div class="row">
                         <div class="argento-grid" style="margin-left:0;margin-right:0;">
                             <div class="col-sm-1"></div>
@@ -68,7 +66,21 @@
                             margin: auto;
                         }
                     }
-                </style> -->
+                </style>
+
+                <div class="visible-xs-block container" id="cta-home-banner">
+                    <div class="row">
+                        {{widget type="Swissup\EasySlide\Block\Slider" identifier="home-mobile-banner-msg"}}
+
+                        <style>
+                            .easyslide-swiper-home-mobile-banner-msg .swiper-wrapper .swiper-slide img {
+                                width: 60%;
+                                display: block;
+                                margin: auto;
+                            }
+                        </style>
+                    </div>
+                </div>
 
             </div>
         </div>
