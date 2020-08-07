@@ -3,19 +3,51 @@
         <div class="row">
             <div>
                 <img id="habiaLogo" src="{{media url="wysiwyg/TRADE-eventCalender/HabiaLogo.png"}}" alt="" />
-                <div class="col-xs-12">
+                <div class="col-xs-12" id="bwoCourses">
                     <p style="font-weight:bold;">Beauty Works fast track courses ensures that every student has the
                         knowledge and practical skill to offer hair extensions to the highest standard.</p>
-                    <p>By partnering with Beauty Works and offering award winning hair extensions, you can increase your
-                        salon revenue with our unique product portfolio and HABIA endorsed extension methods.</p>
-                    <p>With a balance of both theory and practical training, our courses in the UK are held in both
-                        London and Manchester.</p>
-                    <p>As well as training you to the highest standard by our fully qualified educators, you'll gain a
-                        qualification approved by Habia. Regulated and recognised in the industry you'll be able to
-                        offer a new skill set straight on the salon floor. On completion of the course each graduate
-                        will hold a certification and be accredited Beauty Works stylist.</p>
-                    <p>Join some of the world's most recognised and respected hairdressing salons offering Beauty Works
-                        today.</p>
+                    <div class="hidden-xs">
+                        <p>By partnering with Beauty Works and offering award winning hair extensions, you can increase
+                            your salon revenue with our unique product portfolio and HABIA endorsed extension methods.
+                        </p>
+                        <p>With a balance of both theory and practical training, our courses in the UK are held in both
+                            London and Manchester.</p>
+                        <p>As well as training you to the highest standard by our fully qualified educators, you'll gain
+                            a qualification approved by Habia. Regulated and recognised in the industry you'll be able
+                            to offer a new skill set straight on the salon floor. On completion of the course each
+                            graduate will hold a certification and be accredited Beauty Works stylist.</p>
+                        <p>Join some of the world's most recognised and respected hairdressing salons offering Beauty
+                            Works today.</p>
+                    </div>
+
+                    <div class="visible-xs-block" id="accordion" data-mage-init='{
+                    "accordion":{
+                        "active": [1, 2],
+                        "collapsible": true,
+                        "openedState": "active",
+                        "multipleCollapsible": true
+                    }}'>
+                        <div data-role="collapsible">
+                            <div data-role="trigger">
+                                <p style="text-align: center;color: #28AC85;">......</p>
+                            </div>
+                        </div>
+                        <div data-role="content">
+                            <p>By partnering with Beauty Works and offering award winning hair extensions, you can
+                                increase your salon revenue with our unique product portfolio and HABIA endorsed
+                                extension methods.
+                            </p>
+                            <p>With a balance of both theory and practical training, our courses in the UK are held in
+                                both London and Manchester.</p>
+                            <p>As well as training you to the highest standard by our fully qualified educators, you'll
+                                gain a qualification approved by Habia. Regulated and recognised in the industry you'll
+                                be able to offer a new skill set straight on the salon floor. On completion of the
+                                course each graduate will hold a certification and be accredited Beauty Works stylist.
+                            </p>
+                            <p>Join some of the world's most recognised and respected hairdressing salons offering
+                                Beauty Works today.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -28,7 +60,7 @@
         </div>
         <div class="row">
             <div class="col-xs-6">
-                <ul style="list-style-type:none;">
+                <ul class="od_ftt">
                     <li><img src="{{media url="wysiwyg/TRADE-eventCalender/one-day-fast-track-training/beauty-works-offer-award-winning-hair.jpg"}}"
                             alt="" />
                         <p> Offer award winning hair</p>
@@ -48,7 +80,7 @@
                 </ul>
             </div>
             <div class="col-xs-6">
-                <ul style="list-style-type:none;">
+                <ul class="od_ftt">
                     <li><img src="{{media url="wysiwyg/TRADE-eventCalender/one-day-fast-track-training/exclusive-trade-prices.jpg"}}"
                             alt="" />
                         <p> Access to exclusive trade prices</p>
@@ -73,23 +105,26 @@
                 <h2 class="outlinesH2">WHAT YOU WILL LEARN</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6">
-                <ul>
+        <div class="row" id="wywl">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 col-md-6 col-xs-12" id="wywl-one">
+                <ul class="wywl-list">
                     <li>Hair extension knowledge</li>
                     <li>Hair extension application</li>
                     <li>Colour matching & blending techniques</li>
                     <li>Aftercare advice</li>
                 </ul>
             </div>
-            <div class="col-xs-6">
-                <ul>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <ul class="wywl-list">
                     <li>Extension maintenance & removal</li>
                     <li>How to manage customer expectations</li>
                     <li>Business & marketing skills</li>
                     <li>Digital marketing - social media for your business</li>
                 </ul>
             </div>
+            <div class="col-lg-2"></div>
+
         </div>
     </div>
     <div class="container jumbotron">
@@ -104,30 +139,72 @@
                     <img src="{{media url="wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-dawn1.jpg"}}"
                         alt="" />
                     <h3 class="cta-title">DAWN</h3>
-                    <p class="ctaHeight-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h6>Head of Education</h6>
+                    <div class="ctaHeight-lg">
+                        <p><small>Dawn has been working with hair extensions for over 13 years, she has a certificate in
+                                education, all levels of hairdressing and an assessor’s award. Since working with BW
+                                Dawn has taught over 2000 students, training in both Manchester and London weekly.
+                                Dawn’s specialist skills makes her an expert in all aspects of hair.</small>
+                        </p>
+                        <small>
+                            <ul class="educatorQualifications">
+                                <li>Level 1, 2, 3 NVQ apprenticeship in hairdressing</li>
+                                <li>Cert ED (Certificate of Education)</li>
+                                <li>A1 & A2 Assessor Award</li>
+                                <li>IQA Internal Quality Assurance (IQA)</li>
+                            </ul>
+                        </small>
+                    </div>
+                    <a href="https://www.instagram.com/dawn_louise_hair/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i>dawn_louise_hair</a>
                 </div>
             </div>
             <div class="col-md-4 col-xs-12">
                 <div class="cta-block">
-                    <div class="cta-block">
-                        <img src="{{media url="wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-emily2.jpg"}}"
-                            alt="" />
-                        <h3 class="cta-title">EMILY</h3>
-                        <p class="ctaHeight-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="{{media url="wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-emily2.jpg"}}"
+                        alt="" />
+                    <h3 class="cta-title">EMILY</h3>
+                    <h6>Educator</h6>
+                    <div class="ctaHeight-lg">
+                        <p><small>Emily has trained with BW for over 5 years and has worked on photo shoots and hair
+                                trade events around the UK. She counts Celebrities including Molly Mae, Maura
+                                Higgins and Olivia Atwood as client. Her specialists skills in hair extension
+                                application make her highly Experienced in all methods of hair extension application
+                                and removal.</small>
+                        </p>
+                        <small>
+                            <ul class="educatorQualifications">
+                                <li>Level 1, 2, 3 NVQ apprenticeship in hairdressing</li>
+                                <li>Award in Teacher Training (AET/PTLLS)</li>
+                            </ul>
+                        </small>
                     </div>
+                    <a href="https://www.instagram.com/emilyrosemonkhair/?igshid=1aoeodh3a3mqc" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i>emilyrosemonkhair</a>
                 </div>
             </div>
             <div class="col-md-4 col-xs-12">
                 <div class="cta-block">
-                    <div class="cta-block">
-                        <img src="{{media url="wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-lenka3b.jpg"}}"
-                            alt="" />
-                        <h3 class="cta-title">LENKA</h3>
-                        <p class="ctaHeight-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="{{media url="wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-lenka3b.jpg"}}"
+                        alt="" />
+                    <h3 class="cta-title">LENKA</h3>
+                    <h6>Educator</h6>
+                    <div class="ctaHeight-lg">
+                        <p><small>Lenka started working with hair extensions from age 17, working with BW for over 5
+                                years assisting at photo shoots and hair trade shows, including professional hair
+                                live with celebrity hair stylist Jen Atkin. Training both in London and Manchester
+                                weekly, Lenka’s specialists skills in hair extension application make her an expert
+                                in application and removal of hair extensions.</small>
+                        </p>
+                        <small>
+                            <ul class="educatorQualifications">
+                                <li>Level 1, 2, 3 NVQ apprenticeship in hairdressing</li>
+                                <li>Award in Teacher Training (AET/PTLLS)</li>
+                            </ul>
+                        </small>
                     </div>
+                    <a href="https://www.instagram.com/beautycutie_salon/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i>beautycutie_salon</a>
                 </div>
             </div>
         </div>
@@ -149,8 +226,9 @@
                     <a href="">
                         <h3 class="cta-title">The Ultimate Tape Extension Courses</h3>
                     </a>
-                    <p>Course Price £499.99</p>
-                    <p>Super fast extensions for clients and salons on the go. This revolutionary system allows users
+                    <p class="coursePrice"><small>Course Price £499.99</small></p>
+                    <p class="cwo1">Super fast extensions for clients and salons on the go. This revolutionary
+                        system allows users
                         to add extensions in minutes, meaning you create full fringes, layers and a full head of
                         extensions in under an hour.</p>
                     <a class="shopNow smBttnFont" href="">View Dates</a>
@@ -166,8 +244,9 @@
                     <a href="">
                         <h3 class="cta-title">Prebonded & Micro Ring Courses</h3>
                     </a>
-                    <p>Course Price £549.99</p>
-                    <p>Learn how to integrate your client's hair seamlessly with pre-bonded extensions. Discover our
+                    <p class="coursePrice"><small>Course Price £549.99</small></p>
+                    <p class="cwo1">Learn how to integrate your client's hair seamlessly with pre-bonded
+                        extensions. Discover our
                         wide range of colours and how to create bespoke blends for chemical free highlights. Allow
                         clients to enjoy the natural movement with extension strands that flow and move easily, just
                         like your own hair.</p>
@@ -184,8 +263,9 @@
                     <a href="">
                         <h3 class="cta-title">The Complete Micro Ring Course</h3>
                     </a>
-                    <p>Course Price £549.99</p>
-                    <p>Focus on the popular micro ring application methods and bring the very latest Nano Ring system
+                    <p class="coursePrice"><small>Course Price £549.99</small></p>
+                    <p class="cwo1">Focus on the popular micro ring application methods and bring the very
+                        latest Nano Ring system
                         back to your clients.With no braid, no glue and no heat, micro ring applications have taken the
                         hair extension industry by storm. Speeding up more traditional methods of application and being
                         recognised as a safer alternative.</p>
@@ -202,8 +282,9 @@
                     <a href="">
                         <h3 class="cta-title">The Ultimate Weft & Weave Course</h3>
                     </a>
-                    <p>Course Price £449.99</p>
-                    <p>Learn how to integrate your clients hair seamlessly with bonded and tape extensions. Discover a
+                    <p class="coursePrice"><small>Course Price £449.99</small></p>
+                    <p class="cwo2">Learn how to integrate your clients hair seamlessly with bonded and tape
+                        extensions. Discover a
                         wide range of colour with bespoke blonds. Allow your clients to enjoy natural movement, with
                         extensions that flow easily just like your own hair.</p>
                     <a class="shopNow smBttnFont" href="">View Dates</a>
@@ -219,8 +300,9 @@
                     <a href="">
                         <h3 class="cta-title">The Creative Mix 1 Course</h3>
                     </a>
-                    <p>Course Price £649.99</p>
-                    <p>Focus on fast application with tape and weft extensions for clients and salons on the go. Learn
+                    <p class="coursePrice"><small>Course Price £649.99</small></p>
+                    <p class="cwo2">Focus on fast application with tape and weft extensions for clients and
+                        salons on the go. Learn
                         to fit extensions in just one hour, also discover the benefits of seamless tape in extensions.
                     </p>
                     <a class="shopNow smBttnFont" href="">View Dates</a>
@@ -236,8 +318,9 @@
                     <a href="">
                         <h3 class="cta-title">The Creative Mix 2 Course</h3>
                     </a>
-                    <p>Course Price £649.99</p>
-                    <p>Learn how to integrate your clients hair seamlessly with bonded and tape extensions. Discover a
+                    <p class="coursePrice"><small>Course Price £649.99</small></p>
+                    <p class="cwo2">Learn how to integrate your clients hair seamlessly with bonded and tape
+                        extensions. Discover a
                         wide range of colour with bespoke blonds. Allow your clients to enjoy natural movement, with
                         extensions that flow easily just like your own hair.</p>
                     <a class="shopNow smBttnFont" href="">View Dates</a>
@@ -259,20 +342,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <p><b>Training Head Office:</b><br> Beauty Works Professional, Unit D3, Commercial Avenue, Cheadle,
-                    Cheshire, SK8 6QH, UK</p>
+            <div class="col-lg-6 col-xs-12">
+                <h3 class="cta-title" style="text-align: initial;">Training Head Office:</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2751.288004598463!2d-2.2059548031630505!3d53.355063706483215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d26eb4e260f%3A0xbae4a3acdae6c419!2sStanley%20Green%20Business%20Park!5e0!3m2!1sen!2suk!4v1594376854799!5m2!1sen!2suk"
                     width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
+                <p><small>Beauty Works Professional, Unit D3, Commercial Avenue, Cheadle, Cheshire, SK8 6QH, UK</small>
+                </p>
             </div>
-            <div class="col-md-6 col-xs-12">
-                <p><b>Training Office:</b><br> George Street, Marylebone, London, W1H 8AQ, UK</p><br>
+            <div class="col-lg-6 col-xs-12">
+                <h3 class="cta-title" style="text-align: initial;">Training Office:</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7909087507915!2d-0.159987284074698!3d51.51705191781826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acc8f856347%3A0x68a85031122d6867!2sGeorge%20St%2C%20London%20W1H!5e0!3m2!1sen!2suk!4v1596730298952!5m2!1sen!2suk"
                     width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
+                <p><small>George Street, Marylebone, London, W1H 8AQ, UK</small></p>
             </div>
         </div>
     </div>
@@ -288,10 +373,10 @@
     }
 
     #habiaLogo {
-        width: 30%;
+        width: 25%;
         display: block;
         margin: auto;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 
     .catalog-category-view .page-main .columns {
@@ -333,7 +418,21 @@
     }
 
     .ctaHeight-lg {
-        height: 5rem;
+        height: 30rem;
+        border-bottom: solid #28AC85;
+        margin-bottom: .5em;
+    }
+
+    .cwo1 {
+        height: 17rem;
+    }
+
+    .cwo2 {
+        height: 13rem;
+    }
+
+    .coursePrice {
+        margin-bottom: 1em;
     }
 
     .cta-block p {
@@ -347,7 +446,7 @@
         font-family: 'Muli', sans-serif;
         font-style: normal;
         text-transform: uppercase;
-        color: #373737;
+        color: #28AC85;
         padding-top: 15px;
         font-size: 1.6rem;
     }
@@ -355,6 +454,14 @@
     .cta-title::after {
         background-color: transparent !important;
         margin-top: 0px;
+    }
+
+    .educatorQualifications li:before {
+        color: #28AC85;
+    }
+
+    .wywl-list li:before {
+        color: #28AC85;
     }
 
     .outlinesH2 {
@@ -383,6 +490,45 @@
         color: #373737 !important;
     }
 
+    .cms-page-view .column.main ul,
+    .product-info-main .data.item.content ul,
+    .cms-page-view .column.main ol,
+    .product-info-main .data.item.content ol {
+        padding-left: 0;
+    }
+
+    .od_ftt {
+        text-align: center;
+    }
+
+    .od_ftt li::before {
+        content: none !important;
+    }
+
+    .od_ftt li img {
+        display: block;
+        margin: auto;
+        width: 50px;
+    }
+
+    .fa-instagram {
+        color: #28AC85;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .ctaHeight-lg {
+            height: 36rem;
+        }
+
+        .cwo1 {
+            height: 21rem;
+        }
+
+        .cwo2 {
+            height: 16rem;
+        }
+    }
+
     @media only screen and (max-width: 800px) {
         .jumbotron {
             padding-top: 20px;
@@ -400,12 +546,12 @@
             font-size: 1.3rem;
         }
 
-        .cta-block p {
-            font-size: 12px;
+        .ctaHeight-lg {
+            height: 42rem;
         }
 
-        .ctaHeight-lg {
-            height: 5.5rem;
+        .cta-block p {
+            font-size: 12px;
         }
 
         .shopNow {
@@ -436,7 +582,19 @@
             padding-top: 0px;
         }
 
+        #bwoCourses {
+            text-align: center;
+        }
+
         .ctaHeight-lg {
+            height: auto;
+        }
+
+        .cwo1 {
+            height: auto;
+        }
+
+        .cwo2 {
             height: auto;
         }
 
@@ -445,8 +603,23 @@
         }
 
         #habiaLogo {
-            width: 40%;
-            margin-bottom: 3rem;
+            width: 60%;
+        }
+
+        .od_ftt li {
+            height: 120px;
+        }
+
+        .od_ftt li p {
+            font-size: 12px;
+        }
+
+        #wywl {
+            text-align: center;
+        }
+
+        #wywl-one ul {
+            margin-bottom: 0em;
         }
     }
 
