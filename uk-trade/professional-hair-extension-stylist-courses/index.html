@@ -2,52 +2,70 @@
     <div class="container jumbotron">
         <div class="row">
             <div>
-                <img id="habiaLogo" src="{{media url="wysiwyg/TRADE-eventCalender/HabiaLogo.png"}}" alt="" />
+                <img id="habiaLogo" src="{{media url="wysiwyg/TRADE-eventCalender/HabiaLogo.png"}}"
+                    alt="Habia Recognised Provider" title="Habia Recognised Provider" />
                 <div class="col-xs-12" id="bwoCourses">
-                    <p style="font-weight:bold;">Beauty Works fast track courses ensures that every student has the
-                        knowledge and practical skill to offer hair extensions to the highest standard.</p>
-                    <div class="hidden-xs">
-                        <p>By partnering with Beauty Works and offering award winning hair extensions, you can increase
+                    <p><span style="font-weight: bold;">Beauty Works fast track courses ensures that every student has
+                            the knowledge and practical skill to offer hair extensions to the highest standard.</span>
+                        <span class="hidden-xs">
+                            By partnering with Beauty Works and offering award winning hair extensions, you can increase
                             your salon revenue with our unique product portfolio and HABIA endorsed extension methods.
-                        </p>
-                        <p>With a balance of both theory and practical training, our courses in the UK are held in both
-                            London and Manchester.</p>
-                        <p>As well as training you to the highest standard by our fully qualified educators, you'll gain
-                            a qualification approved by Habia. Regulated and recognised in the industry you'll be able
-                            to offer a new skill set straight on the salon floor. On completion of the course each
-                            graduate will hold a certification and be accredited Beauty Works stylist.</p>
-                        <p>Join some of the world's most recognised and respected hairdressing salons offering Beauty
-                            Works today.</p>
+                            <br><br>
+                            With a balance of both theory and practical training, our courses in the UK are held in both
+                            London and Manchester.
+                            <br><br>
+                            As well as training you to the highest standard by our fully qualified educators, you'll
+                            gain a qualification approved by Habia. Regulated and recognised in the industry you'll be
+                            able to offer a new skill set straight on the salon floor. On completion of the course each
+                            graduate will hold a certification and be accredited Beauty Works stylist.
+                            <br><br>
+                            Join some of the world's most recognised and respected hairdressing salons offering Beauty
+                            Works today.
+                        </span>
+                    <div class="visible-xs-block">
+                        <span id="more">
+                            By partnering with Beauty Works and offering award winning hair extensions, you can increase
+                            your salon revenue with our unique product portfolio and HABIA endorsed extension methods.
+                            <br><br>
+                            With a balance of both theory and practical training, our courses in the UK are held in both
+                            London and Manchester.
+                            <br><br>
+                            As well as training you to the highest standard by our fully qualified educators, you'll
+                            gain a qualification approved by Habia. Regulated and recognised in the industry you'll be
+                            able to offer a new skill set straight on the salon floor. On completion of the course each
+                            graduate will hold a certification and be accredited Beauty Works stylist.
+                            <br><br>
+                            Join some of the world's most recognised and respected hairdressing salons offering Beauty
+                            Works today.
+                        </span>
                     </div>
+                    </p>
+                    <a class="visible-xs-block" type="button" id="read" onclick="read()">Read More</a>
+                    <script>
+                        let i = 0;
+                        function read() {
+                            if (!i) {
+                                document.getElementById('more').style.display = 'inline';
+                                document.getElementById('read').innerHTML = 'Read Less';
+                                i = 1;
+                            } else {
+                                document.getElementById('more').style.display = 'none';
+                                document.getElementById('read').innerHTML = 'Read More';
+                                i = 0;
+                            }
+                        }
+                    </script>
+                    <style>
+                        #more {
+                            display: none;
+                        }
 
-                    <div class="visible-xs-block" id="accordion" data-mage-init='{
-                    "accordion":{
-                        "active": [1, 2],
-                        "collapsible": true,
-                        "openedState": "active",
-                        "multipleCollapsible": true
-                    }}'>
-                        <div data-role="collapsible">
-                            <div data-role="trigger">
-                                <p style="text-align: center;color: #28AC85;">......</p>
-                            </div>
-                        </div>
-                        <div data-role="content">
-                            <p>By partnering with Beauty Works and offering award winning hair extensions, you can
-                                increase your salon revenue with our unique product portfolio and HABIA endorsed
-                                extension methods.
-                            </p>
-                            <p>With a balance of both theory and practical training, our courses in the UK are held in
-                                both London and Manchester.</p>
-                            <p>As well as training you to the highest standard by our fully qualified educators, you'll
-                                gain a qualification approved by Habia. Regulated and recognised in the industry you'll
-                                be able to offer a new skill set straight on the salon floor. On completion of the
-                                course each graduate will hold a certification and be accredited Beauty Works stylist.
-                            </p>
-                            <p>Join some of the world's most recognised and respected hairdressing salons offering
-                                Beauty Works today.</p>
-                        </div>
-                    </div>
+                        #read {
+                            color: #28AC85;
+                            font-size: 12px;
+                        }
+                    </style>
+
                 </div>
             </div>
         </div>
