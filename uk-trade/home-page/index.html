@@ -3,8 +3,9 @@
     <div class="container">
         <div class="row globale-hide">
             <div class="col-xs-12">
-                <span class="noticeBanner" id="bg-dark"><i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM
-                    FOR NEXT DAY DELIVERY 00:00</span>
+                <span class="noticeBanner" id="bg-dark">
+                    <div id="countdown"></div>
+                </span>
             </div>
         </div>
         <div class="row">
@@ -412,3 +413,71 @@
         }
     }
 </style>
+
+<script>
+    const convertMS = milliseconds => {
+        let day;
+        let hour;
+        let minute;
+        let seconds;
+        seconds = Math.floor(milliseconds / 1000);
+        minute = Math.floor(seconds / 60);
+        seconds %= 60;
+        hour = Math.floor(minute / 60);
+        minute %= 60;
+        day = Math.floor(hour / 24);
+        hour %= 24;
+        return {
+            day,
+            hour,
+            minute,
+            seconds,
+        };
+    };
+
+    const render = () => {
+        const dateNow = new Date();
+
+        const dateStart = new Date(
+            dateNow.getFullYear(),
+            dateNow.getMonth(),
+            dateNow.getDate(),
+            0,
+            0,
+            0
+        );
+
+        const dateEnd = new Date(
+            dateNow.getFullYear(),
+            dateNow.getMonth(),
+            dateNow.getDate(),
+            15,
+            0,
+            0
+        );
+
+        const dateNowMill = dateNow.getTime();
+        const dateEndMill = dateEnd.getTime();
+
+        const timeRemaining = (() => {
+            const r = dateEndMill - dateNowMill;
+
+            if (r < 0) {
+                return '<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM FOR NEXT DAY DELIVERY';
+            }
+
+            const { hour, minute, seconds } = convertMS(r);
+
+            return `<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM
+                    FOR NEXT DAY DELIVERY: <i class="fa fa-clock-o" aria-hidden="true"></i> ${hour}:${minute}:${seconds}`;
+        })();
+
+        document.getElementById(
+            'countdown'
+        ).innerHTML = `<div>${timeRemaining}</div>`;
+    };
+
+    setInterval(function () {
+        render();
+    }, 1000);
+</script>
