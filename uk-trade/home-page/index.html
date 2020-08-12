@@ -242,18 +242,6 @@
         text-align: center;
     }
 
-    /* .cta-lg-copy {
-        height: 14rem;
-    } */
-
-    /* .cta-sm-copy1 {
-        height: 11rem;
-    } */
-
-    /* .cta-sm-copy2 {
-        height: 11rem;
-    } */
-
     .cta-block p {
         margin-bottom: 2em;
     }
@@ -313,20 +301,6 @@
         color: #373737 !important;
     }
 
-    @media only screen and (max-width: 1024px) {
-        /* .cta-lg-copy {
-            height: auto;
-        } */
-
-        /* .cta-sm-copy1 {
-            height: 18rem;
-        } */
-
-        /* .cta-sm-copy2 {
-            height: 14rem;
-        } */
-    }
-
     @media only screen and (max-width: 800px) {
         .jumbotron {
             padding-top: 20px;
@@ -347,10 +321,6 @@
         .cta-block p {
             font-size: 12px;
         }
-
-        /* .cta-sm-copy1 {
-            height: 14rem;
-        } */
 
         .shopNow {
             font-size: 12px;
@@ -377,16 +347,8 @@
         }
 
         .noticeBanner {
-            font-size: 1.15rem;
+            font-size: 1rem;
         }
-
-        /* .cta-sm-copy1 {
-            height: auto;
-        } */
-
-        /* .cta-sm-copy2 {
-            height: auto;
-        } */
     }
 
     @media (min-width: 576px) {
@@ -410,6 +372,10 @@
 
         .cta-title {
             font-size: 1.1rem;
+        }
+
+        .noticeBanner {
+            font-size: .9rem;
         }
     }
 </style>
@@ -462,7 +428,7 @@
         const timeRemaining = (() => {
             const r = dateEndMill - dateNowMill;
 
-            if (r < 0) {
+            if (r < 0 || dateNow.getUTCDay() > 5) {
                 return '<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM FOR NEXT DAY DELIVERY';
             }
 
