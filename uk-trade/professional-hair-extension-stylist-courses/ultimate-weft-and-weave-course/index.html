@@ -109,3 +109,15 @@
         }
     }
 </style>
+
+<script>
+    const render = (endTime, elemID) => {
+        const dateNow = new Date();
+
+        if (dateNow < endTime) {
+            elemID.style.display = 'block';
+        } else {
+            elemID.style.display = 'none';
+        }
+    };
+</script>

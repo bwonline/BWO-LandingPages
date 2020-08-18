@@ -6,7 +6,7 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container" id="cmrcAug21">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">August 2020</h2>
@@ -108,7 +108,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cmrcSept22">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">September 2020</h2>
@@ -210,7 +210,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cmrcOct19">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">October 2020</h2>
@@ -312,7 +312,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cmrcNov17">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">November 2020</h2>
@@ -414,7 +414,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cmrcDec14">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">December 2020</h2>
@@ -515,6 +515,7 @@
         </script>
     </div>
 </div>
+
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
@@ -523,6 +524,7 @@
         </div>
     </div>
 </div>
+
 <style>
     .monYr {
         text-align: center;
@@ -618,3 +620,45 @@
         }
     }
 </style>
+
+<script>
+    const aug21ID = document.getElementById('cmrcAug21');
+    const aug21Expire = new Date(2020, 7, 21);
+    setInterval(function () {
+        render(aug21Expire, aug21ID);
+    }, 1000);
+
+    const sept22ID = document.getElementById('cmrcSept22');
+    const sept22Expire = new Date(2020, 8, 22);
+    setInterval(function () {
+        render(sept22Expire, sept22ID);
+    }, 1000);
+
+    const oct19ID = document.getElementById('cmrcOct19');
+    const oct19Expire = new Date(2020, 9, 19);
+    setInterval(function () {
+        render(oct19Expire, oct19ID);
+    }, 1000);
+
+    const nov17ID = document.getElementById('cmrcNov17');
+    const nov17Expire = new Date(2020, 10, 17);
+    setInterval(function () {
+        render(nov17Expire, nov17ID);
+    }, 1000);
+
+    const dec14ID = document.getElementById('cmrcDec14');
+    const dec14Expire = new Date(2020, 11, 14);
+    setInterval(function () {
+        render(dec14Expire, dec14ID);
+    }, 1000);
+
+    const render = (endTime, elemID) => {
+        const dateNow = new Date();
+
+        if (dateNow < endTime) {
+            elemID.style.display = 'block';
+        } else {
+            elemID.style.display = 'none';
+        }
+    };
+</script>

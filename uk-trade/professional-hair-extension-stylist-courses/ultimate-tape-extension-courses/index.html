@@ -109,13 +109,6 @@
         </script>
     </div>
 </div>
-<script>
-    const sept14ID = document.getElementById('tutcSept14');
-    const sept14Expire = new Date(2020, 8, 14);
-    setInterval(function () {
-        render(sept14Expire, sept14ID);
-    }, 1000);
-</script>
 
 <div class="container" id="tutcOct26">
     <div class="row">
@@ -314,19 +307,6 @@
         </script>
     </div>
 </div>
-<script>
-    const oct12ID = document.getElementById('tutcOct12');
-    const oct12Expire = new Date(2020, 9, 12);
-    const oct26ID = document.getElementById('tutcOct26');
-    const oct26Expire = new Date(2020, 9, 26);
-    setInterval(function () {
-        render(oct12Expire, oct12ID);
-    }, 1000);
-    setInterval(function () {
-        render(oct26Expire, oct26ID);
-    }, 1000);
-</script>
-
 
 <div class="container" id="tutcNov9">
     <div class="row">
@@ -430,13 +410,6 @@
         </script>
     </div>
 </div>
-<script>
-    const nov9ID = document.getElementById('tutcNov9');
-    const nov9Expire = new Date(2020, 8, 14);
-    setInterval(function () {
-        render(nov9Expire, nov9ID);
-    }, 1000);
-</script>
 
 <div class="container" id="tutcDec7">
     <div class="row">
@@ -540,13 +513,6 @@
         </script>
     </div>
 </div>
-<script>
-    const dec7ID = document.getElementById('tutcDec7');
-    const dec7Expire = new Date(2020, 8, 14);
-    setInterval(function () {
-        render(dec7Expire, dec7ID);
-    }, 1000);
-</script>
 
 <div class="container">
     <div class="row">
@@ -653,7 +619,38 @@
     }
 </style>
 
-<script>const render = (endTime, elemID) => {
+<script>
+    const sept14ID = document.getElementById('tutcSept14');
+    const sept14Expire = new Date(2020, 8, 14);
+    setInterval(function () {
+        render(sept14Expire, sept14ID);
+    }, 1000);
+
+    const oct12ID = document.getElementById('tutcOct12');
+    const oct12Expire = new Date(2020, 9, 12);
+    setInterval(function () {
+        render(oct12Expire, oct12ID);
+    }, 1000);
+
+    const oct26ID = document.getElementById('tutcOct26');
+    const oct26Expire = new Date(2020, 9, 26);
+    setInterval(function () {
+        render(oct26Expire, oct26ID);
+    }, 1000);
+
+    const nov9ID = document.getElementById('tutcNov9');
+    const nov9Expire = new Date(2020, 8, 14);
+    setInterval(function () {
+        render(nov9Expire, nov9ID);
+    }, 1000);
+
+    const dec7ID = document.getElementById('tutcDec7');
+    const dec7Expire = new Date(2020, 8, 14);
+    setInterval(function () {
+        render(dec7Expire, dec7ID);
+    }, 1000);
+
+    const render = (endTime, elemID) => {
         const dateNow = new Date();
 
         if (dateNow < endTime) {

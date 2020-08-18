@@ -7,13 +7,13 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cm1cSept28">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">September 2020</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="cm1cSept01">
         <div class="col-xs-12 course">
             <div class="container">
                 <div id="accordion" data-mage-init='{
@@ -414,6 +414,7 @@
         </div>
     </div>
 </div>
+
 <style>
     .monYr {
         text-align: center;
@@ -509,3 +510,39 @@
         }
     }
 </style>
+
+<script>
+    const sept01ID = document.getElementById('cm1cSept01');
+    const sept01Expire = new Date(2020, 8, 1);
+    setInterval(function () {
+        render(sept01Expire, sept01ID);
+    }, 1000);
+
+    const sept28ID = document.getElementById('cm1cSept28');
+    const sept28Expire = new Date(2020, 8, 28);
+    setInterval(function () {
+        render(sept28Expire, sept28ID);
+    }, 1000);
+
+    const oct26ID = document.getElementById('cm1cOct26');
+    const oct26Expire = new Date(2020, 9, 26);
+    setInterval(function () {
+        render(oct26Expire, oct26ID);
+    }, 1000);
+
+    const nov23ID = document.getElementById('cm1cNov23');
+    const nov23Expire = new Date(2020, 10, 23);
+    setInterval(function () {
+        render(nov23Expire, nov23ID);
+    }, 1000);
+
+    const render = (endTime, elemID) => {
+        const dateNow = new Date();
+
+        if (dateNow < endTime) {
+            elemID.style.display = 'block';
+        } else {
+            elemID.style.display = 'none';
+        }
+    };
+</script>

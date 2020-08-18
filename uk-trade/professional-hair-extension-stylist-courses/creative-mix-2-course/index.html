@@ -6,7 +6,7 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container" id="cm2cAug25">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">August 2020</h2>
@@ -108,7 +108,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cm2cSept07">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">September 2020</h2>
@@ -306,7 +306,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cm2cOct05">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">October 2020</h2>
@@ -503,13 +503,13 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cm2cNov16">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">November 2020</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="cm2cNov02">
         <div class="col-xs-12 course">
             <div class="container">
                 <div id="accordion" data-mage-init='{
@@ -794,7 +794,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="cm2cDec07">
     <div class="row">
         <div class="col-xs-12">
             <h2 class="monYr">December 2020</h2>
@@ -896,6 +896,7 @@
         </script>
     </div>
 </div>
+
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
@@ -904,6 +905,7 @@
         </div>
     </div>
 </div>
+
 <style>
     .monYr {
         text-align: center;
@@ -999,3 +1001,51 @@
         }
     }
 </style>
+
+<script>
+    const aug25ID = document.getElementById('cm2cAug25');
+    const aug25Expire = new Date(2020, 7, 25);
+    setInterval(function () {
+        render(aug25Expire, aug25ID);
+    }, 1000);
+
+    const sept07ID = document.getElementById('cm2cSept07');
+    const sept07Expire = new Date(2020, 8, 7);
+    setInterval(function () {
+        render(sept07Expire, sept07ID);
+    }, 1000);
+
+    const oct05ID = document.getElementById('cm2cOct05');
+    const oct05Expire = new Date(2020, 9, 5);
+    setInterval(function () {
+        render(oct05Expire, oct05ID);
+    }, 1000);
+
+    const nov02ID = document.getElementById('cm2cNov02');
+    const nov02Expire = new Date(2020, 10, 2);
+    setInterval(function () {
+        render(nov02Expire, nov02ID);
+    }, 1000);
+
+    const nov16ID = document.getElementById('cm2cNov16');
+    const nov16Expire = new Date(2020, 10, 16);
+    setInterval(function () {
+        render(nov16Expire, nov16ID);
+    }, 1000);
+
+    const dec07ID = document.getElementById('cm2cDec07');
+    const dec07Expire = new Date(2020, 11, 7);
+    setInterval(function () {
+        render(dec07Expire, dec07ID);
+    }, 1000);
+
+    const render = (endTime, elemID) => {
+        const dateNow = new Date();
+
+        if (dateNow < endTime) {
+            elemID.style.display = 'block';
+        } else {
+            elemID.style.display = 'none';
+        }
+    };
+</script>
