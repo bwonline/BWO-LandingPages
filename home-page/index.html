@@ -40,15 +40,14 @@
                                         height="72">
                                 </a>
                             </div>
-                            <div class="col-sm-2 hidden-xs" id="unidaysDiscount"></div>
-                            <!-- <div class="col-sm-2 hidden-xs">
+                            <div class="col-sm-2 hidden-xs">
                                 <a href="/unidays" tabindex="0" style="width: 100%; display: inline-block;">
                                     <img id="mobCentered"
                                         src="{{media url="wysiwyg/bw-head/head-student-discount.jpg"}}"
                                         alt="Unidays Student Discount on Hair Extensions"
                                         title="Unidays Student Discount on Hair Extensions" width="217" height="72">
                                 </a>
-                            </div> -->
+                            </div>
                             <div class="col-sm-1"></div>
                         </div>
                     </div>
@@ -68,39 +67,6 @@
                         }
                     }
                 </style>
-                <script>
-                    const elem1 = document.getElementById('unidaysDiscount');
-                    const dateEnd1 = new Date(2020, 7, 21, 8, 0, 0);
-
-                    const timeCheck = func => {
-                        setInterval(func, 1000);
-                    };
-
-                    const runRender = () => {
-                        render(dateEnd1, elem1);
-                    };
-
-                    const render = (endTime, elemID) => {
-                        const dateNow = new Date();
-                        if (dateNow < endTime) {
-                            document.getElementById(
-                                'unidaysDiscount'
-                            ).innerHTML = `<a href="/unidays" tabindex="0" style="width: 100%; display: inline-block;">
-            <img id="mobCentered" src="{{media url="wysiwyg/bw-head/unidays-20-offer.jpg"}}"
-                alt="Unidays Student Discount on Hair Extensions" title="Unidays Student Discount on Hair Extensions"
-                width="217" height="72"></a>`;
-                        } else {
-                            document.getElementById(
-                                'unidaysDiscount'
-                            ).innerHTML = `<a href="/unidays" tabindex="0" style="width: 100%; display: inline-block;">
-            <img id="mobCentered" src="{{media url="wysiwyg/bw-head/head-student-discount.jpg"}}"
-                alt="Unidays Student Discount on Hair Extensions" title="Unidays Student Discount on Hair Extensions"
-                width="217" height="72"></a>`;
-                            clearInterval(timeCheck);
-                        }
-                    };
-                    timeCheck(runRender);
-                </script>
 
                 <div class="visible-xs-block container" id="cta-home-banner">
                     <div class="row">
