@@ -524,37 +524,41 @@
 </style>
 
 <script>
-    const sept21ID = document.getElementById('pamrtcSept21');
-    const sept21Expire = new Date(2020, 8, 21);
-    setInterval(function () {
-        render(sept21Expire, sept21ID);
-    }, 1000);
+    const expireListing = (e, d) => {
+        const render = expirationDate => {
+            const dateNow = new Date();
+            if (dateNow > expirationDate) {
+                clearInterval(counter);
+                return true;
+            }
+            return false;
+        };
 
-    const oct20ID = document.getElementById('pamrtcOct20');
-    const oct20Expire = new Date(2020, 9, 20);
-    setInterval(function () {
-        render(oct20Expire, oct20ID);
-    }, 1000);
-
-    const nov16ID = document.getElementById('pamrtcNov16');
-    const nov16Expire = new Date(2020, 10, 16);
-    setInterval(function () {
-        render(nov16Expire, nov16ID);
-    }, 1000);
-
-    const dec15ID = document.getElementById('pamrtcDec15');
-    const dec15Expire = new Date(2020, 11, 15);
-    setInterval(function () {
-        render(dec15Expire, dec15ID);
-    }, 1000);
-
-    const render = (endTime, elemID) => {
-        const dateNow = new Date();
-
-        if (dateNow < endTime) {
-            elemID.style.display = 'block';
-        } else {
-            elemID.style.display = 'none';
-        }
+        const counter = setInterval(() => {
+            const expired = render(d);
+            if (expired) {
+                e.style.display = 'none';
+            }
+        }, 1000);
     };
+
+    // SEPTEMBER 21ST
+    const septE = document.getElementById('pamrtcSept21');
+    const septEDate = new Date(2020, 8, 21);
+    expireListing(septE, septEDate);
+
+    // OCTOBER 20TH
+    const octE = document.getElementById('pamrtcOct20');
+    const octEDate = new Date(2020, 9, 20);
+    expireListing(octE, octEDate);
+
+    // NOVEMBER 16TH
+    const novE = document.getElementById('pamrtcNov16');
+    const novEDate = new Date(2020, 10, 16);
+    expireListing(novE, novEDate);
+
+    // DECECMBER 15TH
+    const decE = document.getElementById('pamrtcDec15');
+    const decEDate = new Date(2020, 11, 15);
+    expireListing(decE, decEDate);
 </script>
