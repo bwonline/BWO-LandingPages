@@ -115,6 +115,102 @@
             <h2 class="monYr">October 2020</h2>
         </div>
     </div>
+
+    <div class="row" id="cmrcOct6">
+        <div class="col-xs-12 course">
+            <div class="container">
+                <div id="accordion" data-mage-init='{
+                                "accordion":{
+                                    "active": [1, 2],
+                                    "collapsible": true,
+                                    "openedState": "active",
+                                    "multipleCollapsible": true
+                                }}'>
+                    <div class="row">
+                        <div data-role="collapsible">
+                            <div class="col-xs-2">
+                                <div class="container calOutline">
+                                    <div class="row">
+                                        <div class="col calMonth">Oct</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col calDay">06</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-10">
+                                <h3>The Complete Micro Ring Training Course</h3>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> Manchester</p>
+                                <div data-role="trigger">
+                                    <p style="text-decoration:underline;cursor: pointer;">Event Details</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div data-role="content">
+                            <div class="col-md-2 col-xs-12">
+                                <p>
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    <b>Event Time</b><br>9:30am - 5:00 pm <br>October 6th
+                                </p>
+                            </div>
+                            <div class="col-md-10 col-xs-12">
+                                <p>
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i> <b>Event
+                                        Location</b><br>
+                                    <a
+                                        href="https://www.google.com/maps/place/Stanley+Green+Business+Park/@53.354739,-2.204906,15z/data=!4m5!3m4!1s0x0:0xbae4a3acdae6c419!8m2!3d53.354739!4d-2.2049064?hl=en">
+                                        Beauty Works HQ Manchester, UK
+                                    </a>
+                                </p>
+                                <iframe class="gMap"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2751.288004598463!2d-2.2059548031630505!3d53.355063706483215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d26eb4e260f%3A0xbae4a3acdae6c419!2sStanley%20Green%20Business%20Park!5e0!3m2!1sen!2suk!4v1594376854799!5m2!1sen!2suk"
+                                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                            <div class="col-xs-12">
+                                <p><i class="fa fa-info" aria-hidden="true"></i> <b>Event Information</b><br>
+                                    The Complete Micro-ring course at our Training Academy in Manchester. Price for the
+                                    full day course is £549.99. Reserve your place now, limited spaces available.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 col-xs-12"><a class="shopNow" href="">Book Now</a></div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type='application/ld+json'>
+            {
+            "@context": "https://www.schema.org",
+            "@type": "Event",
+            "name": "The Complete Micro Ring Course",
+            "url": "https://beautyworks.co.uk/the-complete-micro-ring-training-course",
+            "description": "Focus on the popular micro ring application methods and bring the very latest Nano Ring system back to your clients.With no braid, no glue and no heat, micro ring applications have taken the hair extension industry by storm. Speeding up more traditional methods of application and being recognised as a safer alternative.",
+            "startDate": "06/10/2020 09:30AM",
+            "endDate": "06/10/2020 17:00PM",
+            "location": {
+                "@type": "Place",
+                "name": "Beauty Works HQ Manchester, UK",
+                "sameAs": "https://beautyworksonline.com/",
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Stanley Green Business Park, 2 Earl Rd",
+                "addressLocality": "Cheadle Hulme, Handforth",
+                "addressRegion": "Cheadle",
+                "postalCode": "SK8 6QL",
+                "addressCountry": "Great Britain"
+                }
+            }
+            }
+        </script>
+    </div>
+
     <div class="row">
         <div class="col-xs-12 course">
             <div class="container">
@@ -544,10 +640,15 @@
     const septEDate = new Date(2020, 8, 22);
     expireListing(septE, septEDate);
 
+    // OCTOBER 6TH
+    const octE1 = document.getElementById('cmrcOct6');
+    const octE1Date = new Date(2020, 9, 6);
+    expireListing(octE1, octE1Date);
+
     // OCTOBER 19TH
-    const octE = document.getElementById('cmrcOct19');
-    const octEDate = new Date(2020, 9, 19);
-    expireListing(octE, octEDate);
+    const octE2 = document.getElementById('cmrcOct19');
+    const octE2Date = new Date(2020, 9, 19);
+    expireListing(octE2, octE2Date);
 
     // NOVEMBER 17TH
     const novE = document.getElementById('cmrcNov17');
