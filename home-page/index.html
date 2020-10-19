@@ -266,36 +266,63 @@
         <div class="row">
             <div class="col-md-6 col-xs-12">
                 <div class="cta-block">
-                    <a href="https://www.youtube.com/watch?v=0N0eWFyO1uo" target="_blank">
-                        <img src="{{media url="wysiwyg/summerShop2020/beauty-works-clip-in-hair-length-guide.jpg"}}"
-                            alt="Beauty Works Clip In Hair Length Guide"
-                            title="Beauty Works Clip In Hair Length Guide" />
-                    </a>
-                    <p>Need some help choosing the right length for your Beauty Works clip-in hair extensions? Watch
-                        our length guide! Covering both Deluxe Clip-in Extensions and Double Hair Set Clip-in
-                        Extensions, choose from our complete clip-in range for the perfect length. Beauty Works
+
+                    <iframe class="tutorialEmb"
+                        src="https://www.youtube.com/embed/0N0eWFyO1uo?playlist=0N0eWFyO1uo&loop=1" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <script type="application/ld+json">
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "VideoObject",
+                                "name": "Beauty Works Clip-In Hair Extension Length Guide",
+                                "description": "Need some help choosing the right length for your Beauty Works clip-in hair extensions? Watch our length guide!",
+                                "thumbnailUrl": "http://i3.ytimg.com/vi/0N0eWFyO1uo/maxresdefault.jpg",
+                                "uploadDate": "2018-06-18",
+                                "contentUrl": "https://www.youtube.com/watch?v=0N0eWFyO1uo",
+                                "embedUrl": "https://youtu.be/0N0eWFyO1uo"
+                            }
+                        </script>
+
+                    <p class="vidText">Need some help choosing the right length for your Beauty Works clip-in hair
+                        extensions? Watch our length guide! Covering both Deluxe Clip-in Extensions and Double Hair Set
+                        Clip-in Extensions, choose from our complete clip-in range for the perfect length. Beauty Works
                         Clip-in extensions come in lengths 16", 18", 20" & 22".</p>
-                    <a class="shopNow" href="https://www.youtube.com/watch?v=0N0eWFyO1uo" target="_blank">Clip-In
-                        Length Guide</a>
+                    <a class="shopNow" href="{{store url=''}}shop-by-length.html">Clip-In Length Guide</a>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="cta-block">
-                    <a href="https://www.youtube.com/watch?v=g80fQxWexLQ&t=126s" target="_blank">
-                        <img src="{{media url="wysiwyg/summerShop2020/beauty-works-blogger-reviews.jpg"}}"
-                            alt="Beauty Works Blogger Reviews" title="Beauty Works Blogger Reviews" />
-                    </a>
-                    <p>Confused by hair extensions? Here are 5 Quick and EASY Hairstyles you can do with Beauty
-                        Works hair extensions, honestly if I can do them, so can you :D!! I'm the worst at hair,
-                        honestly haha, its a chore for me but i was really pleasantly surprised with these
-                        hairstyles. I really enjoyed filming this video for you and i hope you enjoy!!</p>
-                    <a class="shopNow" href="https://www.youtube.com/watch?v=g80fQxWexLQ&t=126s" target="_blank">Blogger
-                        Reviews</a>
+
+                    <iframe class="tutorialEmb"
+                        src="https://www.youtube.com/embed/uqJevJig4nU?playlist=uqJevJig4nU&loop=1" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <script type="application/ld+json">
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "VideoObject",
+                                "name": "Christmas Campaign 2020",
+                                "description": "Shop our new Christmas campaign and get ready to sleigh this festive season babe.",
+                                "thumbnailUrl": "http://i3.ytimg.com/vi/uqJevJig4nU/maxresdefault.jpg",
+                                "uploadDate": "yyyy-mm-dd",
+                                "contentUrl": "https://www.youtube.com/watch?v=uqJevJig4nU&feature=emb_title",
+                                "embedUrl": "https://youtu.be/uqJevJig4nU"
+                            }
+                        </script>
+
+                    <p class="vidText">Countdown to Christmas and get glam for the 'gram with our latest campaign. Shop
+                        hair essentials for an instant hair glow up this festive season with award-winning clip-in hair
+                        extensions to enhance length and thickness, plus styling tools, including trending curling wands
+                        and wavers.
+                    </p>
+                    <a class="shopNow" href="{{store url=''}}christmas-shop">SHOP THE CAMPAIGN</a>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="row jumbotron foursixtyx hidden-xs">
         <div class="block block-highlight">
@@ -595,6 +622,15 @@
         color: #373737 !important;
     }
 
+    .tutorialEmb {
+        width: 560px;
+        height: 315px
+    }
+
+    .vidText {
+        height: 11rem;
+    }
+
     @media only screen and (max-width: 1024px) {
         .cta-lg-copy {
             height: auto;
@@ -605,6 +641,15 @@
         }
 
         .cta-sm-copy2 {
+            height: 14rem;
+        }
+
+        .tutorialEmb {
+            width: 430px;
+            height: 240px;
+        }
+
+        .vidText {
             height: 14rem;
         }
     }
@@ -647,6 +692,11 @@
             font-size: 2.5rem;
             margin-top: 20px;
         }
+
+        .tutorialEmb {
+            width: 330px;
+            height: 185px;
+        }
     }
 
     @media only screen and (max-width: 600px) {
@@ -670,6 +720,14 @@
             height: auto;
         }
 
+        .tutorialEmb {
+            width: auto;
+            height: 210px;
+        }
+
+        .vidText {
+            height: auto;
+        }
     }
 
     @media (min-width: 576px) {
@@ -685,7 +743,6 @@
             padding-top: 50%;
         }
     }
-
 
     @media only screen and (max-width: 320px) {
         .jumbotron>.container {
