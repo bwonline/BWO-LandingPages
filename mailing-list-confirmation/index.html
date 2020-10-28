@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col">
             <img id="signUpBanner"
-                src="{{media url="wysiwyg/sign-up-confirmation/Beauty-Works-Mailing-List-Sign-Up-Confirmation-Banner.jpg"}}"
+                src="{{media url="wysiwyg/sign-up-confirmation/Beauty-Works-Sign-Up-Confirmation-2020.jpeg"}}"
                 alt="Hey Gurl thanks for signing up to the Beauty Works Mailing List"
                 title="Beauty Works Mailing List Sign Up Confirmation" />
         </div>
@@ -63,7 +63,6 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <!-- <h2>SHOP INSTAGRAM</h2> -->
             <div class="row jumbotron foursixtyx hidden-xs">
                 <script src="//foursixty.com/media/scripts/fs.embed.v2.5.js" data-feed-id="beauty-works"
                     data-open-links-in-same-page="false" data-theme="showcase_v2_5" data-page-size="16"></script>
@@ -88,16 +87,14 @@
 
 </div>
 
-<!-- IMAGES -->
 <style>
     #signUpBanner {
         display: block;
         margin: 0 auto;
+        width: 60%;
+        height: auto;
     }
-</style>
 
-<!-- TITLE -->
-<style>
     #signUpTitle h2::after,
     .h2::after,
     .block-title strong:after {
@@ -106,16 +103,6 @@
         margin: 2rem auto;
         width: 9%;
     }
-
-    @media only screen and (max-width: 425px) {
-
-        #signUpTitle h2::after,
-        .h2::after,
-        .block-title strong:after {
-            width: 20%;
-        }
-    }
-
 
     h1::after,
     h2::after,
@@ -136,10 +123,7 @@
         letter-spacing: 2px;
         margin: 3rem 0 2rem;
     }
-</style>
 
-<!-- TEXT -->
-<style>
     .signUpText {
         font-size: 2rem;
         color: #343434;
@@ -148,29 +132,6 @@
         line-height: 2.6rem;
     }
 
-    @media only screen and (max-width: 1024px) {
-        .signUpText {
-            margin: 1.5rem 10rem;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        .signUpText {
-            margin: 1.5rem;
-            font-size: 1.5rem;
-            letter-spacing: 1.5px;
-        }
-    }
-
-    @media only screen and (max-width: 425px) {
-        .signUpText {
-            letter-spacing: 1.2px;
-        }
-    }
-</style>
-
-<!-- BUTTON -->
-<style>
     .signUpButton {
         display: table;
         margin: 0 auto 5rem;
@@ -191,17 +152,6 @@
         background-color: transparent;
     }
 
-    @media only screen and (max-width: 768px) {
-        .signUpButton {
-            padding: 8px 20px;
-            font-size: 1.1rem;
-            letter-spacing: 2px;
-        }
-    }
-</style>
-
-<!-- SOCIAL -->
-<style>
     .swoosh {
         background: #FFFFFF url('/media/wysiwyg/sign-up-confirmation/Swoosh.png') no-repeat center;
         background-size: 50%;
@@ -212,7 +162,25 @@
         width: 50%;
     }
 
+    @media only screen and (max-width: 1024px) {
+        .signUpText {
+            margin: 1.5rem 10rem;
+        }
+    }
+
     @media only screen and (max-width: 768px) {
+        .signUpText {
+            margin: 1.5rem;
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+        }
+
+        .signUpButton {
+            padding: 8px 20px;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+
         .swoosh {
             background-size: 75%;
         }
@@ -223,12 +191,26 @@
     }
 
     @media only screen and (max-width: 425px) {
+        .signUpText {
+            letter-spacing: 1.2px;
+        }
+
         .swoosh {
             background-size: 100%;
         }
 
         .socialImg {
             width: 75%;
+        }
+
+        #signUpBanner {
+            width: 100%;
+        }
+
+        #signUpTitle h2::after,
+        .h2::after,
+        .block-title strong:after {
+            width: 20%;
         }
     }
 
