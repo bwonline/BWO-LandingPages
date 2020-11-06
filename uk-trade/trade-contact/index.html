@@ -1,0 +1,106 @@
+<div class="argento-grid">
+    <div class="col-xs-12 col-md-4">
+        <h3>Open Times</h3>
+        <dl>
+            <dt>09:00 hrs - 17:00hrs (GMT)</dt>
+            <dd>Closed Saturday & Sunday</dd>
+            <dd>Closed U.K. Bank Holidays</dd>
+        </dl>
+    </div>
+    <div class="col-xs-12 col-md-4">
+        <h3>Send Email</h3>
+        <dl>
+            <dt>Customer Services</dt>
+            <dd><a href="mailto:customerservice@beautyworks.co.uk">customerservice@beautyworks.co.uk</a></dd>
+            <dt>Trade Accounts</dt>
+            <dd><a href="mailto:trade@beautyworks.co.uk">trade@beautyworks.co.uk</a></dd>
+            <dd>*Please allow 24 hrs for reply</dd>
+        </dl>
+    </div>
+    <div class="col-xs-12 col-md-4">
+        <h3>Postal Address</h3>
+        <dl>
+            <dt></dt>
+            <dd>Beauty Works</dd>
+            <dd>Unit D3 Stanley Green Business Park</dd>
+            <dd>Handforth, Cheadle</dd>
+            <dd>SK8 6QH</dd>
+            <dd>United Kingdom</dd>
+        </dl>
+    </div>
+</div>
+
+
+<h4>Send Message</h4>
+<!-- modify this form HTML and place wherever you want your form -->
+
+<form id="fs-frm" action="https://formspree.io/mgenqlaa" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" />
+    <label>Message:</label>
+    <input type="text" name="message" />
+
+    <button id="fs-frm-button">Submit</button>
+    <p id="fs-frm-status"></p>
+</form>
+
+<style>
+    #fs-frm {
+        background-color: #F5F5F5;
+        padding: 10px;
+    }
+
+    #fs-frm-button {
+        margin-top: 10px;
+    }
+</style>
+<!-- Place this script at the end of the body tag -->
+
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        // get the form elements defined in your form HTML above
+
+        const form = document.getElementById('fs-frm');
+        const button = document.getElementById('fs-frm-button');
+        const status = document.getElementById('fs-frm-status');
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+            form.reset();
+            button.style = 'display: none ';
+            status.innerHTML =
+                'Thanks for contacting our trade team, we will be in touch soon!';
+        }
+
+        function error() {
+            status.innerHTML =
+                'There was a problem, some  information is missing from your message';
+        }
+
+        // handle the form submission event
+
+        form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            const data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+        const xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
+</script>
