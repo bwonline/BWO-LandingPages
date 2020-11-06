@@ -1,60 +1,166 @@
-<div class="argento-grid">
-    <div class="col-xs-12 col-md-4">
-        <h3>Open Times</h3>
-        <dl>
-            <dt>09:00 hrs - 17:00hrs (GMT)</dt>
-            <dd>Closed Saturday & Sunday</dd>
-            <dd>Closed U.K. Bank Holidays</dd>
-        </dl>
+<div class="container marblebackground">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="headingFont">Contact Us</h2>
+        </div>
     </div>
-    <div class="col-xs-12 col-md-4">
-        <h3>Send Email</h3>
-        <dl>
-            <dt>Customer Services</dt>
-            <dd><a href="mailto:customerservice@beautyworks.co.uk">customerservice@beautyworks.co.uk</a></dd>
-            <dt>Trade Accounts</dt>
-            <dd><a href="mailto:trade@beautyworks.co.uk">trade@beautyworks.co.uk</a></dd>
-            <dd>*Please allow 24 hrs for reply</dd>
-        </dl>
-    </div>
-    <div class="col-xs-12 col-md-4">
-        <h3>Postal Address</h3>
-        <dl>
-            <dt></dt>
-            <dd>Beauty Works</dd>
-            <dd>Unit D3 Stanley Green Business Park</dd>
-            <dd>Handforth, Cheadle</dd>
-            <dd>SK8 6QH</dd>
-            <dd>United Kingdom</dd>
-        </dl>
+    <div class="row">
+        <div class="col-lg-6 col-xs-12">
+            <h3>Open Times</h3>
+            <dl>
+                <dt>09:00 hrs - 17:00hrs (GMT)</dt>
+                <dd>Closed Saturday & Sunday</dd>
+                <dd>Closed U.K. Bank Holidays</dd>
+            </dl>
+            <h3>Postal Address</h3>
+            <dl>
+                <dt></dt>
+                <dd>Beauty Works</dd>
+                <dd>Unit D3 Stanley Green Business Park</dd>
+                <dd>Handforth, Cheadle</dd>
+                <dd>SK8 6QH</dd>
+                <dd>United Kingdom</dd>
+            </dl>
+
+            <h3>Useful Pages</h3>
+            <dl>
+                <dd><a href="{{store url=''}}trade-f-a-q">Trade FAQs</a></dd>
+                <dd><a href="{{store url=''}}trade-delivery-information">Delivery Information</a></dd>
+                <dd><a href="{{store url=''}}trade-returns-exchanges">Returns & Exchanges</a></dd>
+            </dl>
+
+            <h3>Social Links</h3>
+            <dl id="socialImgs">
+                <div class="col-lg-1 col-xs-3">
+                    <dd>
+                        <a href="https://www.facebook.com/BeautyWorksOnline/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </dd>
+                </div>
+                <div class="col-lg-1 col-xs-3">
+                    <dd>
+                        <a href="https://www.instagram.com/beauty_worksonline/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </dd>
+                </div>
+                <div class="col-lg-1 col-xs-3">
+                    <dd>
+                        <a href="https://twitter.com/beauty_works">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </dd>
+                </div>
+                <div class="col-lg-1 col-xs-3">
+                    <dd>
+                        <a href="https://www.youtube.com/user/beautyworks">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                    </dd>
+                </div>
+            </dl>
+
+        </div>
+        <div class="col-lg-6 col-xs-12">
+            <h3>Send Email</h3>
+            <dl>
+                <dt>Customer Services</dt>
+                <dd><a href="mailto:customerservice@beautyworks.co.uk">customerservice@beautyworks.co.uk</a>
+                </dd>
+                <dt>Trade Accounts</dt>
+                <dd><a href="mailto:trade@beautyworks.co.uk">trade@beautyworks.co.uk</a></dd>
+            </dl>
+            <h3>Send Message</h3>
+            <p>Jot us a note and we’ll get back to you as quickly as possible.</p>
+            <form id="fs-frm" action="https://formspree.io/mgenqlaa" method="POST">
+                <label>Name:</label>
+                <input type="text" name="name" />
+
+                <label>Email:</label>
+                <input type="email" name="email" />
+
+                <label>Contact Number:</label>
+                <input type="number" name="number" />
+
+                <label>What's on your mind?</label>
+                <input type="text" name="message" />
+
+                <button id="fs-frm-button">Submit</button>
+                <p id="fs-frm-status"></p>
+                <dl>
+                    <dd id="reply">*Please allow 24 hrs for reply</dd>
+                </dl>
+            </form>
+        </div>
     </div>
 </div>
 
-
-<h4>Send Message</h4>
-<!-- modify this form HTML and place wherever you want your form -->
-
-<form id="fs-frm" action="https://formspree.io/mgenqlaa" method="POST">
-    <label>Email:</label>
-    <input type="email" name="email" />
-    <label>Message:</label>
-    <input type="text" name="message" />
-
-    <button id="fs-frm-button">Submit</button>
-    <p id="fs-frm-status"></p>
-</form>
-
 <style>
+    .marblebackground {
+        background-image: url(/media/wysiwyg/trade-contact/marblebackground.jpg);
+        background-repeat: no-repeat;
+        display: grid;
+        background-position: center;
+        background-size: cover;
+        padding: 3rem;
+    }
+
+    .headingFont {
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        color: #373737;
+        margin-top: 30px;
+        font-size: 3rem;
+    }
+
+    .headingFont::after {
+        background-color: transparent !important;
+    }
+
     #fs-frm {
-        background-color: #F5F5F5;
         padding: 10px;
     }
 
     #fs-frm-button {
-        margin-top: 10px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    #reply {
+        text-align: right;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .marblebackground {
+            text-align: center;
+        }
+
+        .fa {
+            margin-bottom: 2rem;
+        }
+
+        #socialImgs {
+            margin: auto 13rem;
+        }
+
+        #reply {
+            color: white;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        #socialImgs {
+            margin: auto;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .marblebackground {
+            padding: 0;
+        }
     }
 </style>
-<!-- Place this script at the end of the body tag -->
 
 <script>
     window.addEventListener('DOMContentLoaded', function () {
