@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <span class="noticeBanner" id="bg-dark">Any orders placed after 3pm on Friday will be
+                <span class="noticeBanner" id="bg-dark">Any orders placed after 1pm on Friday will be
                     dispatched Monday.</span>
             </div>
         </div>
@@ -464,7 +464,7 @@
             dateNow.getFullYear(),
             dateNow.getMonth(),
             dateNow.getDate(),
-            15,
+            13,
             0,
             0
         );
@@ -476,12 +476,12 @@
             const r = dateEndMill - dateNowMill;
 
             if (r < 0 || dateNow.getUTCDay() > 5) {
-                return '<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM FOR NEXT DAY DELIVERY';
+                return '<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 1PM FOR NEXT DAY DELIVERY';
             }
 
             const { hour, minute, seconds } = convertMS(r);
 
-            return `<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM
+            return `<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 1PM
                     FOR NEXT DAY DELIVERY: <i class="fa fa-clock-o" aria-hidden="true"></i> ${hour}:${minute}:${seconds}`;
         })();
 
