@@ -481,8 +481,12 @@
 
             const { hour, minute, seconds } = convertMS(r);
 
+            const hr = `0${hour}`.slice(-2);
+            const min = `0${minute}`.slice(-2);
+            const sec = `0${seconds}`.slice(-2);
+
             return `<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 1PM
-                    FOR NEXT DAY DELIVERY: <i class="fa fa-clock-o" aria-hidden="true"></i> ${hour}:${minute}:${seconds}`;
+                    FOR NEXT DAY DELIVERY: <i class="fa fa-clock-o" aria-hidden="true"></i> ${hr}:${min}:${sec}`;
         })();
 
         document.getElementById(
