@@ -2,8 +2,6 @@
     <div class="container">
         <div class="row globale-hide">
             <div class="col-xs-12">
-
-                <!--  -->
                 <div class="hidden-xs container" id="cta-home-banner">
                     <div class="row">
                         <div class="argento-grid" style="margin-left:0;margin-right:0;">
@@ -59,7 +57,6 @@
                         </div>
                     </div>
                 </div>
-
                 <style>
                     #cta-home-banner {
                         background-color: #EEEEEE;
@@ -88,8 +85,6 @@
                         </style>
                     </div>
                 </div>
-                <!--  -->
-
             </div>
         </div>
         <div class="row">
@@ -450,7 +445,6 @@
             </div>
         </div>
     </div>
-
     <div class="row jumbotron subs-sign-ups">
         <div class="signs-up-block-hm-cont">
             <div class="col-xs-12 col-md-12 a-center">
@@ -459,6 +453,7 @@
                     title="Sign up for Beauty Works Newsletter, be first for exclusive offers & the latest trends" />
                 <p>Be the first to find out about new hair styles, new hair extension products, colour trends and
                     exclusive promotional offers. Sign up and get inspired!</p>
+
                 <style type="text/css">
                     #signup input~label.wrap {
                         white-space: pre-wrap;
@@ -471,8 +466,7 @@
                         <input type="hidden" name="userid" value="280764">
                         <input type="hidden" name="SIGe6f809a66f772f653cee4b30433280b28334006b3e00c6e2871426ef1c970c01"
                             value="">
-                        <input type="hidden" name="addressbookid" value="146424" />
-                        <input type="hidden" name="programid" value="189932" />
+                        <input type="hidden" name="programid" value="187104" />
                         <input type="hidden" name="ReturnURL"
                             value="https://beautyworksonline.com/sign-up-verification">
                         <input type="hidden" name="ci_userConsentText"
@@ -483,54 +477,48 @@
                             <input type="text" name="email" id="email" required aria-required="true">
                         </div>
                         <p>
-                            <input type="submit" id="btnsubmit" name="btnsubmit" value="Subscribe" class="button">
-                        </p>
-                        <p>
                             <input type="checkbox" name="ci_userConsentCheckBox" id="ci_userConsentCheckBox">
                             <label for="ci_userConsentCheckBox"><small>Yes I agree. We would like to send you
                                     promotional emails with regard to our products, please see our <a
                                         class="mailchump-label-link" href="{{store url=''}}privacy-policy">privacy
-                                        notice</a> to
-                                    see how we manage your data.</small></label>
+                                        notice</a> to see how we manage your
+                                    data.</small></label>
                         </p>
-
+                        <p>
+                            <input type="submit" id="btnsubmit" name="btnsubmit" value="Subscribe">
+                        </p>
                     </form>
                 </div>
                 <script type="text/javascript">
-    < !--
-    var urlInput = document.getElementById("ci_consenturl");
+                    const urlInput = document.getElementById('ci_consenturl');
                     if (urlInput != null && urlInput != 'undefined') {
                         urlInput.value = encodeURI(window.location.href);
                     }
                     function checkbox_Clicked(element) {
-                        document.getElementById(element.id + "_unchecked").value = !element.checked;
+                        document.getElementById(`${element.id}_unchecked`).value = !element.checked;
                     }
                     function validate_signup(frm, showAlert) {
-                        var emailAddress = frm.email.value;
-                        var errorString = '';
+                        const emailAddress = frm.email.value;
+                        let errorString = '';
                         if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
                             errorString = 'Please enter your email address';
                         }
-                        var checkBoxValue = frm.ci_userConsentCheckBox.checked;
+                        const checkBoxValue = frm.ci_userConsentCheckBox.checked;
                         if (checkBoxValue == false && showAlert) {
-                            errorString = 'You must click the checkbox to accept terms, we will send you promotional emails with regard to our products';
+                            errorString =
+                                'You must click the checkbox to accept terms, we will send you promotional emails with regard to our products';
                         }
-                        var isError = false;
+                        let isError = false;
                         if (errorString.length > 0) {
                             isError = true;
                             if (showAlert) alert(errorString);
                         }
                         return !isError;
-                    } -->
+                    }
                 </script>
-
-
-
             </div>
         </div>
     </div>
-    <!--  -->
-
 </div>
 
 <style>
@@ -659,6 +647,32 @@
 
     .vidText {
         height: 11rem;
+    }
+
+    #mc_embed_signup #btnsubmit {
+        background-image: none;
+        background: 0 0;
+        border: 0 solid transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Muli', sans-serif;
+        font-weight: 800;
+        margin: 10px 0 0;
+        padding: 10px 15px;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        box-sizing: border-box;
+        vertical-align: middle;
+        border-width: 1px;
+        border-color: #fff;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    #mc_embed_signup #btnsubmit:hover {
+        background-color: #fff;
+        color: #28ac85;
     }
 
     @media only screen and (max-width: 1024px) {
