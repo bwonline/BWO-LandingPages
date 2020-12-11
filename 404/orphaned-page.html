@@ -1,0 +1,99 @@
+<div class="container jumbotron">
+
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <p>Be the first to find out about new hair styles, new hair extension products, colour trends and
+                        exclusive promotional offers. Sign up and get inspired!</p>
+                </div>
+                <form name="signup" id="signup" action="https://news-beautyworks.co.uk/signup.ashx" method="post"
+                    autocomplete="off" onsubmit="return validate_signup(this, true)">
+                    <div class="col-md-4 col-xs-12">
+                        <input type="hidden" name="ci_isconsentform" value="true">
+                        <input type="hidden" name="userid" value="280764">
+                        <input type="hidden" name="SIGe6f809a66f772f653cee4b30433280b28334006b3e00c6e2871426ef1c970c01"
+                            value="">
+                        <input type="hidden" name="programid" value="187104" />
+                        <input type="hidden" name="ReturnURL"
+                            value="https://beautyworksonline.com/sign-up-verification">
+                        <input type="hidden" name="ci_userConsentText"
+                            value="Yes I agree. We would like to send you promotional emails with regard to our products, please see our privacy notice to see how we manage your data.">
+                        <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
+                        <div>
+                            <label class="wrap" for="email">Email</label>
+                            <input type="text" name="email" id="email" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="col-xs-12" id="terms">
+                        <p><small>
+                                <input type="checkbox" name="ci_userConsentCheckBox" id="ci_userConsentCheckBox">
+                                <label for="ci_userConsentCheckBox">Yes I agree. We would like to send you promotional
+                                    emails
+                                    with regard to our products, please see our <a
+                                        href="{{store url=''}}privacy-policy">privacy
+                                        notice</a> to see how we manage your data.</label></small>
+                            <br>
+                            <input type="submit" id="btnsubmit" name="btnsubmit" value="Subscribe">
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style type="text/css">
+    #signup input~label.wrap {
+        white-space: pre-wrap;
+    }
+
+    #signup #email {
+        font-size: 12px;
+        height: 30px;
+    }
+
+    #signup #terms {
+        text-align: center;
+    }
+
+    #signup p small {
+        font-size: 10px;
+    }
+
+    #signup #btnsubmit {
+        background-color: transparent;
+        padding: .5rem;
+        margin: 1rem;
+    }
+</style>
+
+<script type="text/javascript">
+< !--
+var urlInput = document.getElementById("ci_consenturl");
+    if (urlInput != null && urlInput != 'undefined') {
+        urlInput.value = encodeURI(window.location.href);
+    }
+    function checkbox_Clicked(element) {
+        document.getElementById(element.id + "_unchecked").value = !element.checked;
+    }
+    function validate_signup(frm, showAlert) {
+        var emailAddress = frm.email.value;
+        var errorString = '';
+        if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
+            errorString = 'Please enter your email address';
+        }
+        var checkBoxValue = frm.ci_userConsentCheckBox.checked;
+        if (checkBoxValue == false && showAlert) {
+            errorString = 'You must accept the terms';
+        }
+        var isError = false;
+        if (errorString.length > 0) {
+            isError = true;
+            if (showAlert) alert(errorString);
+        }
+        return !isError;
+    }
+//-->
+</script>
