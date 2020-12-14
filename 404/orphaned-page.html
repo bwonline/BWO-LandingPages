@@ -1,15 +1,27 @@
 <div class="container jumbotron">
 
     <div class="row">
-        <div class="container">
+        <div class="col-xs-12">
+            <div class="hidden-xs topSldr">
+                {{widget type="Swissup\EasySlide\Block\Slider" identifier="beautyworks_home-2020"}}
+            </div>
+            <div class="visible-xs-block topSldr">
+                {{widget type="Swissup\EasySlide\Block\Slider" identifier="beautyworks_home-2020-MOB"}}
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container signUpBackground">
             <div class="row">
-                <div class="col-md-8 col-xs-12">
-                    <p>Be the first to find out about new hair styles, new hair extension products, colour trends and
-                        exclusive promotional offers. Sign up and get inspired!</p>
+                <div class="col-xs-12">
+                    <p id="signUpCopy">Be the first to find out about new hair styles, new hair extension products,
+                        colour trends and exclusive promotional offers. Sign up and get inspired!</p>
                 </div>
                 <form name="signup" id="signup" action="https://news-beautyworks.co.uk/signup.ashx" method="post"
                     autocomplete="off" onsubmit="return validate_signup(this, true)">
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 col-xs-12">
                         <input type="hidden" name="ci_isconsentform" value="true">
                         <input type="hidden" name="userid" value="280764">
                         <input type="hidden" name="SIGe6f809a66f772f653cee4b30433280b28334006b3e00c6e2871426ef1c970c01"
@@ -24,48 +36,297 @@
                             <label class="wrap" for="email">Email</label>
                             <input type="text" name="email" id="email" required aria-required="true">
                         </div>
+
+                        <div id="terms">
+                            <p id="txtConsent"><small>
+                                    <input type="checkbox" name="ci_userConsentCheckBox" id="ci_userConsentCheckBox">
+                                    <label for="ci_userConsentCheckBox">Yes I agree. We would like to send you
+                                        promotional
+                                        emails with regard to our products, please see our <a
+                                            href="{{store url=''}}privacy-policy">privacy notice</a> to see how we
+                                        manage
+                                        your data.</label></small>
+                                <br>
+                                <input type="submit" id="btnsubmit" name="btnsubmit" value="Subscribe">
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-xs-12" id="terms">
-                        <p><small>
-                                <input type="checkbox" name="ci_userConsentCheckBox" id="ci_userConsentCheckBox">
-                                <label for="ci_userConsentCheckBox">Yes I agree. We would like to send you promotional
-                                    emails
-                                    with regard to our products, please see our <a
-                                        href="{{store url=''}}privacy-policy">privacy
-                                        notice</a> to see how we manage your data.</label></small>
-                            <br>
-                            <input type="submit" id="btnsubmit" name="btnsubmit" value="Subscribe">
-                        </p>
-                    </div>
+                    <div class="col-md-2"></div>
                 </form>
             </div>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}clip-in-hair-extensions.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-2019q1/404/clip-ins-404.jpg&quot;}}" alt="Clip-Ins"
+                        title="Clip-Ins" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}clip-in-hair-extensions.html">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}professional-extensions.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-2019q1/404/professionals-404.jpg&quot;}}"
+                        alt="Professional Extensions" title="Professional Extensions" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}professional-extensions.html">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}professional-extensions/weft-extensions.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-2019q1/404/weft-404.jpg&quot;}}"
+                        alt="Professional Weft Extensions" title="Professional Weft Extensions" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}professional-extensions/weft-extensions.html">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}professional-extensions/tape-extensions.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-2019q1/404/tape-404.jpg&quot;}}"
+                        alt="Professional Tape Extensions" title="Professional Tape Extensions" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}professional-extensions/tape-extensions.html">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}sale-offers.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-2019q1/404/offers-404.jpg&quot;}}" alt="Sale Offers"
+                        title="Sale Offers" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}sale-offers.html">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}haircare.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-home-201808/Beauty_Works_Luxury_Hair_Extensions_Haircare_Aftercare_PI_404.jpg&quot;}}"
+                        alt="Haircare" title="Haircare" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}haircare.html">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}styling-tools.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-2019q1/404/styling-tools-404.jpg&quot;}}" alt="Styling Tools"
+                        title="Styling Tools" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}styling-tools.html">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <div class="cta-block">
+                <a href="{{store url=''}}hair-trends.html">
+                    <img src="{{media url=&quot;wysiwyg/bw-2019q1/404/hair-trends-404.jpg&quot;}}" alt="Hair Trends"
+                        title="Hair Trends" />
+                </a>
+                <a class="cta-bttn" href="{{store url=''}}hair-trends.html">Shop Now</a>
+            </div>
+        </div>
+
+    </div>
+
 </div>
 
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .topSldr {
+        margin-bottom: 45px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        position: initial;
+    }
+
+    .swiper-pagination-bullet {
+        height: 15px;
+        width: 15px;
+        opacity: 1;
+        background: transparent;
+        border: solid #373737 1px;
+        margin: 25px 5px 0 !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #373737;
+    }
+
+    .h2title {
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        color: #373737;
+        margin-top: 30px;
+    }
+
+    .h2title::after {
+        margin: 2rem auto;
+        background-color: #373737 !important;
+    }
+
+    .cta-block {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cta-block img {
+        margin-bottom: 1rem;
+    }
+
+    .cta-title {
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.1;
+        font-size: 1.6rem;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        color: #373737;
+        padding-top: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .cta-title::after {
+        background-color: transparent !important;
+        margin-top: 0px;
+    }
+
+    .cta-bttn {
+        background: #373737;
+        border: solid 1px;
+        color: white !important;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .cta-bttn:hover {
+        background: transparent;
+        color: #373737 !important;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .topSldr {
+            margin-bottom: 20px;
+        }
+
+        .h2title {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        .cta-block {
+            padding: 25px 5px;
+        }
+
+        .cta-title {
+            font-size: 1.2rem;
+        }
+
+        .cta-bttn {
+            font-size: 12px;
+            padding: 7px 20px
+        }
+    }
+</style>
+
+<!-- Sign Up Form -->
 <style type="text/css">
+    .signUpBackground {
+        background-color: #EEEEEE;
+        display: grid;
+        padding: 3rem 2rem 0rem;
+    }
+
+    #signUpCopy {
+        font-family: 'Muli', sans-serif;
+        text-align: center;
+        margin-bottom: 0em;
+        line-height: 18px;
+    }
+
     #signup input~label.wrap {
         white-space: pre-wrap;
+    }
+
+    #signup .wrap {
+        font-weight: 600;
+    }
+
+    #signup p small {
+        font-size: 10px;
+        font-family: 'Muli', sans-serif;
     }
 
     #signup #email {
         font-size: 12px;
         height: 30px;
+        font-family: 'Muli', sans-serif;
     }
 
     #signup #terms {
         text-align: center;
-    }
-
-    #signup p small {
-        font-size: 10px;
+        font-family: 'Muli', sans-serif;
     }
 
     #signup #btnsubmit {
         background-color: transparent;
-        padding: .5rem;
+        border: solid 1px #6d6d6d;
         margin: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+        font-family: 'Muli', sans-serif;
+        color: #6d6d6d;
+    }
+
+    #signup #btnsubmit:hover {
+        color: #EEEEEE;
+        background-color: #6d6d6d;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        #signUpCopy {
+            font-size: 12px;
+        }
+
+        #signup .wrap {
+            font-size: 12px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        #signup #btnsubmit {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        #txtConsent {
+            line-height: 12px;
+            margin-bottom: 0px;
+        }
+
+        .signUpBackground {
+            padding-top: 1rem;
+        }
     }
 </style>
 
