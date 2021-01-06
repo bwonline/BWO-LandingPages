@@ -99,10 +99,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12">
-            <iframe class="mollyCampaignVid" src="https://www.youtube.com/embed/MXFDf9zAVWw" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <div class="col-md-6 col-xs-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t7wUkRYg7qc" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NKulEZ2GgUY" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -234,20 +243,6 @@
         color: #373737 !important;
     }
 
-    .mollyCampaignVid {
-        height: 500px;
-        width: 1000px;
-        display: block;
-        margin: auto;
-    }
-
-    @media only screen and (max-width: 1265px) {
-        .mollyCampaignVid {
-            height: 400px;
-            width: 750px;
-        }
-    }
-
     @media only screen and (max-width: 800px) {
         .page_outlines {
             font-size: 2.5rem;
@@ -269,11 +264,6 @@
             font-size: 12px;
             padding: 7px 20px
         }
-
-        .mollyCampaignVid {
-            height: 330px;
-            width: 600px;
-        }
     }
 
     @media only screen and (max-width: 600px) {
@@ -285,22 +275,8 @@
             height: auto;
         }
 
-        .mollyCampaignVid {
-            height: 200px;
-            width: 350px;
-        }
-    }
-
-    @media only screen and (max-width: 375px) {
-        .mollyCampaignVid {
-            width: 300px;
-        }
-    }
-
-    @media only screen and (max-width: 320px) {
-        .mollyCampaignVid {
-            width: 275px;
-            height: 200px;
+        .embed-responsive-item {
+            margin: 2rem auto;
         }
     }
 </style>
