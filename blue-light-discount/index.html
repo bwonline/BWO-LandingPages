@@ -1,139 +1,197 @@
-<div class="container">
+<div class="container" id="blcContainer">
     <div class="row">
-        <div class="col-md-4 col-xs-12">
-            <div class="row">
-                <a href="https://www.bluelightcard.co.uk/">
-                    <img class="blueLightLogo" src="{{media url='wysiwyg/blue-light/blue_light_card_discount.jpg'}}"
-                        alt="Blue Light Card" title="Blue Light Card Discount" />
-                </a>
-            </div>
-            <div class="row center">
-                <p class="blText">
-                    To thank our Emergency Services, NHS and Armed Forces, Blue Light Card holders can benefit from 15%
-                    off sitewide including sale + free delivery on purchases over £25* - and it couldn't be easier. For
-                    instant access to this discount simply join now or log in with your Blue Light Card account.
-                    <br><br>
-                    <small>*Excludes 26inch Clip Ins & Beauty Works x Molly-Mae – The Waver Kit & Curl Kit</small>
-                </p>
-                <br>
-                <img class="blueLightDiscountMob"
-                    src="{{media url=&quot;wysiwyg/blue-light/beauty_works_blue_light_discount-Jan2021.jpg&quot;}}"
-                    alt="Blue Light Card Discount with Beauty Works"
-                    title="Blue Light Card Discount with Beauty Works" />
-                <br>
-                <a class="weftButton" href="https://www.bluelightcard.co.uk/login.php">Login</a>
+        <div class="col-lg-4 col-xs-12 bwxblcImg">
+            <div class="container">
+                <div class="row hidden-xs">
+                    <div class="col-xs-12">
+                        <img id="bwlogo" src="{{media url='wysiwyg/blue-light/beauty-works-logo-wh2.png'}}"
+                            alt="Beauty Works Logo" title="Beauty Works Logo" />
+                    </div>
+                </div>
+                <div class="row hidden-xs">
+                    <div class="col-xs-12">
+                        <p id="x">x</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img id="blclogo" src="{{media url='wysiwyg/blue-light/blc_logo_long_white.png'}}"
+                            alt="Blue Light Card" title="Blue Light Card" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img id="blcMobLogo"
+                        src="{{media url='wysiwyg/blue-light/beauty_works_blue_light_discount-Jan2021.jpg'}}"
+                        alt="Blue Light Card Discount with Beauty Works"
+                        title="Blue Light Card Discount with Beauty Works" />
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>
+                            To thank our Emergency Services, NHS and Armed Forces, Blue Light Card holders can
+                            benefit from 15% off sitewide including sale + free delivery on purchases over £25* - and it
+                            couldn't be easier. For instant access to this discount simply join now or log in with
+                            your Blue Light Card account.
+                            <br><br>
+                            <small>*Excludes 26inch Clip Ins & Beauty Works x Molly-Mae – The Waver Kit & Curl
+                                Kit</small>
+                        </p>
+                        <a id="blcLogin" target="_blank" href="https://www.bluelightcard.co.uk/login.php">Login</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-8 blueLightDiscount">
-            <img src="{{media url=&quot;wysiwyg/blue-light/beauty_works_blue_light_discount-Jan2021.jpg&quot;}}"
+        <div class="col-lg-8 hidden-xs">
+            <img id="bwImg" src="{{media url='wysiwyg/blue-light/beauty_works_blue_light_discount-Jan2021.jpg'}}"
                 alt="Blue Light Card Discount with Beauty Works" title="Blue Light Card Discount with Beauty Works" />
         </div>
     </div>
 </div>
 
 <style>
-    .blueLightLogo {
-        width: 80%;
-        margin: 10px auto;
+    #blcContainer {
+        height: 53rem;
+    }
+
+    .bwxblcImg {
+        background-color: #1383b8;
+        padding: 2rem;
+        height: 55.2rem;
+    }
+
+    .bwxblcImg img {
         display: block;
-    }
-
-    .blText {
-        text-align: center;
-        color: black;
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .center {
         margin: auto;
-        padding: 10% 0
     }
 
-    .blueLightDiscountMob {
+    #bwlogo {
+        width: 60%;
+    }
+
+    #blclogo {
+        width: 75%;
+    }
+
+    #blcMobLogo {
         display: none;
     }
 
-    @media only screen and (max-width: 768px) {
-        .blueLightLogo {
-            margin: 5px auto;
+    .bwxblcImg #x {
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: -1px 1px darkslategrey;
+        margin: 1rem 0 2rem;
+        font-family: Century Gothic;
+    }
+
+    .bwxblcImg p {
+        color: white;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #blcLogin {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #1383b8;
+        border: solid white;
+        border-radius: 5px;
+        background-color: white;
+        font-weight: 600;
+        padding: 0.5rem;
+    }
+
+    #blcLogin:hover {
+        color: #5ac9e3;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        #blcContainer {
+            height: 40rem;
         }
 
-        .center {
-            padding: 2% 0;
+        .bwxblcImg {
+            height: 43.8rem;
+            padding: 1rem;
         }
 
-        .blText {
+        .bwxblcImg p {
             font-size: 12px;
-            line-height: 25px;
+            line-height: 20px
+        }
+
+        .bwxblcImg p small {
+            font-size: 10px;
         }
     }
 
-    @media only screen and (max-width: 425px) {
-        .blueLightLogo {
-            display: block;
-            margin: 0 auto;
+    @media only screen and (max-width: 800px) {
+        #blcContainer {
+            height: auto;
+            margin-top: 1rem;
         }
 
-        .blText {
-            font-size: 14px;
+        .bwxblcImg {
+            padding: 0;
+            padding-bottom: 2.5rem;
+            height: auto;
+            margin-bottom: 2rem;
         }
 
-        .blueLightDiscount {
+        #bwlogo {
             display: none;
         }
 
-        .blueLightDiscountMob {
-            width: 75%;
+        .bwxblcImg #x {
+            display: none;
+        }
+
+        #blclogo {
+            width: 100%;
+            padding: 1.5rem 0;
+        }
+
+        #blcMobLogo {
             display: block;
-            margin: auto;
+        }
+
+        .bwxblcImg p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            font-size: 15px;
+        }
+
+        .bwxblcImg p small {
+            font-size: 13px;
+        }
+
+        #bwImg {
+            display: none;
+        }
+
+        #blcLogin {
+            margin: 0 7rem;
         }
     }
 
-    @media only screen and (max-width: 375px) {
-        .blueLightLogo {
-            width: 90%;
-        }
-    }
-</style>
-
-<!--/* BUTTON */-->
-<style>
-    .weftButton {
-        display: table;
-        margin: 0 auto 5rem;
-        padding: 8px 45px;
-        background-color: #373737;
-        border: solid 1px #373737;
-        color: white !important;
-        font-size: 1.5rem;
-        font-weight: 100;
-        letter-spacing: 2.5px;
-        text-decoration: none !important;
-        text-transform: uppercase;
-    }
-
-    .weftButton:hover {
-        color: #373737 !important;
-        border: solid 1px #373737;
-        background-color: transparent;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .weftButton {
-            padding: 5px 40px;
-            font-size: 1rem;
-            letter-spacing: 2px;
+    @media only screen and (max-width: 600px) {
+        .bwxblcImg {
+            margin-bottom: 0;
         }
     }
 
-    @media only screen and (max-width: 425px) {
-        .weftButton {
-            margin: 0 auto;
+    @media only screen and (max-width: 400px) {
+        .bwxblcImg p {
+            font-size: 13px;
         }
 
-        #invisiWeftBttn {
-            margin-bottom: 5rem;
+        .bwxblcImg p small {
+            font-size: 10px;
         }
     }
 </style>
