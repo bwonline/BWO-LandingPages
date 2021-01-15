@@ -1,42 +1,26 @@
-<div class="container" id="blcContainer">
+<div class="container">
     <div class="row">
-        <div class="col-lg-4 col-xs-12 bwxblcImg">
+        <div class="col-lg-4 col-xs-12" id="blcText">
             <div class="container">
-                <div class="row hidden-xs">
-                    <div class="col-xs-12">
-                        <img id="bwlogo" src="{{media url='wysiwyg/blue-light/beauty-works-logo-wh2.png'}}"
-                            alt="Beauty Works Logo" title="Beauty Works Logo" />
-                    </div>
-                </div>
-                <div class="row hidden-xs">
-                    <div class="col-xs-12">
-                        <p id="x">x</p>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <img id="blclogo" src="{{media url='wysiwyg/blue-light/blc_logo_long_white.png'}}"
                             alt="Blue Light Card" title="Blue Light Card" />
                     </div>
                 </div>
-
                 <div class="row">
-                    <img id="blcMobLogo"
+                    <img id="bwImgMob"
                         src="{{media url='wysiwyg/blue-light/beauty_works_blue_light_discount-Jan2021.jpg'}}"
                         alt="Blue Light Card Discount with Beauty Works"
                         title="Blue Light Card Discount with Beauty Works" />
                 </div>
-
                 <div class="row">
                     <div class="col-xs-12">
-                        <p>
-                            To thank our Emergency Services, NHS and Armed Forces, Blue Light Card holders can
+                        <p>To thank our Emergency Services, NHS and Armed Forces, Blue Light Card holders can
                             benefit from 15% off sitewide including sale + free delivery on purchases over £25* - and it
                             couldn't be easier. For instant access to this discount simply join now or log in with
-                            your Blue Light Card account.
-                            <br><br>
-                            <small>*Excludes 26inch Clip Ins & Beauty Works x Molly-Mae – The Waver Kit & Curl
-                                Kit</small>
+                            your Blue Light Card account.<br><br><small>*Excludes 26inch Clip Ins & Beauty Works x
+                                Molly-Mae – The Waver Kit & Curl Kit</small>
                         </p>
                         <a id="blcLogin" target="_blank" href="https://www.bluelightcard.co.uk/login.php">Login</a>
                     </div>
@@ -44,53 +28,30 @@
             </div>
         </div>
         <div class="col-lg-8 hidden-xs">
-            <img id="bwImg" src="{{media url='wysiwyg/blue-light/beauty_works_blue_light_discount-Jan2021.jpg'}}"
+            <img id="bwImgDktp" src="{{media url='wysiwyg/blue-light/beauty_works_blue_light_discount-Jan2021.jpg'}}"
                 alt="Blue Light Card Discount with Beauty Works" title="Blue Light Card Discount with Beauty Works" />
         </div>
     </div>
 </div>
 
 <style>
-    #blcContainer {
-        height: 53rem;
-    }
-
-    .bwxblcImg {
+    #blcText {
         background-color: #1383b8;
-        padding: 2rem;
-        height: 55.2rem;
-    }
-
-    .bwxblcImg img {
-        display: block;
-        margin: auto;
-    }
-
-    #bwlogo {
-        width: 60%;
+        height: 55.5rem;
     }
 
     #blclogo {
-        width: 75%;
+        margin: 5rem 0 3rem;
     }
 
-    #blcMobLogo {
+    #bwImgMob {
         display: none;
     }
 
-    .bwxblcImg #x {
-        color: white;
-        text-align: center;
-        font-size: 3rem;
-        text-shadow: -1px 1px darkslategrey;
-        margin: 1rem 0 2rem;
-        font-family: Century Gothic;
-    }
 
-    .bwxblcImg p {
+    #blcText p {
         color: white;
         text-align: center;
-        margin-top: 2rem;
     }
 
     #blcLogin {
@@ -103,6 +64,8 @@
         background-color: white;
         font-weight: 600;
         padding: 0.5rem;
+        margin: 2rem;
+        margin-top: 5rem;
     }
 
     #blcLogin:hover {
@@ -110,88 +73,55 @@
     }
 
     @media only screen and (max-width: 1024px) {
-        #blcContainer {
-            height: 40rem;
+        #blcText {
+            height: 44rem;
         }
 
-        .bwxblcImg {
-            height: 43.8rem;
-            padding: 1rem;
+        #blclogo {
+            margin: 3rem 0;
         }
 
-        .bwxblcImg p {
-            font-size: 12px;
-            line-height: 20px
-        }
-
-        .bwxblcImg p small {
-            font-size: 10px;
+        #blcLogin {
+            margin: 2rem;
         }
     }
 
     @media only screen and (max-width: 800px) {
-        #blcContainer {
-            height: auto;
-            margin-top: 1rem;
-        }
-
-        .bwxblcImg {
-            padding: 0;
-            padding-bottom: 2.5rem;
-            height: auto;
-            margin-bottom: 2rem;
-        }
-
-        #bwlogo {
-            display: none;
-        }
-
-        .bwxblcImg #x {
-            display: none;
+        #blcText {
+            background-color: transparent;
+            height: auto
         }
 
         #blclogo {
-            width: 100%;
-            padding: 1.5rem 0;
+            margin: 1.5rem 0;
         }
 
-        #blcMobLogo {
-            display: block;
+        #blcText .col-xs-12 {
+            background-color: #1383b8;
         }
 
-        .bwxblcImg p {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            padding: 1rem;
-            font-size: 15px;
+        #blcText p {
+            padding: 2rem 0;
         }
 
-        .bwxblcImg p small {
-            font-size: 13px;
-        }
-
-        #bwImg {
+        #bwImgDktp {
             display: none;
         }
 
-        #blcLogin {
-            margin: 0 7rem;
+        #bwImgMob {
+            display: block;
         }
     }
 
     @media only screen and (max-width: 600px) {
-        .bwxblcImg {
+        #blcText p {
+            font-size: 12px;
             margin-bottom: 0;
-        }
-    }
-
-    @media only screen and (max-width: 400px) {
-        .bwxblcImg p {
-            font-size: 13px;
+            padding: 1rem 0;
         }
 
-        .bwxblcImg p small {
-            font-size: 10px;
+        #blcText p small {
+            font-size: 11px;
         }
     }
 </style>
