@@ -1,74 +1,7 @@
-<div class="container marblebackground">
+<div class="container a-center">
     <div class="row">
-        <div class="col-xs-12">
-            <h2 class="headingFont">Contact Us</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6 col-xs-12">
-            <h3>Open Times</h3>
-            <dl>
-                <dt>09:00 hrs - 17:00hrs (GMT)</dt>
-                <dd>Closed Saturday & Sunday</dd>
-                <dd>Closed U.K. Bank Holidays</dd>
-            </dl>
-            <h3>Postal Address</h3>
-            <dl>
-                <dt></dt>
-                <dd>Beauty Works</dd>
-                <dd>Unit D3 Stanley Green Business Park</dd>
-                <dd>Handforth, Cheadle</dd>
-                <dd>SK8 6QH</dd>
-                <dd>United Kingdom</dd>
-            </dl>
-
-            <h3>Useful Pages</h3>
-            <dl>
-                <dd><a href="{{store url=''}}frequently-asked-questions">Customer F.A.Q.</a></dd>
-                <dd><a href="{{store url=''}}delivery-information">Delivery Information</a></dd>
-                <dd><a href="{{store url=''}}returns-and-exchanges">Returns & Exchanges</a></dd>
-            </dl>
-
-            <h3>Social Links</h3>
-            <dl id="socialImgs">
-                <div class="col-lg-1 col-xs-3">
-                    <dd>
-                        <a href="https://www.facebook.com/BeautyWorksOnline/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </dd>
-                </div>
-                <div class="col-lg-1 col-xs-3">
-                    <dd>
-                        <a href="https://www.instagram.com/beauty_worksonline/">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </dd>
-                </div>
-                <div class="col-lg-1 col-xs-3">
-                    <dd>
-                        <a href="https://twitter.com/beauty_works">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </dd>
-                </div>
-                <div class="col-lg-1 col-xs-3">
-                    <dd>
-                        <a href="https://www.youtube.com/user/beautyworks">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </a>
-                    </dd>
-                </div>
-            </dl>
-
-        </div>
-        <div class="col-lg-6 col-xs-12">
-            <h3>Send Email</h3>
-            <dl>
-                <dt>Customer Services</dt>
-                <dd><a href="mailto:customerservice@beautyworks.co.uk">customerservice@beautyworks.co.uk</a>
-                </dd>
-            </dl>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 col-xs-12">
             <h3>Send Message</h3>
             <p>Jot us a note and we’ll get back to you as quickly as possible.</p>
             <form id="fs-frm" action="https://formspree.io/f/mdowvldr" method="POST">
@@ -85,36 +18,25 @@
                 <p id="fs-frm-status"></p>
                 <dl>
                     <dd id="reply">*Please allow 24 hrs for reply</dd>
+                    <dd id="reply"><b>Open Times:</b></dd>
+                    <dd id="reply">09:00 hrs - 17:00hrs (GMT)</dd>
+                    <dd id="reply">Closed Saturday & Sunday</dd>
                 </dl>
             </form>
         </div>
+        <div class="col-lg-2"></div>
     </div>
 </div>
 
+
 <style>
-    .marblebackground {
-        background-image: url(/media/wysiwyg/contact/marblebackground.jpg);
-        background-repeat: no-repeat;
-        display: grid;
-        background-position: center;
-        background-size: cover;
-        padding: 3rem;
-    }
-
-    .headingFont {
-        text-align: center;
-        font-family: 'Muli', sans-serif;
-        color: #373737;
-        margin-top: 30px;
-        font-size: 3rem;
-    }
-
-    .headingFont::after {
-        background-color: transparent !important;
+    a {
+        text-decoration: none;
     }
 
     #fs-frm {
         padding: 10px;
+        text-align: initial;
     }
 
     #fs-frm-button {
@@ -122,38 +44,13 @@
         display: block;
     }
 
+    textarea {
+        height: 10rem;
+    }
+
     #reply {
         text-align: right;
-    }
-
-    textarea {
-        height: 124px;
-    }
-
-    @media only screen and (max-width: 800px) {
-        .fa {
-            margin-bottom: 2rem;
-        }
-
-        #socialImgs {
-            margin: auto 13rem;
-        }
-
-        #reply {
-            color: white;
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        #socialImgs {
-            margin: auto;
-        }
-    }
-
-    @media only screen and (max-width: 320px) {
-        .marblebackground {
-            padding: 0;
-        }
+        margin-bottom: 0;
     }
 </style>
 
