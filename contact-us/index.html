@@ -1,6 +1,5 @@
-<div class="container a-center">
-    <div class="row">
-        <div class="col-lg-2"></div>
+<div class="container">
+    <div class="row" id="contactUs">
         <div class="col-lg-8 col-xs-12">
             <h3>Send Message</h3>
             <p>Jot us a note and we’ll get back to you as quickly as possible.</p>
@@ -16,22 +15,53 @@
 
                 <button id="fs-frm-button">Submit</button>
                 <p id="fs-frm-status"></p>
-                <dl>
-                    <dd id="reply">*Please allow 24 hrs for reply</dd>
-                    <dd id="reply"><b>Open Times:</b></dd>
-                    <dd id="reply">09:00 hrs - 17:00hrs (GMT)</dd>
-                    <dd id="reply">Closed Saturday & Sunday</dd>
-                </dl>
             </form>
         </div>
-        <div class="col-lg-2"></div>
+        <div class="col-lg-4 col-xs-12">
+            <hr>
+            <h3>Open Times</h3>
+            <ul>
+                <li>09:00 hrs - 17:00hrs (GMT)</li>
+                <li>Closed Saturday & Sunday</li>
+                <li>Closed U.K. Bank Holidays</li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <hr>
+            <h3>Useful Pages</h3>
+            <ul>
+                <li><a href="{{store url=''}}frequently-asked-questions">Customer F.A.Q.</a></li>
+                <li><a href="{{store url=''}}delivery-information">Delivery Information</a></li>
+                <li><a href="{{store url=''}}returns-and-exchanges">Returns & Exchanges</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+            <hr>
+            <h3>Social Links</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/BeautyWorksOnline/"> <i class="fa fa-facebook"
+                            aria-hidden="true"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/beauty_worksonline/"> <i class="fa fa-instagram"
+                            aria-hidden="true"></i> Instagram</a></li>
+                <li><a href="https://twitter.com/beauty_works"> <i class="fa fa-twitter" aria-hidden="true"></i>
+                        Twitter</a></li>
+                <li><a href="https://www.youtube.com/user/beautyworks"> <i class="fa fa-youtube-play"
+                            aria-hidden="true"></i> YouTube</a></li>
+            </ul>
+        </div>
     </div>
+
 </div>
 
 
 <style>
     a {
         text-decoration: none;
+    }
+
+    #contactUs hr {
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     #fs-frm {
@@ -45,12 +75,17 @@
     }
 
     textarea {
-        height: 10rem;
+        height: 15rem;
     }
 
-    #reply {
-        text-align: right;
+    #contactUs p {
         margin-bottom: 0;
+    }
+
+    ul li:before,
+    ol li:before {
+        color: transparent;
+        padding-right: 0;
     }
 </style>
 
