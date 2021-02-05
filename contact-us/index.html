@@ -6,18 +6,17 @@
             <form id="fs-frm" action="https://formspree.io/f/mdowvldr" method="POST">
                 <label>Name:</label>
                 <input type="text" name="name" required />
-
                 <label>Email:</label>
                 <input type="email" name="email" required />
-
                 <label>What's on your mind?</label>
                 <textarea type="text" name="message"></textarea>
-
+                <label>Attachment: </label>
+                <input type="file" name="attachment" accept="image/png, image/jpeg">
+                <br><br>
                 <label><input type="checkbox" name="formConsent" required>I agree to my personal data being stored.
                     Please see our <a href="{{store url=''}}privacy-policy">privacy notice</a> to see how we manage your
                     data.</label>
                 <br>
-
                 <button id="fs-frm-button">Submit</button>
                 <p id="fs-frm-status"></p>
             </form>
@@ -41,9 +40,7 @@
             </ul>
         </div>
     </div>
-
 </div>
-
 
 <style>
     a {
