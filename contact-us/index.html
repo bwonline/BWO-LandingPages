@@ -62,6 +62,14 @@
         display: block;
     }
 
+    #fs-frm-status {
+        background-color: #c8b69b;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+        margin: 1rem;
+    }
+
     textarea {
         height: 15rem;
     }
@@ -91,12 +99,12 @@
             form.reset();
             button.style = 'display: none ';
             status.innerHTML =
-                'Thanks for contacting our trade team, we will be in touch soon!';
+                'Thanks for contacting our customer service team, we will be in touch soon!';
         }
 
         function error() {
             status.innerHTML =
-                'There was a problem, some  information is missing from your message';
+                'There was a problem, some information is missing from your message';
         }
 
         // handle the form submission event
