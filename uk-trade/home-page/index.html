@@ -20,7 +20,7 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <span class="noticeBanner" id="bg-dark">Any orders placed after 1pm on Friday will be
+                <span class="noticeBanner" id="bg-dark">Any orders placed after 3pm on Friday will be
                     dispatched Monday.</span>
             </div>
         </div>
@@ -134,7 +134,7 @@
             <div class="col-md-4 col-xs-12">
                 <div class="cta-block">
                     <a href="{{store url=''}}marketing-materials.html">
-                        <img src="{{media url='wysiwyg/tradeHome2020/beauty_works_marketing_materials.png'}}"
+                        <img src="{{media url=&quot;wysiwyg/tradeHome2020/beauty_works_marketing_materials2021.jpg&quot;}}"
                             alt="Beauty Works Marketing Materials" title="Beauty Works Marketing Materials" />
                     </a>
                     <a href="{{store url=''}}marketing-materials.html">
@@ -175,35 +175,54 @@
         <div class="row">
             <div class="col-md-6 col-xs-12">
                 <div class="cta-block">
-                    <a href="https://www.youtube.com/watch?v=0N0eWFyO1uo" target="_blank">
-                        <img src="{{media url='wysiwyg/summerShop2020/beauty-works-clip-in-hair-length-guide.jpg'}}"
-                            alt="Beauty Works Clip In Hair Length Guide"
-                            title="Beauty Works Clip In Hair Length Guide" />
-                    </a>
-                    <p>Need some help choosing the right length for your Beauty Works clip-in hair extensions? Watch
-                        our length guide! Covering both Deluxe Clip-in Extensions and Double Hair Set Clip-in
-                        Extensions, choose from our complete clip-in range for the perfect length. Beauty Works
-                        Clip-in extensions come in lengths 16", 18", 20" & 22".</p>
-                    <a class="shopNow" href="https://www.youtube.com/watch?v=0N0eWFyO1uo" target="_blank">Clip-In
-                        Length Guide</a>
+                    <iframe src="https://player.vimeo.com/video/522695770" class="tutorialEmb" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <script type="application/ld+json">
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "VideoObject",
+                        "name": "BEAUTY WORKS | HOW TO APPLY CELEBRITY CHOICE STICK TIP HAIR EXTENSIONS",
+                        "description": "How to apply Beauty Works Stick Tip hair extensions featuring celebrity hair stylist Jay Birmingham",
+                        "contentUrl": "https://vimeo.com/522695770",
+                        "embedUrl": "hhttps://player.vimeo.com/video/522695770",
+                        }
+                    </script>
+                    <p class="vidText">Watch our guide on how to apply Beauty Works Invisi®Tape hair extensions
+                        featuring celebrity hair stylist Jay Birmingham. This video shows how this award-winning method
+                        can work for you and your clients, offering a discreet application using patented
+                        Invisi®technology. The mesh tape tab mimics the natural re-growth at the hair's root, creating a
+                        transformation that is virtually undetectable.</p>
+                    <a class="shopNow"
+                        href="{{store url=''}}professional-extensions/tape-extensions/invisi-tape.html">Shop Invisi®Tape
+                        Extensions</a>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="cta-block">
-                    <a href="https://www.youtube.com/watch?v=g80fQxWexLQ&t=126s" target="_blank">
-                        <img src="{{media url='wysiwyg/summerShop2020/beauty-works-blogger-reviews.jpg'}}"
-                            alt="Beauty Works Blogger Reviews" title="Beauty Works Blogger Reviews" />
-                    </a>
-                    <p>Confused by hair extensions? Here are 5 Quick and EASY Hairstyles you can do with Beauty
-                        Works hair extensions, honestly if I can do them, so can you :D!! I'm the worst at hair,
-                        honestly haha, its a chore for me but i was really pleasantly surprised with these
-                        hairstyles. I really enjoyed filming this video for you and i hope you enjoy!!</p>
-                    <a class="shopNow" href="https://www.youtube.com/watch?v=g80fQxWexLQ&t=126s" target="_blank">Blogger
-                        Reviews</a>
+                    <iframe src="https://player.vimeo.com/video/522695400" class="tutorialEmb" frameborder=" 0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <script type="application/ld+json">
+                            {
+                            "@context": "https://schema.org",
+                            "@type": "VideoObject",
+                            "name": "BEAUTY WORKS | HOW TO APPLY INVISI TAPE EXTENSIONS",
+                            "description": "How to apply Beauty Works Invisi®Tape hair extensions featuring celebrity hair stylist Jay Birmingham",
+                            "contentUrl": "https://vimeo.com/522695400",
+                            "embedUrl": "https://player.vimeo.com/video/522695400",
+                            }
+                        </script>
+                    <p class="vidText">Discover Beauty Works Celebrity Choice® Nanobond® hair extensions featuring
+                        celebrity hair stylist Jay Birmingham. Available in 18", 20" & 24" lengths, this no-glue micro
+                        ring method is applied and attached using tiny copper rings, coloured to match the root of the
+                        hair perfectly for a seamless and discreet blend. Choose from over 40 unique shade blends.
+                    </p>
+                    <a class="shopNow" href="{{store url=''}}professional-extensions/micro-ring-extensions.html">Shop
+                        Celebrity Choice® Nanobond®</a>
                 </div>
             </div>
         </div>
     </div>
+
 
 </div>
 
@@ -223,10 +242,6 @@
     #bg-dark {
         background-color: #373737;
         margin-bottom: 15px;
-    }
-
-    #bg-teal {
-        background-color: #28AC85;
     }
 
     .homeSldr {
@@ -322,6 +337,15 @@
         color: #373737 !important;
     }
 
+    .tutorialEmb {
+        width: 560px;
+        height: 315px
+    }
+
+    .vidText {
+        height: 14rem
+    }
+
     @media only screen and (max-width: 1024px) {
         .ctaH1 {
             height: 19rem;
@@ -329,6 +353,15 @@
 
         .ctaH2 {
             height: 21rem;
+        }
+
+        .tutorialEmb {
+            width: 430px;
+            height: 240px;
+        }
+
+        .vidText {
+            height: 16rem
         }
     }
 
@@ -374,6 +407,11 @@
             font-size: 2.5rem;
             margin-top: 20px;
         }
+
+        .tutorialEmb {
+            width: 330px;
+            height: 185px;
+        }
     }
 
     @media only screen and (max-width: 600px) {
@@ -394,6 +432,15 @@
         }
 
         .ctaH2 {
+            height: auto;
+        }
+
+        .tutorialEmb {
+            width: auto;
+            height: 210px;
+        }
+
+        .vidText {
             height: auto;
         }
     }
@@ -464,7 +511,7 @@
             dateNow.getFullYear(),
             dateNow.getMonth(),
             dateNow.getDate(),
-            13,
+            15,
             0,
             0
         );
@@ -476,7 +523,7 @@
             const r = dateEndMill - dateNowMill;
 
             if (r < 0 || dateNow.getUTCDay() > 5) {
-                return '<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 1PM FOR NEXT DAY DELIVERY';
+                return '<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM FOR NEXT DAY DELIVERY';
             }
 
             const { hour, minute, seconds } = convertMS(r);
@@ -485,7 +532,7 @@
             const min = `0${minute}`.slice(-2);
             const sec = `0${seconds}`.slice(-2);
 
-            return `<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 1PM
+            return `<i class="fa fa-truck" aria-hidden="true"></i> ORDER BEFORE 3PM
                     FOR NEXT DAY DELIVERY: <i class="fa fa-clock-o" aria-hidden="true"></i> ${hr}:${min}:${sec}`;
         })();
 
