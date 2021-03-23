@@ -1,37 +1,7 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-6 col-xs-12">
-            <div class="cta-block cta-lg">
-                <a href="{{store url=''}}collaborations.html">
-                    <img src="{{media url=&quot;wysiwyg/shop-by-influencer/beauty-works-Influencers-collaborations.jpg&quot;}}"
-                        alt="Beauty Works Influencer Collaborations" title="Beauty Works Influencer Collaborations">
-                </a>
-                <a href="{{store url=''}}collaborations.html">
-                    <h3 class="cta-title">Collaborations</h3>
-                </a>
-                <p>Shop our exclusive influencer collaboration with Molly-Mae Hague, featuring her award-winning Curl
-                    Kits, limited edition Haircare Gift Set and her bestselling Waver Kit.</p>
-                <a class="shopNow" href="{{store url=''}}collaborations.html">Shop Now</a>
-            </div>
-        </div>
-        <div class="col-md-6 col-xs-12">
-            <div class="cta-block cta-lg">
-                <a href="{{store url=''}}new-in.html">
-                    <img src="{{media url=&quot;wysiwyg/shop-by-influencer/beauty-works-Influencers-new-in.jpg&quot;}}"
-                        alt="Beauty Works Influencer New In" title="Beauty Works Influencer New In">
-                </a>
-                <a href="{{store url=''}}new-in.html">
-                    <h3 class="cta-title">New In</h3>
-                </a>
-                <p>The latest hair trends direct to your door, let us inspire you with new in hair extensions, styling
-                    tools and haircare.</p>
-                <a class="shopNow" href="{{store url=''}}new-in.html">Shop Now</a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-xs-12">
-            <h2 class="page_outlines">Brand Ambassadors</h2>
+            <h2 class="page_outlines" id="outlinePadding">Brand Ambassadors</h2>
         </div>
     </div>
     <div class="row">
@@ -393,7 +363,6 @@
         </div>
     </div>
 
-
     <div class="row">
         <div class="col-xs-12">
             <h2 class="page_outlines">SHOP INFLUENCERS IN BEAUTY WORKS</h2>
@@ -433,8 +402,8 @@
         font-size: 3rem;
     }
 
-    .page_outlines::after {
-        margin: 2rem auto;
+    #outlinePadding {
+        margin-top: 0rem;
     }
 
     #tutorialOutLine {
@@ -557,6 +526,10 @@
     }
 
     @media only screen and (max-width: 600px) {
+        #outlinePadding {
+            margin-top: 3rem;
+        }
+
         .cta-block {
             padding: 5px;
         }
@@ -585,7 +558,6 @@
 
     /* Top Picks Carousel */
     .slider {
-        margin-top: 5rem;
         margin-bottom: 5px;
         text-align: center;
     }
