@@ -78,12 +78,166 @@
     <div class="row">
         <div class="col-xs-12">
             <h3>CONTACT THE TEAM TODAY:</h3>
-            <p>
-                Learn more about our products and the benefits of carrying Beauty Works in your salon and education
-                programmes. Email <a href="mailto:trade@beautyworks.co.uk?Subject=Trade%20Enquiry"
-                    target="_top">trade@beautyworks.co.uk</a> and one of our account managers will contact you with more
-                information within 7 working days.
-            </p>
+            <p>Learn more about our products from the benefits of carrying Beauty Works in your salon to our education
+                programmes. Simply fill in the form below and one of our account managers will contact you with more
+                information within 7 working days.</p>
         </div>
     </div>
+
+    <div class="row">
+        <form id="fs-frm" action="https://formspree.io/f/mvownbqw" method="POST">
+
+            <div class="col-md-6 col-xs-12">
+                <label>Name<span class="required">*</span>:</label>
+                <input type="text" name="name" required />
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <label>Business/Trading Name<span class="required">*</span>:</label>
+                <input type="text" name="Business/Trading Name" required />
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>Business Type<span class="required">*</span>:</label>
+                <select id="Business Type" name="Business Type" required>
+                    <option value="Hair & Beauty">Hair & Beauty</option>
+                    <option value="Hairdressing">Hairdressing</option>
+                    <option value="Mobile Hairdresser">Mobile Hairdresser</option>
+                    <option value="Barbers">Barbers</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Mobile - Beauty">Mobile - Beauty</option>
+                    <option value="Nails">Nails</option>
+                    <option value="Tanning">Tanning</option>
+                    <option value="Aromatherapy/Holistic">Aromatherapy/Holistic</option>
+                    <option value="Spa & Leisure">Spa & Leisure</option>
+                    <option value="Educational Institute">Educational Institute</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>Street Address<span class="required">*</span>:</label>
+                <input type="text" name="Street Address" required />
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>City<span class="required">*</span>:</label>
+                <input type="text" name="City" required />
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>Post Code<span class="required">*</span>:</label>
+                <input type="text" name="Post Code" required />
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>County<span class="required">*</span>:</label>
+                <input type="text" name="County" required />
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>Telephone<span class="required">*</span>:</label>
+                <input type="number" name="Telephone" required />
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>Email<span class="required">*</span>:</label>
+                <input type="email" name="email" required />
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <label>How Did You Hear About Us<span class="required">*</span>:</label>
+                <select id="How Did You Hear About Us" name="How Did You Hear About Us" required>
+                    <option value="Beauty Works Catalogue">Beauty Works Catalogue</option>
+                    <option value="Print Media & Magazines">Print Media & Magazines</option>
+                    <option value="Google">Google</option>
+                    <option value="Other Search Engine">Other Search Engine</option>
+                    <option value="Word Of Mouth">Word Of Mouth</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="col-xs-12">
+                <label id="formConsent"><input type="checkbox" name="formConsent" required>I agree to my personal data
+                    being stored. Please see our <a href="{{store url=''}}privacy-policy">privacy notice</a> to see how
+                    we manage your data.<span class="required">*</span></label>
+            </div>
+
+
+            <div class="col-xs-12">
+                <button id="fs-frm-button">Submit</button>
+            </div>
+        </form>
+        <p id="fs-frm-status"></p>
+    </div>
+
 </div>
+
+<style>
+    .required {
+        color: red;
+    }
+
+    #formConsent {
+        text-align: center;
+        display: block;
+        margin: 2rem 0;
+    }
+
+    #fs-frm-button {
+        display: block;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    #fs-frm-status {
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+    }
+</style>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        // get the form elements defined in your form HTML above
+
+        const form = document.getElementById('fs-frm');
+        const button = document.getElementById('fs-frm-button');
+        const status = document.getElementById('fs-frm-status');
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+            form.reset();
+            form.style = 'display: none ';
+            button.style = 'display: none ';
+            status.innerHTML =
+                'Thanks for your enquiry, our team will be in touch soon!';
+        }
+
+        function error() {
+            status.innerHTML =
+                'There was a problem, some information is missing from your message';
+        }
+
+        // handle the form submission event
+
+        form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            const data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+        const xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
+</script>
