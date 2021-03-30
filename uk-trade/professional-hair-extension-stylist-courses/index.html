@@ -40,7 +40,7 @@
                         </span>
                     </div>
                     </p>
-                    <a class="visible-xs-block" type="button" id="read" onclick="read()">Read More</a>
+                    <button class="visible-xs-block" type="button" id="read" onclick="read()">Read More</button>
                     <script>
                         let i = 0;
                         function read() {
@@ -61,8 +61,13 @@
                         }
 
                         #read {
-                            color: #dacab9;
+                            background-color: #dacab9;
                             font-size: 12px;
+                            margin: auto;
+                            border: solid 1px #dacab9;
+                            color: white;
+                            border-radius: 7.5px;
+                            padding: 10px;
                         }
                     </style>
 
@@ -76,49 +81,72 @@
                 <h2 class="outlinesH2">ONE DAY : FAST TRACK TRAINING</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6">
-                <ul class="od_ftt">
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/beauty-works-offer-award-winning-hair.jpg'}}"
-                            alt="Offer award winning hair" title="Offer award winning hair" />
-                        <p> Offer award winning hair</p>
-                    </li>
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/professional-hair-extension-kits.jpg'}}"
-                            alt="Professional hair extension kit worth £300"
-                            title="Professional hair extension kit worth £300" />
-                        <p> Professional hair extension kit worth £300</p>
-                    </li>
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/marketing-material.jpg'}}"
-                            alt="Marketing material" title="Marketing material" />
-                        <p> Marketing material</p>
-                    </li>
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/become-beauty-works-certified-stylist.jpg'}}"
-                            alt="Become a Beauty Works certified stylist"
-                            title="Become a Beauty Works certified stylist" />
-                        <p> Become a Beauty Works certified stylist</p>
-                    </li>
-                </ul>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/beauty-works-offer-award-winning-hair.jpg'}}"
+                        alt="Offer award winning hair" title="Offer award winning hair" />
+                    <p> Offer award winning hair</p>
+                </div>
             </div>
-            <div class="col-xs-6">
-                <ul class="od_ftt">
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/exclusive-trade-prices.jpg'}}"
-                            alt="Access to exclusive trade prices" title="Access to exclusive trade prices" />
-                        <p> Access to exclusive trade prices</p>
-                    </li>
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/dedicated-account-manager.jpg'}}"
-                            alt="Manager assigned to your account" title="Manager assigned to your account" />
-                        <p> Manager assigned to your account</p>
-                    </li>
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/hair-extension-promotions.jpg'}}"
-                            alt="Enjoy Beauty Works promotions" title="Enjoy Beauty Works promotions" />
-                        <p> Enjoy Beauty Works promotions</p>
-                    </li>
-                    <li><img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/conferences-and-events.jpg'}}"
-                            alt="Join conferences & events" title="Join conferences & events" />
-                        <p> Join conferences & events</p>
-                    </li>
-                </ul>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/professional-hair-extension-kits.jpg'}}"
+                        alt="Professional hair extension kit worth £300"
+                        title="Professional hair extension kit worth £300" />
+                    <p> Professional hair extension kit worth £300</p>
+                </div>
             </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/marketing-material.jpg'}}"
+                        alt="Marketing material" title="Marketing material" />
+                    <p> Marketing material</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/become-beauty-works-certified-stylist.jpg'}}"
+                        alt="Become a Beauty Works certified stylist" title="Become a Beauty Works certified stylist" />
+                    <p> Become a Beauty Works certified stylist</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/exclusive-trade-prices.jpg'}}"
+                        alt="Access to exclusive trade prices" title="Access to exclusive trade prices" />
+                    <p>Access to exclusive trade prices</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/dedicated-account-manager.jpg'}}"
+                        alt="Manager assigned to your account" title="Manager assigned to your account" />
+                    <p> Manager assigned to your account</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/hair-extension-promotions.jpg'}}"
+                        alt="Enjoy Beauty Works promotions" title="Enjoy Beauty Works promotions" />
+                    <p> Enjoy Beauty Works promotions</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="fastTrack">
+                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/conferences-and-events.jpg'}}"
+                        alt="Join conferences & events" title="Join conferences & events" />
+                    <p> Join conferences & events</p>
+                </div>
+            </div>
+
         </div>
         <div class="row">
             <div class="col-xs-12">
@@ -136,7 +164,7 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6 col-xs-12">
-                <ul class="wywl-list">
+                <ul class="wywl-list" id="wywl-list2">
                     <li>Extension maintenance & removal</li>
                     <li>How to manage customer expectations</li>
                     <li>Business & marketing skills</li>
@@ -144,7 +172,6 @@
                 </ul>
             </div>
             <div class="col-lg-2"></div>
-
         </div>
     </div>
     <div class="container jumbotron">
@@ -553,6 +580,10 @@
             margin-bottom: 20px;
         }
 
+        .fastTrack p {
+            height: 6rem;
+        }
+
         .cta-block {
             padding: 25px 5px;
         }
@@ -631,6 +662,10 @@
 
         #wywl {
             text-align: center;
+        }
+
+        .wywl-list {
+            margin-top: 0;
         }
 
         #wywl-one ul {
