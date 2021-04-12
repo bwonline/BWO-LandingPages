@@ -1,139 +1,39 @@
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <h2 class="monYr">No dates currently available</h2>
+        {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="75"}}
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+            <img src="{{media url='wysiwyg/TRADE-eventCalender/course-we-offer/Ultimate_Weft_Weave_Course2.jpg'}}"
+                alt="The Ultimate Weft & Weave Course" title="The Ultimate Weft & Weave Course" />
+        </div>
+        <div class="col-md-8 col-xs-12">
+            <h2 class="cta-title">The Ultimate Weft & Weave Course</h2>
+            <p>Learn how to integrate your clients hair seamlessly with bonded and tape extensions.
+                Discover a wide range of colour with bespoke blonds. Allow your clients to enjoy natural
+                movement, with extensions that flow easily just like your own hair.</p>
         </div>
     </div>
-</div>
-<div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <p><a href="{{store url=''}}professional-hair-extension-stylist-courses">&lt;&lt; Return to Beauty Works
-                    fast track courses homepage</a></p>
+            <h3 id="datesAvailable">Dates Available:</h3>
         </div>
     </div>
 </div>
 
-<style>
-    .monYr {
-        text-align: center;
-    }
+<!-- Course Dates -->
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="84"}}
 
-    h1::after,
-    h2::after,
-    .h2::after,
-    h3::after,
-    h4::after {
-        margin: 2rem auto;
-    }
+<div class="container">
+    <div class="row">
+        <!-- Embedded Map -->
+        {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="74"}}
+    </div>
+    <div class="row">
+        <!-- Page Link -->
+        {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="75"}}
+    </div>
+</div>
 
-    .course {
-        background-color: #EEEEEE;
-        padding: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .calOutline {
-        text-align: center;
-        width: 7rem;
-        margin: auto;
-    }
-
-    .calMonth {
-        border: solid #dacab9;
-        background-color: #dacab9;
-        color: white;
-    }
-
-    .calDay {
-        color: #dacab9;
-        border: solid #dacab9 .5px;
-        font-size: 2.5rem;
-        background-color: white;
-    }
-
-    .fa {
-        color: #dacab9;
-    }
-
-    .shopNow {
-        background: #373737;
-        border: solid #373737 1px;
-        color: white !important;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        display: block;
-        margin: auto;
-    }
-
-    .shopNow:hover {
-        background: transparent;
-        color: #373737 !important;
-    }
-
-    @media only screen and (max-width: 800px) {
-        .shopNow {
-            font-size: 12px;
-            padding: 7px
-        }
-    }
-
-    @media only screen and (max-width: 425px) {
-        .calOutline {
-            width: auto;
-        }
-
-        .gMap {
-            margin-bottom: 2rem;
-        }
-
-        .calMonth {
-            font-size: 1rem;
-        }
-
-        .calDay {
-            font-size: 1.5rem;
-        }
-
-        .bookNow {
-            font-size: 14px;
-        }
-    }
-
-    @media only screen and (max-width: 320px) {
-        .calMonth {
-            font-size: .9rem;
-        }
-
-        .calDay {
-            font-size: 1.3rem;
-        }
-
-        .bookNow {
-            font-size: 11px;
-        }
-    }
-</style>
-
-<script>
-    const expireListing = (e, d) => {
-        const render = expirationDate => {
-            const dateNow = new Date();
-            if (dateNow > expirationDate) {
-                clearInterval(counter);
-                return true;
-            }
-            return false;
-        };
-
-        const counter = setInterval(() => {
-            const expired = render(d);
-            if (expired) {
-                e.style.display = 'none';
-            }
-        }, 1000);
-    };
-</script>
+<!-- Styling -->
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="85"}}
