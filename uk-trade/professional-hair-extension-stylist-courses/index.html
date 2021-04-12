@@ -1,3 +1,6 @@
+<!-- Read More/Less JS -->
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="88"}}
+
 <div class="container jumbotron">
     <div class="container jumbotron">
         <div class="row">
@@ -5,72 +8,21 @@
                 <img id="habiaLogo" src="{{media url='wysiwyg/TRADE-eventCalender/HabiaLogo.png'}}"
                     alt="Habia Recognised Provider" title="Habia Recognised Provider" />
                 <div class="col-xs-12" id="bwoCourses">
-                    <p><span style="font-weight: bold;">Beauty Works fast track courses ensures that every student has
-                            the knowledge and practical skill to offer hair extensions to the highest standard.</span>
-                        <span class="hidden-xs">
-                            By partnering with Beauty Works and offering award winning hair extensions, you can increase
-                            your salon revenue with our unique product portfolio and HABIA endorsed extension methods.
-                            <br><br>
-                            With a balance of both theory and practical training, our courses in the UK are held in both
-                            London and Manchester.
-                            <br><br>
-                            As well as training you to the highest standard by our fully qualified educators, you'll
-                            gain a qualification approved by Habia. Regulated and recognised in the industry you'll be
-                            able to offer a new skill set straight on the salon floor. On completion of the course each
-                            graduate will hold a certification and be accredited Beauty Works stylist.
-                            <br><br>
-                            Join some of the world's most recognised and respected hairdressing salons offering Beauty
-                            Works today.
-                        </span>
-                    <div class="visible-xs-block">
-                        <span id="more">
-                            By partnering with Beauty Works and offering award winning hair extensions, you can increase
-                            your salon revenue with our unique product portfolio and HABIA endorsed extension methods.
-                            <br><br>
-                            With a balance of both theory and practical training, our courses in the UK are held in both
-                            London and Manchester.
-                            <br><br>
-                            As well as training you to the highest standard by our fully qualified educators, you'll
-                            gain a qualification approved by Habia. Regulated and recognised in the industry you'll be
-                            able to offer a new skill set straight on the salon floor. On completion of the course each
-                            graduate will hold a certification and be accredited Beauty Works stylist.
-                            <br><br>
-                            Join some of the world's most recognised and respected hairdressing salons offering Beauty
-                            Works today.
-                        </span>
+                    <p><b>Beauty Works fast track courses ensures that every student has the knowledge and practical
+                            skill to offer hair extensions to the highest standard.</b></p>
+                    <div class="hidden-xs">
+                        {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
+                        block_id="87"}}
                     </div>
-                    </p>
-                    <button class="visible-xs-block" type="button" id="read" onclick="read()">Read More</button>
-                    <script>
-                        let i = 0;
-                        function read() {
-                            if (!i) {
-                                document.getElementById('more').style.display = 'inline';
-                                document.getElementById('read').innerHTML = 'Read Less';
-                                i = 1;
-                            } else {
-                                document.getElementById('more').style.display = 'none';
-                                document.getElementById('read').innerHTML = 'Read More';
-                                i = 0;
-                            }
-                        }
-                    </script>
-                    <style>
-                        #more {
-                            display: none;
-                        }
-
-                        #read {
-                            background-color: #dacab9;
-                            font-size: 12px;
-                            margin: auto;
-                            border: solid 1px #dacab9;
-                            color: white;
-                            border-radius: 7.5px;
-                            padding: 10px;
-                        }
-                    </style>
-
+                    <div class="visible-xs-block">
+                        <span id="fullCourseDescription">
+                            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
+                            block_id="87"}}
+                        </span>
+                        <button type="button" id="courseDescriptionTrigger"
+                            onclick="read('fullCourseDescription', 'courseDescriptionTrigger')">Read
+                            More</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -403,6 +355,20 @@
         display: block;
         margin: auto;
         margin-bottom: 2rem;
+    }
+
+    #fullCourseDescription {
+        display: none;
+    }
+
+    #courseDescriptionTrigger {
+        background-color: #dacab9;
+        font-size: 12px;
+        margin: auto;
+        border: solid 1px #dacab9;
+        color: white;
+        border-radius: 7.5px;
+        padding: 10px;
     }
 
     .catalog-category-view .page-main .columns {

@@ -1,0 +1,14 @@
+<script>
+    let i = 0;
+    function read(content, trigger) {
+        if (!i) {
+            document.getElementById(content).style.display = "inline";
+            document.getElementById(trigger).innerHTML = "Read Less";
+            i = 1;
+        } else {
+            document.getElementById(content).style.display = "none";
+            document.getElementById(trigger).innerHTML = "Read More";
+            i = 0;
+        }
+    }
+</script>
