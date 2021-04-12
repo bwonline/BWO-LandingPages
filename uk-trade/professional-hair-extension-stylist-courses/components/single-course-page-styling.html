@@ -1,0 +1,57 @@
+<style>
+    .container {
+        display: flow-root;
+    }
+
+    .cta-title {
+        font-weight: 800;
+        line-height: 1.1;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        padding-top: 15px;
+    }
+
+    .cta-title::after {
+        background-color: transparent !important;
+        margin-top: 0px;
+    }
+
+    .calOutline {
+        text-align: center;
+        width: 75%;
+        margin: auto;
+    }
+
+    .calMonth {
+        border: solid #dacab9;
+        background-color: #dacab9;
+        color: white;
+    }
+
+    .calDay {
+        color: #dacab9;
+        border: solid #dacab9 .5px;
+        font-size: 3.5rem;
+        background-color: white;
+        height: 5rem;
+    }
+
+    .eventInfo {
+        text-align: center;
+    }
+
+    #datesAvailable {
+        margin-top: 1em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .calOutline {
+            width: auto;
+        }
+
+        #datesAvailable {
+            margin-top: .5em;
+        }
+    }
+</style>
