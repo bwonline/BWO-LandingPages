@@ -1,0 +1,54 @@
+<!-- Read More/Less JS -->
+{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="88"}}
+
+<style>
+    #habiaLogo {
+        width: 25%;
+        display: block;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    #fullCourseDescription {
+        display: none;
+    }
+
+    #courseDescriptionTrigger {
+        background-color: #dacab9;
+        font-size: 12px;
+        margin: auto;
+        border: solid 1px #dacab9;
+        color: white;
+        border-radius: 7.5px;
+        padding: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #habiaLogo {
+            width: 60%;
+        }
+    }
+</style>
+
+<div style="text-align: center;">
+    <img id="habiaLogo" src="{{media url='wysiwyg/TRADE-eventCalender/HabiaLogo.png'}}" alt="Habia Recognised Provider"
+        title="Habia Recognised Provider" />
+    <div class="col-xs-12" id="bwoCourses">
+        <p><b style="color: #373737;">Beauty Works fast track courses ensures that every student has the knowledge and
+                practical
+                skill to offer hair extensions to the highest standard.</b></p>
+        <div class="hidden-xs">
+            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
+            block_id="87"}}
+        </div>
+        <div class="visible-xs-block">
+            <span id="fullCourseDescription">
+                {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
+                block_id="87"}}
+            </span>
+            <button type="button" id="courseDescriptionTrigger"
+                onclick="read('fullCourseDescription', 'courseDescriptionTrigger')">Read
+                More</button>
+        </div>
+    </div>
+</div>

@@ -1,329 +1,76 @@
-<!-- Read More/Less JS -->
-{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="88"}}
+<style>
+    .outlinesH2 {
+        text-align: center;
+        font-family: 'Muli', sans-serif;
+        color: #373737;
+        margin-top: 30px;
+    }
 
-<div class="container jumbotron">
-    <div class="container jumbotron">
+    .outlinesH2::after {
+        margin: 2rem auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .outlinesH2 {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+    }
+</style>
+
+<div class="container">
+    <!-- Courses Introduction -->
+    <section>
         <div class="row">
-            <div>
-                <img id="habiaLogo" src="{{media url='wysiwyg/TRADE-eventCalender/HabiaLogo.png'}}"
-                    alt="Habia Recognised Provider" title="Habia Recognised Provider" />
-                <div class="col-xs-12" id="bwoCourses">
-                    <p><b>Beauty Works fast track courses ensures that every student has the knowledge and practical
-                            skill to offer hair extensions to the highest standard.</b></p>
-                    <div class="hidden-xs">
-                        {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
-                        block_id="87"}}
-                    </div>
-                    <div class="visible-xs-block">
-                        <span id="fullCourseDescription">
-                            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml"
-                            block_id="87"}}
-                        </span>
-                        <button type="button" id="courseDescriptionTrigger"
-                            onclick="read('fullCourseDescription', 'courseDescriptionTrigger')">Read
-                            More</button>
-                    </div>
-                </div>
-            </div>
+            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="96"}}
         </div>
-    </div>
-    <div class="container jumbotron">
+    </section>
+    <!-- One Day : Fast Track Training -->
+    <section>
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="outlinesH2">ONE DAY : FAST TRACK TRAINING</h2>
             </div>
         </div>
-        <div class="row" style="text-align: center;">
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/beauty-works-offer-award-winning-hair.jpg'}}"
-                        alt="Offer award winning hair" title="Offer award winning hair" />
-                    <p> Offer award winning hair</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/professional-hair-extension-kits.jpg'}}"
-                        alt="Professional hair extension kit worth £300"
-                        title="Professional hair extension kit worth £300" />
-                    <p> Professional hair extension kit worth £300</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/marketing-material.jpg'}}"
-                        alt="Marketing material" title="Marketing material" />
-                    <p> Marketing material</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/become-beauty-works-certified-stylist.jpg'}}"
-                        alt="Become a Beauty Works certified stylist" title="Become a Beauty Works certified stylist" />
-                    <p> Become a Beauty Works certified stylist</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/exclusive-trade-prices.jpg'}}"
-                        alt="Access to exclusive trade prices" title="Access to exclusive trade prices" />
-                    <p>Access to exclusive trade prices</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/dedicated-account-manager.jpg'}}"
-                        alt="Manager assigned to your account" title="Manager assigned to your account" />
-                    <p> Manager assigned to your account</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/hair-extension-promotions.jpg'}}"
-                        alt="Enjoy Beauty Works promotions" title="Enjoy Beauty Works promotions" />
-                    <p> Enjoy Beauty Works promotions</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-xs-6">
-                <div class="fastTrack">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/one-day-fast-track-training/conferences-and-events.jpg'}}"
-                        alt="Join conferences & events" title="Join conferences & events" />
-                    <p> Join conferences & events</p>
-                </div>
-            </div>
-
+        <div class="row">
+            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="97"}}
         </div>
+    </section>
+    <!-- What You Will Learn -->
+    <section>
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="outlinesH2">WHAT YOU WILL LEARN</h2>
             </div>
         </div>
-        <div class="row" id="wywl">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4 col-md-6 col-xs-12" id="wywl-one">
-                <ul class="wywl-list">
-                    <li>Hair extension knowledge</li>
-                    <li>Hair extension application</li>
-                    <li>Colour matching & blending techniques</li>
-                    <li>Aftercare advice</li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 col-xs-12">
-                <ul class="wywl-list" id="wywl-list2">
-                    <li>Extension maintenance & removal</li>
-                    <li>How to manage customer expectations</li>
-                    <li>Business & marketing skills</li>
-                    <li>Digital marketing - social media for your business</li>
-                </ul>
-            </div>
-            <div class="col-lg-2"></div>
+        <div class="row">
+            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="98"}}
         </div>
-    </div>
-    <div class="container jumbotron">
+    </section>
+    <!-- Meet Our Educators -->
+    <section>
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="outlinesH2">MEET OUR EDUCATORS</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-dawn1.jpg'}}"
-                        alt="Dawn - Head of Education" title="Dawn - Head of Education" />
-                    <h3 class="cta-title">DAWN</h3>
-                    <h6>Head of Education</h6>
-                    <div class="ctaHeight-lg">
-                        <p><small>Dawn has been working with hair extensions for over 13 years, she has a certificate in
-                                education, all levels of hairdressing and an assessor’s award. Since working with BW
-                                Dawn has taught over 2000 students, training in both Manchester and London weekly.
-                                Dawn’s specialist skills makes her an expert in all aspects of hair.</small>
-                        </p>
-                        <small>
-                            <ul class="educatorQualifications">
-                                <li>Level 1, 2, 3 NVQ apprenticeship in hairdressing</li>
-                                <li>Cert ED (Certificate of Education)</li>
-                                <li>A1 & A2 Assessor Award</li>
-                                <li>IQA Internal Quality Assurance (IQA)</li>
-                            </ul>
-                        </small>
-                    </div>
-                    <a href="https://www.instagram.com/dawn_louise_hair/" target="_blank"><i class="fa fa-instagram"
-                            aria-hidden="true"></i>dawn_louise_hair</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-emily2.jpg'}}"
-                        alt="Emily - Educator" title="Emily - Educator" />
-                    <h3 class="cta-title">EMILY</h3>
-                    <h6>Educator</h6>
-                    <div class="ctaHeight-lg">
-                        <p><small>Emily has trained with BW for over 5 years and has worked on photo shoots and hair
-                                trade events around the UK. She counts Celebrities including Molly Mae, Maura
-                                Higgins and Olivia Atwood as client. Her specialists skills in hair extension
-                                application make her highly Experienced in all methods of hair extension application
-                                and removal.</small>
-                        </p>
-                        <small>
-                            <ul class="educatorQualifications">
-                                <li>Level 1, 2, 3 NVQ apprenticeship in hairdressing</li>
-                                <li>Award in Teacher Training (AET/PTLLS)</li>
-                            </ul>
-                        </small>
-                    </div>
-                    <a href="https://www.instagram.com/emilyrosemonkhair/?igshid=1aoeodh3a3mqc" target="_blank"><i
-                            class="fa fa-instagram" aria-hidden="true"></i>emilyrosemonkhair</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <img src="{{media url='wysiwyg/TRADE-eventCalender/meet-our-educators/trainer-lenka3b.jpg'}}"
-                        alt="Lenka - Educator" title="Lenka - Educator" />
-                    <h3 class="cta-title">LENKA</h3>
-                    <h6>Educator</h6>
-                    <div class="ctaHeight-lg">
-                        <p><small>Lenka started working with hair extensions from age 17, working with BW for over 5
-                                years assisting at photo shoots and hair trade shows, including professional hair
-                                live with celebrity hair stylist Jen Atkin. Training both in London and Manchester
-                                weekly, Lenka’s specialists skills in hair extension application make her an expert
-                                in application and removal of hair extensions.</small>
-                        </p>
-                        <small>
-                            <ul class="educatorQualifications">
-                                <li>Level 1, 2, 3 NVQ apprenticeship in hairdressing</li>
-                                <li>Award in Teacher Training (AET/PTLLS)</li>
-                            </ul>
-                        </small>
-                    </div>
-                    <a href="https://www.instagram.com/beautycutie_salon/" target="_blank"><i class="fa fa-instagram"
-                            aria-hidden="true"></i>beautycutie_salon</a>
-                </div>
-            </div>
+            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="99"}}
         </div>
-    </div>
-    <div class="container jumbotron">
+    </section>
+    <!-- Course We Offer -->
+    <section>
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="outlinesH2">COURSE WE OFFER</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <a href="{{store url=''}}ultimate-tape-extension-course">
-                        <img class="imgShadow"
-                            src="{{media url='wysiwyg/TRADE-eventCalender/course-we-offer/Ultimate_Tape_Extension_Courses2.jpg'}}"
-                            alt="The Ultimate Tape Extension Courses" title="The Ultimate Tape Extension Courses" />
-                    </a>
-                    <a href="{{store url=''}}ultimate-tape-extension-course">
-                        <h3 class="cta-title">The Ultimate Tape Extension Course</h3>
-                    </a>
-                    <p class="coursePrice"><small>Course Price £499.99</small></p>
-                    <p class="cwo1">Super fast extensions for clients and salons on the go. This revolutionary
-                        system allows users to add extensions in minutes, meaning you create full fringes, layers and a
-                        full head of extensions in under an hour.</p>
-                    <a class="shopNow smBttnFont" href="{{store url=''}}ultimate-tape-extension-course">View Dates</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <a href="{{store url=''}}prebonded-and-micro-ring-course">
-                        <img class="imgShadow"
-                            src="{{media url='wysiwyg/TRADE-eventCalender/course-we-offer/Prebonded_Micro_Ring_Courses2.jpg'}}"
-                            alt="Prebonded & Micro Ring Courses" title="Prebonded & Micro Ring Courses" />
-                    </a>
-                    <a href="{{store url=''}}prebonded-and-micro-ring-course">
-                        <h3 class="cta-title">Prebonded & Micro Ring Course</h3>
-                    </a>
-                    <p class="coursePrice"><small>Course Price £549.99</small></p>
-                    <p class="cwo1">Learn how to integrate your client's hair seamlessly with pre-bonded extensions.
-                        Discover our wide range of colours and how to create bespoke blends for chemical free
-                        highlights. Allow clients to enjoy the natural movement with extension strands that flow and
-                        move easily, just like your own hair.</p>
-                    <a class="shopNow smBttnFont" href="{{store url=''}}prebonded-and-micro-ring-course">View Dates</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <a href="{{store url=''}}complete-micro-ring-course">
-                        <img class="imgShadow"
-                            src="{{media url='wysiwyg/TRADE-eventCalender/course-we-offer/Complete_Micro_Ring_Course2.jpg'}}"
-                            alt="The Complete Micro Ring Course" title="The Complete Micro Ring Course" />
-                    </a>
-                    <a href="{{store url=''}}complete-micro-ring-course">
-                        <h3 class="cta-title">The Complete Micro Ring Course</h3>
-                    </a>
-                    <p class="coursePrice"><small>Course Price £549.99</small></p>
-                    <p class="cwo1">Focus on the popular micro ring application methods and bring the very latest Nano
-                        Ring system back to your clients.With no braid, no glue and no heat, micro ring applications
-                        have taken the hair extension industry by storm. Speeding up more traditional methods of
-                        application and being recognised as a safer alternative.</p>
-                    <a class="shopNow smBttnFont" href="{{store url=''}}complete-micro-ring-course">View Dates</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <a href="{{store url=''}}ultimate-weft-and-weave-course">
-                        <img class="imgShadow"
-                            src="{{media url='wysiwyg/TRADE-eventCalender/course-we-offer/Ultimate_Weft_Weave_Course2.jpg'}}"
-                            alt="The Ultimate Weft & Weave Course" title="The Ultimate Weft & Weave Course" />
-                    </a>
-                    <a href="{{store url=''}}ultimate-weft-and-weave-course">
-                        <h3 class="cta-title">The Ultimate Weft & Weave Course</h3>
-                    </a>
-                    <p class="coursePrice"><small>Course Price £449.99</small></p>
-                    <p class="cwo2">Learn how to integrate your clients hair seamlessly with bonded and tape extensions.
-                        Discover a wide range of colour with bespoke blonds. Allow your clients to enjoy natural
-                        movement, with extensions that flow easily just like your own hair.</p>
-                    <a class="shopNow smBttnFont" href="{{store url=''}}ultimate-weft-and-weave-course">View Dates</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <a href="{{store url=''}}creative-mix-1-course">
-                        <img class="imgShadow"
-                            src="{{media url='wysiwyg/TRADE-eventCalender/course-we-offer/The_Creative_Mix_1_Course2.jpg'}}"
-                            alt="The Creative Mix 1 Course" title="The Creative Mix 1 Course" />
-                    </a>
-                    <a href="{{store url=''}}creative-mix-1-course">
-                        <h3 class="cta-title">The Creative Mix 1 Course</h3>
-                    </a>
-                    <p class="coursePrice"><small>Course Price £649.99</small></p>
-                    <p class="cwo2">Focus on fast application with tape and weft extensions for clients and salons on
-                        the go. Learn to fit extensions in just one hour, also discover the benefits of seamless tape in
-                        extensions.
-                    </p>
-                    <a class="shopNow smBttnFont" href="{{store url=''}}creative-mix-1-course">View Dates</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="cta-block">
-                    <a href="{{store url=''}}creative-mix-2-course">
-                        <img class="imgShadow"
-                            src="{{media url='wysiwyg/TRADE-eventCalender/course-we-offer/The_Creative_Mix_2_Course2.jpg'}}"
-                            alt="The Creative Mix 2 Course" title="The Creative Mix 2 Course" />
-                    </a>
-                    <a href="{{store url=''}}creative-mix-2-course">
-                        <h3 class="cta-title">The Creative Mix 2 Course</h3>
-                    </a>
-                    <p class="coursePrice"><small>Course Price £649.99</small></p>
-                    <p class="cwo2">Learn how to integrate your clients hair seamlessly with bonded and tape extensions.
-                        Discover a wide range of colour with bespoke blonds. Allow your clients to enjoy natural
-                        movement, with extensions that flow easily just like your own hair.</p>
-                    <a class="shopNow smBttnFont" href="{{store url=''}}creative-mix-2-course">View Dates</a>
-                </div>
-            </div>
-
+            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="90"}}
         </div>
-    </div>
-    <div class="container jumbotron">
+    </section>
+    <!-- Where Are We Based? -->
+    <section>
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="outlinesH2">WHERE ARE WE BASED?</h2>
@@ -338,298 +85,5 @@
         <div class="row">
             {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="74"}}
         </div>
-    </div>
+    </section>
 </div>
-
-<style>
-    .category-view {
-        display: none;
-    }
-
-    .toolbar-products {
-        display: none;
-    }
-
-    #habiaLogo {
-        width: 25%;
-        display: block;
-        margin: auto;
-        margin-bottom: 2rem;
-    }
-
-    #fullCourseDescription {
-        display: none;
-    }
-
-    #courseDescriptionTrigger {
-        background-color: #dacab9;
-        font-size: 12px;
-        margin: auto;
-        border: solid 1px #dacab9;
-        color: white;
-        border-radius: 7.5px;
-        padding: 10px;
-    }
-
-    .catalog-category-view .page-main .columns {
-        margin-top: 2.5px;
-    }
-
-    .page-layout-1column.page-with-filter .column.main {
-        padding-top: 2.5px;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .proToolsSldr {
-        margin-bottom: 25px;
-    }
-
-    .swiper-container-horizontal>.swiper-pagination-bullets {
-        position: initial;
-    }
-
-    .swiper-pagination-bullet {
-        height: 15px;
-        width: 15px;
-        opacity: 1;
-        background: transparent;
-        border: solid #373737 1px;
-        margin: 25px 5px 0 !important;
-    }
-
-    .swiper-pagination-bullet-active {
-        background: #373737;
-    }
-
-    .cta-block {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .ctaHeight-lg {
-        height: 30rem;
-        border-bottom: solid #dacab9;
-        margin-bottom: .5em;
-    }
-
-    .cwo1 {
-        height: 17rem;
-    }
-
-    .cwo2 {
-        height: 13rem;
-    }
-
-    .coursePrice {
-        margin-bottom: 1em;
-    }
-
-    .cta-block p {
-        margin-bottom: 2em;
-    }
-
-    .cta-title {
-        text-align: center;
-        font-weight: 800;
-        line-height: 1.1;
-        font-family: 'Muli', sans-serif;
-        font-style: normal;
-        text-transform: uppercase;
-        color: #dacab9;
-        padding-top: 15px;
-        font-size: 1.6rem;
-    }
-
-    .cta-title::after {
-        background-color: transparent !important;
-        margin-top: 0px;
-    }
-
-    .educatorQualifications li:before {
-        color: #dacab9;
-    }
-
-    .wywl-list li:before {
-        color: #dacab9;
-    }
-
-    .outlinesH2 {
-        text-align: center;
-        font-family: 'Muli', sans-serif;
-        color: #373737;
-        margin-top: 30px;
-    }
-
-    .outlinesH2::after {
-        margin: 2rem auto;
-    }
-
-    .shopNow {
-        background: #373737;
-        border: solid #373737 1px;
-        color: white !important;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.3rem;
-    }
-
-    .shopNow:hover {
-        background: transparent;
-        color: #373737 !important;
-    }
-
-    .cms-page-view .column.main ul,
-    .product-info-main .data.item.content ul,
-    .cms-page-view .column.main ol,
-    .product-info-main .data.item.content ol {
-        padding-left: 0;
-    }
-
-    .od_ftt {
-        text-align: center;
-    }
-
-    .od_ftt li::before {
-        content: none !important;
-    }
-
-    .od_ftt li img {
-        display: block;
-        margin: auto;
-        width: 50px;
-    }
-
-    .fa-instagram {
-        color: #dacab9;
-    }
-
-    @media only screen and (max-width: 1200px) {
-        .ctaHeight-lg {
-            height: 36rem;
-        }
-
-        .cwo1 {
-            height: 21rem;
-        }
-
-        .cwo2 {
-            height: 16rem;
-        }
-    }
-
-    @media only screen and (max-width: 800px) {
-        .jumbotron {
-            padding-top: 20px;
-        }
-
-        .proToolsSldr {
-            margin-bottom: 20px;
-        }
-
-        .fastTrack p {
-            height: 6rem;
-        }
-
-        .cta-block {
-            padding: 25px 5px;
-        }
-
-        .cta-title {
-            font-size: 1.3rem;
-        }
-
-        .ctaHeight-lg {
-            height: 42rem;
-        }
-
-        .cta-block p {
-            font-size: 12px;
-        }
-
-        .shopNow {
-            font-size: 11px;
-            padding: 7px 20px
-        }
-
-        .smBttnFont {
-            font-size: .9rem;
-        }
-
-        .outlinesH2 {
-            font-size: 2.5rem;
-            margin-top: 20px;
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        .cms-page-view .page-main {
-            padding-top: 15px;
-        }
-
-        .page-products .columns {
-            padding-top: 5px;
-        }
-
-        .jumbotron {
-            padding-top: 0px;
-        }
-
-        #bwoCourses {
-            text-align: center;
-        }
-
-        .ctaHeight-lg {
-            height: auto;
-        }
-
-        .cwo1 {
-            height: auto;
-        }
-
-        .cwo2 {
-            height: auto;
-        }
-
-        .filter-title {
-            display: none;
-        }
-
-        #habiaLogo {
-            width: 60%;
-        }
-
-        .od_ftt li {
-            height: 120px;
-        }
-
-        .od_ftt li p {
-            font-size: 12px;
-        }
-
-        #wywl {
-            text-align: center;
-        }
-
-        .wywl-list {
-            margin-top: 0;
-        }
-
-        #wywl-one ul {
-            margin-bottom: 0em;
-        }
-    }
-
-    @media only screen and (max-width: 320px) {
-        .jumbotron>.container {
-            padding: 0;
-        }
-
-        .mob-row-height {
-            height: 3.5rem;
-        }
-    }
-</style>
