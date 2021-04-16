@@ -1,85 +1,84 @@
-<div class="container">
-    <hr />
-    <!-- PRICING & COSTING ANALYST -->
-    <div class="row">
-        <div class="col-xs-12">
-            <h3>PRICING & COSTING ANALYST</h3>
-            <p>
-                A newly created role in a fast-paced beauty business with strong forecasts and pipeline for 2021.<span
-                    id="career1Dots">....</span>
-            </p>
-            <span id="career1Text">
-                <p>
-                    Sitting within the finance team whilst working closely with the buying and marketing department to
-                    provide valuable insights into business.
-                    This role will be focused on providing support to facilitate exciting growth plans and improve
-                    current processes.
-                </p>
-                <h4>Main duties consist of:</h4>
-                <ul>
-                    <li>Manage new product line documents and prepare pricing and set company margin</li>
-                    <li>Set all pricing for new lines per season</li>
-                    <li>Audit all pricelists for all tiers</li>
-                    <li>Ensuring all prices are correctly documented and consistent within all sales channels</li>
-                    <li>Work with ecommerce team and other departments to set and check margin for promotions online or
-                        for retailers</li>
-                    <li>Review sales details by week and highlight trends to management per SKU in the absence of the
-                        purchasing manager</li>
-                    <li>Report trends back to purchasing buyer and share weekly report to management in the absence of
-                        the purchasing manager</li>
-                    <li>Producing flash reports for senior management in the absence of the purchasing manager</li>
-                    <li>Any other adhoc projects or tasks required from the finance or buying departments</li>
-
-                    </li>
-                </ul>
-                <h4>Experience</h4>
-                <ul>
-                    <li>AAT qualification essential</li>
-                    <li>2 years prior experience required</li>
-                    <li>NetSuite system experience desirable</li>
-                    <li>Excel knowledge essential</li>
-                </ul>
-                <h4>Location</h4>
-                <p>South Manchester</p>
-                <h4>Applications</h4>
-                <p>
-                    To apply for this role please email <a
-                        href="mailto:vanessa.cockburn@beautyworks.co.uk?subject=Pricing and Costing Analyst Role">vanessa.cockburn@beautyworks.co.uk</a>
-                    with your CV and cover letter. All successful candidates will be notified of interview dates via
-                    email.
-                </p>
-            </span>
-            <br />
-            <button class="readmore" onclick="readMore('career1Dots','career1Text', 'career1Btn')" id="career1Btn">READ
-                MORE</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <hr />
-        </div>
-    </div>
-</div>
-
+<!-- CTA Block Styling -->
 <style>
-    .readmore {
-        cursor: pointer;
-        text-decoration: none;
+    .card {
+        padding: 20px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .card-title {
+        font-weight: 800;
+        line-height: 1.1;
+        font-size: 2rem;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        color: black;
+        padding-top: 15px;
+        margin-bottom: 1rem
+    }
+
+    .card-title::after {
+        background-color: transparent !important;
+        margin-top: 0px;
+    }
+
+    .card-text {
+        margin-bottom: 2em !important;
+        color: #6d6d6d !important;
+    }
+
+    .card ul {
+        padding-left: 0em !important;
+    }
+
+    #wwyrb li ul {
+        padding-left: 0em !important;
+    }
+
+    .card-btn {
         background: #373737;
         border: solid #373737 1px;
-        color: white;
-        padding: 11px 20px;
+        color: white !important;
+        padding: 10px 20px;
         text-transform: uppercase;
         font-weight: bold;
+        text-decoration: none;
         display: block;
         margin: auto;
     }
 
-    .readmore:hover {
+    .card-btn:hover {
         background: transparent;
         color: #373737 !important;
     }
 
+    @media only screen and (max-width: 800px) {
+        .card {
+            padding: 25px 5px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .card-btn {
+            font-size: 12px;
+            padding: 7px 20px
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .card-title {
+            font-size: 1.5rem;
+            padding-top: 5px;
+            /* text-align: center; */
+        }
+    }
+</style>
+
+<!-- JS ID Styling -->
+<style>
     #career1Text,
     #career2Text,
     #career3Text,
@@ -89,6 +88,7 @@
     }
 </style>
 
+<!-- Read More JS -->
 <script>
     function readMore(dotID, text, bttn) {
         const dots = document.getElementById(dotID);
@@ -106,3 +106,149 @@
         }
     }
 </script>
+
+<div class="container">
+    <!-- Pricing & Costing Analyst -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Pricing & Costing Analyst</h3>
+                    <p>
+                        A newly created role in a fast-paced beauty business with strong forecasts and pipeline for
+                        2021. Sitting within the finance team whilst working closely with the buying and marketing
+                        department to provide valuable insights into business. This role will be focused on
+                        providing support to facilitate exciting growth plans and improve current processes.<span
+                            id="career1Dots">....</span>
+                    </p>
+                    <span id="career1Text">
+                        <h4>Main duties consist of:</h4>
+                        <ul>
+                            <li>Manage new product line documents and prepare pricing and set company margin</li>
+                            <li>Set all pricing for new lines per season</li>
+                            <li>Audit all pricelists for all tiers</li>
+                            <li>Ensuring all prices are correctly documented and consistent within all sales
+                                channels</li>
+                            <li>Work with ecommerce team and other departments to set and check margin for
+                                promotions online or for retailers</li>
+                            <li>Review sales details by week and highlight trends to management per SKU in the
+                                absence of the purchasing manager</li>
+                            <li>Report trends back to purchasing buyer and share weekly report to management in the
+                                absence of the purchasing manager</li>
+                            <li>Producing flash reports for senior management in the absence of the purchasing
+                                manager</li>
+                            <li>Any other adhoc projects or tasks required from the finance or buying departments
+                            </li>
+                        </ul>
+                        <h4>Experience</h4>
+                        <ul>
+                            <li>AAT qualification essential</li>
+                            <li>2 years prior experience required</li>
+                            <li>NetSuite system experience desirable</li>
+                            <li>Excel knowledge essential</li>
+                        </ul>
+                        <h4>Location</h4>
+                        <p>South Manchester</p>
+                        <h4>Applications</h4>
+                        <p>To apply for this role please email <a
+                                href="mailto:vanessa.cockburn@beautyworks.co.uk?subject=Pricing and Costing Analyst Role">vanessa.cockburn@beautyworks.co.uk</a>
+                            with your CV and cover letter. All successful candidates will be notified of interview dates
+                            via email.</p>
+                    </span>
+                    <button class="card-btn" onclick="readMore('career1Dots','career1Text', 'career1Btn')"
+                        id="career1Btn" title="">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ecommerce Assistant -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Ecommerce Assistant</h3>
+                    <br>
+                    <h4>What will the role include?</h4>
+                    <ul style="margin-bottom: 0;">
+                        <li>Uploading and updating products including writing descriptions and uploading imagery.</li>
+                        <li>Merchandising & upselling products to ensure best sellers and key products are highlighted.
+                        </li>
+                        <li>Writing SEO descriptions and producing blog content.<span id="career2Dots">....</span></li>
+                    </ul>
+                    <span id="career2Text">
+                        <ul style="margin-top: 0;">
+                            <li>Uploading price changes.</li>
+                            <li>Making & testing promo codes.</li>
+                            <li>Support the execution of onsite content, campaigns and trading activity.</li>
+                            <li>Proof-reading marketing emails & auditing the website on a daily basis.</li>
+                            <li>General admin duties and assisting the eCommerce and Marketing teams.</li>
+                            <li>Build effective working relationships and actively participate in internal meetings.
+                            </li>
+                        </ul>
+                        <h4>What will your responsibilities be?</h4>
+                        <ul id="wwyrb">
+                            <li>
+                                <b>Trading</b><br>
+                                <ul>
+                                    <li>Working closely with Ecommerce Manager & wider teams to ensure product launches
+                                        happen on time and products are assigned to all appropriate listing pages.</li>
+                                    <li>Maximise cross selling opportunities through product recommendations, continual
+                                        review of performance and placement.</li>
+                                    <li>Ensuring all promotional/sale activity is set up accurately and tested ahead of
+                                        launch working alongside Ecommerce executive.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Onsite Content</b><br>
+                                <ul>
+                                    <li>Monitoring performance of onsite content and proposing changes to maximise
+                                        revenue
+                                        and profit.</li>
+                                    <li>Working closely with Marketing, Buying and Ecommerce Manager to influence the
+                                        development/testing roadmap.</li>
+                                    <li> Ensure that each item on sale is fully optimized for copy and imagery for both
+                                        the
+                                        customer and for SEO.</li>
+                                    <li> Regular review of competitor activity to propose UX improvements/tests.</li>
+                                    <li> Support with UAT of new onsite features/capabilities as and when required.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Other</b>
+                                <ul>
+                                    <li>Troubleshooting website/pricing/customer issues and liaising with appropriate
+                                        teams to resolve issues and provide feedback in a timely manner.</li>
+                                    <li>Support wider team where appropriate, e.g. channel landing page testing.</li>
+                                    <li>Keep up to date with industry best practices and new platform features to ensure
+                                        we’re getting the most from the information/tools available.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>What are we looking for?</h4>
+                        <ul>
+                            <li>Min 1 years ecommerce experience in Retail or similar B2C industry.</li>
+                            <li>A strong commercial mindset and customer first approach.</li>
+                            <li>Excellent data and analytics skills, with confident use of Excel to manipulate data into
+                                meaningful insight.</li>
+                            <li>Highly organised and methodical with ability to prioritise workload effectively.</li>
+                            <li>Excellent writing skills with an understanding of SEO content.</li>
+                            <li>Comfortable working in a fast-paced business.</li>
+                            <li>A passion for fashion/retail and detail but always seeks continuous improvement.</li>
+                            <li>Proactive and positive approach to problem solving - a can do attitude.</li>
+                            <li>Team player with excellent communication skills both internally and externally.</li>
+                        </ul>
+                        <h4>Location</h4>
+                        <p>South Manchester</p>
+                        <h4>Applications</h4>
+                        <p>To apply for this role please email <a
+                                href="mailto:pippa.mead@beautyworks.co.uk?subject=Ecommerce Assistant Role">pippa.mead@beautyworks.co.uk</a>
+                            with your CV and cover letter. All successful candidates will be notified of interview dates
+                            via email.</p>
+                    </span>
+                    <button class="card-btn" onclick="readMore('career2Dots','career2Text', 'career2Btn')"
+                        id="career2Btn" title="">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
