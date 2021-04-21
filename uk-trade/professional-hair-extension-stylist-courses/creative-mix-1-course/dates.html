@@ -1,61 +1,6 @@
 <!-- Expired Course JS -->
 {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="78"}}
 
-<!-- APRIL 19TH -->
-<div class="container" id="cm1cApr19">
-    <div class="row">
-        <div class="col-xs-3">
-            <div class="calOutline">
-                <div class="calMonth">Apr</div>
-                <div class="calDay">19</div>
-            </div>
-        </div>
-        <div class="col-xs-9">
-            <!-- London Facility Info -->
-            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="77"}}
-        </div>
-        <div class="col-xs-12 eventInfo">
-            <small>The Creative Mix 1 Course at Training Academy in London. Price for the full
-                day course is £649.99. Reserve your place now, limited spaces available.
-                <br><br>
-                <b>Book Now: </b> <i class="fa fa-envelope" aria-hidden="true"></i> <a
-                    href="mailto:trade@beautyworks.co.uk?subject=The Creative Mix 1 Course - 19/04/2021">trade@beautyworks.co.uk</a>
-                | <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:01614853602">0161 485 3602</a>
-            </small>
-            <hr>
-        </div>
-    </div>
-</div>
-<script>
-    const Apr19 = document.getElementById('cm1cApr19');
-    const Apr19Date = new Date(2021, 3, 19);
-    expireListing(Apr19, Apr19Date);
-</script>
-<script type='application/ld+json'>
-    {
-        "@context": "https://www.schema.org",
-        "@type": "Event",
-        "name": "The Creative Mix 1 Course",
-        "url": "https://beautyworks.co.uk/the-creative-mix-1-hair-course",
-        "description": "Focus on fast application with tape and weft extensions for clients and salons on the go. Learn to fit extensions in just one hour, also discover the benefits of seamless tape in extensions.",
-        "startDate": "19/04/2021 09:30AM",
-        "endDate": "19/04/2021 17:00PM",
-        "location": {
-            "@type": "Place",
-            "name": "Daniel Galvin Salon, London, UK",
-            "sameAs": "https://beautyworksonline.com/",
-            "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "George Street",
-            "addressLocality": "Marylebone",
-            "addressRegion": "London",
-            "postalCode": "W1H 8AQ",
-            "addressCountry": "Great Britain"
-            }
-        }
-    }
-</script>
-
 <!-- APRIL 26TH -->
 <div class="container" id="cm1cApr26">
     <div class="row">
@@ -70,13 +15,14 @@
             {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="76"}}
         </div>
         <div class="col-xs-12 eventInfo">
-            <small>The Creative Mix 1 Course at new Training Academy in Manchester. Price for the full day course is
+            <p>The Creative Mix 1 Course at new Training Academy in Manchester. Price for the full day course is
                 £649.99. Reserve your place now, limited spaces available.
-                <br><br>
+            </p>
+            <p class="bookNow">
                 <b>Book Now: </b> <i class="fa fa-envelope" aria-hidden="true"></i> <a
                     href="mailto:trade@beautyworks.co.uk?subject=The Creative Mix 1 Course - 26/04/2021">trade@beautyworks.co.uk</a>
                 | <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:01614853602">0161 485 3602</a>
-            </small>
+            </p>
             <hr>
         </div>
     </div>
