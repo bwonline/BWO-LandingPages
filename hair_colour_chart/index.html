@@ -7,9 +7,27 @@
         letter-spacing: 0em;
     }
 
+    .card {
+        height: 15rem;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .card {
+            height: 13rem;
+        }
+    }
+
     @media only screen and (max-width: 800px) {
         .catalog-category-view .page-main .category-view {
             padding-top: 14rem;
+        }
+
+        .card {
+            height: 11rem;
+        }
+
+        .card-title {
+            font-size: 1.2rem !important;
         }
     }
 
@@ -20,6 +38,12 @@
 
         .page-title .base {
             font-size: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .card {
+            height: 11rem;
         }
     }
 </style>
