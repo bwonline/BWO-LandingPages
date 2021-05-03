@@ -1,3 +1,204 @@
+<!-- CTA Block Styling -->
+<style>
+    .card {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card a {
+        text-decoration: none;
+    }
+
+    .card-title {
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.1;
+        font-size: 1.6rem;
+        font-family: 'Muli', sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        color: #373737;
+        padding-top: 15px;
+        margin-bottom: 1rem
+    }
+
+    .card-title::after {
+        background-color: transparent !important;
+        margin-top: 0px;
+    }
+
+    .card-text {
+        margin-bottom: 2em !important;
+        color: #6d6d6d !important;
+    }
+
+    .card-btn {
+        background: #373737;
+        border: solid #373737 1px;
+        color: white !important;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .card-btn:hover {
+        background: transparent;
+        color: #373737 !important;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .card {
+            padding: 25px 5px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            padding-top: 5px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        .card-btn {
+            font-size: 12px;
+            padding: 7px 20px
+        }
+    }
+</style>
+
+<style>
+    .card {
+        text-align: initial;
+        display: flow-root;
+        padding: 5px;
+    }
+
+    .card a {
+        text-decoration: underline;
+    }
+
+    .card-img-top {
+        display: block;
+        margin: auto;
+    }
+
+    #marieClaireAwardUK2021 {
+        width: 65%;
+    }
+
+    #cosmopolitanBeautyAwardsUK2020 {
+        width: 58%;
+    }
+
+    #beautyAwards2020Winner {
+        width: 60%;
+    }
+
+    #beautyAwards2020Commended {
+        width: 60%;
+    }
+
+    #beautyAwards2019 {
+        width: 65%;
+    }
+
+    #marieClaireAward2019 {
+        width: 72%;
+    }
+
+    .card-title {
+        text-align: initial;
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+
+        #cosmopolitanBeautyAwardsUK2020 {
+            width: 70%;
+        }
+
+        #marieClaireAwardUK2021,
+        #beautyAwards2020Winner,
+        #beautyAwards2020Commended,
+        #beautyAwards2019 {
+            width: 75%;
+        }
+
+        #marieClaireAward2019 {
+            width: auto;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .card-img-top {
+            width: 80%;
+        }
+
+        #cosmopolitanBeautyAwardsUK2020 {
+            width: 78%;
+        }
+
+        #marieClaireAwardUK2021,
+        #beautyAwards2020Winner,
+        #beautyAwards2020Commended,
+        #beautyAwards2019 {
+            width: 85%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .card {
+            text-align: center;
+        }
+
+        .card-img-top {
+            width: auto;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .card-body ul li {
+            padding-left: 0 !important;
+        }
+
+        #cosmopolitanBeautyAwardsUK2020 {
+            width: 65%;
+        }
+
+        #marieClaireAwardUK2021,
+        #beautyAwards2020Winner,
+        #beautyAwards2020Commended,
+        #beautyAwards2019 {
+            width: 70%;
+        }
+
+        #marieClaireAward2019 {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        #cosmopolitanBeautyAwardsUK2020 {
+            width: 70%;
+        }
+
+        #marieClaireAwardUK2021,
+        #beautyAwards2020Winner,
+        #beautyAwards2020Commended,
+        #beautyAwards2019 {
+            width: 75%;
+        }
+
+        #marieClaireAward2019 {
+            width: auto;
+        }
+    }
+</style>
+
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-12">
@@ -19,331 +220,496 @@
         </div>
     </div>
 
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="https://www.beauty-magazine.co.uk/the-beauty-awards-2019" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/ASOS_Hair_Awards_Winner_Professional_Styler.png'}}"
-                    alt="THE BEAUTY AWARDS 2019 WITH ASOS" title="THE BEAUTY AWARDS 2019 WITH ASOS" />
-            </a>
+    <div class="row">
+        <!-- Marie Claire Award UK 2021 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="https://www.marieclaire.co.uk/beauty/hair/marie-claire-uk-hair-awards-2021-tools-accessories-winners-730196"
+                    rel="nofollow" target="_blank" title="Marie Claire Award UK 2021">
+                    <img src="{{media url=&quot;wysiwyg/awards/Marie_Claire_HAIR_AWARDS_WINNER__LOGO_2021.png&quot;}}"
+                        class="card-img-top" id="marieClaireAwardUK2021" loading="lazy" alt="Marie Claire Award UK 2021"
+                        title="Marie Claire Award UK 2021">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="https://www.marieclaire.co.uk/beauty/hair/marie-claire-uk-hair-awards-2021-tools-accessories-winners-730196"
+                        title="Marie Claire Award UK 2021" target="_blank">
+                        <h5 class="card-title">Marie Claire Award UK 2021</h5>
+                    </a>
+                    <b>Best Hair Extensions WINNER</b>
+                    <ul><small>
+                            <li>
+                                <a href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/double-hair-set.html"
+                                    title="Double Hair Set Clip-In Extensions">Double Hair Set Clip-In Extensions</a>
+                            </li>
+                            <li>
+                                <a href="{{store url=''}}professional-extensions/tape-extensions/invisi-tape.html"
+                                    title="Invisi Tape Professional Extensions">Invisi Tape Professional Extensions</a>
+                            </li>
+                        </small>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}the-professional-styler.html">Beauty Awards 2019 with ASOS</a></h3>
-            <h5><a href="{{store url=''}}the-professional-styler.html">‘New Hair Styling Hero’ - Winner</a></h5>
-            <br>
-            <p>Beauty Works Professional Styler claimed first prize at the Beauty Awards 2019, sponsored by ASOS.com.
-                The annual awards were judged by a panel of leading beauty experts including ASOS beauty buyers and the
-                UK’s most recognised influencers. <a href="{{store url=''}}the-professional-styler.html">Shop Now</a>.
-            </p>
+        <hr>
+        <!-- Cosmopolitan Beauty Awards UK 2020 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="https://www.cosmopolitan.com/uk/beauty-hair/a34504783/cosmopolitan-2020-beauty-awards/"
+                    rel="nofollow" target="_blank" title="Cosmopolitan Beauty Awards UK 2020">
+                    <img src="{{media url=&quot;wysiwyg/awards/Cosmo_Beauty_Awards_2020_logo.png&quot;}}"
+                        class="card-img-top" id="cosmopolitanBeautyAwardsUK2020" loading="lazy"
+                        alt="Cosmopolitan Beauty Awards UK 2020" title="Cosmopolitan Beauty Awards UK 2020">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="https://www.cosmopolitan.com/uk/beauty-hair/a34504783/cosmopolitan-2020-beauty-awards/"
+                        title="Cosmopolitan Beauty Awards UK 2020" target="_blank">
+                        <h5 class="card-title">Cosmopolitan Beauty Awards UK 2020</h5>
+                    </a>
+                    <b>Best Curling Tong</b>
+                    <ul><small>
+                            <li>
+                                <a href="{{store url=''}}beauty-works-flat-iron-wave-bar-25mm.html"
+                                    title="Beauty Works Flat Iron Wave Bar 25mm">Beauty Works Flat Iron Wave Bar
+                                    25mm</a>
+                            </li>
+                        </small>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img id="hairAwards2019Winner" src="{{media url='wysiwyg/bw-2019q3/Winner_2019_Hair_Awards.jpg'}}"
-                    alt="Hair Awards 2019" title="Hair Awards 2019" />
-            </a>
+        <hr>
+        <!-- Beauty Awards 2020 with ASOS - Winner -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="https://www.asos.com/discover/beauty-awards/" target="_blank"
+                    title="Beauty Awards 2020 with ASOS - Winner">
+                    <img src="{{media url=&quot;wysiwyg/awards/Beauty_Awards_winner_logo_circle.png&quot;}}"
+                        class="card-img-top" id="beautyAwards2020Winner" loading="lazy"
+                        alt="Beauty Awards 2020 with ASOS - Winner" title="Beauty Awards 2020 with ASOS - Winner">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <h5 class="card-title">Beauty Awards 2020 with ASOS</h5>
+                    <b>New Hair Styling Hero WINNER</b>
+                    <ul>
+                        <small>
+                            <li><a href="{{store url=''}}molly-mae-x-beauty-works-curl-kit.html" title="Beauty Works X Molly-Mae
+                            Curl Kit">Beauty Works X Molly-Mae Curl Kit</a></li>
+                        </small>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}invisi-collection/invisi-tape.html">Best European Hair Extensions - Winner</a>
-            </h3>
-            <h5><a href="{{store url=''}}beach-wave-hair-extensions">Best Instant Clip-in hair extensions - Winner</a>
-            </h5>
-            <h5><a href="{{store url=''}}styling-tools/the-hair-waver.html">Best Electrical Styler - Winner</a></h5>
-            <br>
-            <p>We were honoured to hold the crown again for 'Best European Hair Extensions' at the Hair Awards 2019
-                with Invisi®Tape hair extensions. <a
-                    href="{{store url=''}}invisi-collection/invisi-tape.html">Discover</a> the 'best hair extensions' in
-                Europe.<br><br>The Beauty Works Double Hair set Extensions were again in the industry spotlight with
-                their quality shining through as “Best Instant Clip-in Hair Extensions”. You can <a
-                    href="{{store url=''}}beach-wave-hair-extensions">shop</a> our signature collection in a wide
-                selection of lengths and colours here.<br><br>With a cult influencer and celebrity following, <a
-                    href="{{store url=''}}styling-tools/the-hair-waver.html">The Waver</a> was recognized by industry
-                expert panel at the “Hair Awards” for being the Best Electrical styler in 2019. Were honoured to be
-                recognized in this category.</p>
+        <hr>
+        <!-- Beauty Awards 2020 with ASOS - Highly Commended -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="https://www.asos.com/discover/beauty-awards/" target="_blank"
+                    title="Beauty Awards 2020 with ASOS - Highly Commended">
+                    <img src="{{media url=&quot;wysiwyg/awards/Beauty_Awards_HIGHLY_COMMENDED_logo_circle.png&quot;}}"
+                        class="card-img-top" id="beautyAwards2020Commended" loading="lazy"
+                        alt="Beauty Awards 2020 with ASOS - Highly Commended"
+                        title="Beauty Awards 2020 with ASOS - Highly Commended">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <h5 class="card-title">Beauty Awards 2020 with ASOS</h5>
+                    <b>Most Grammable 2020 HIGHLY COMMENDED</b>
+                    <ul>
+                        <small>
+                            <li><a href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/double-hair-set.html"
+                                    title="Beauty Works Double Hair Set Clip-In Extensions">Beauty Works Double Hair Set
+                                    Clip-In Extensions</a></li>
+                        </small>
+                    </ul>
+                    <b>Best Influencer Collaboration of the Year HIGHLY COMMENDED</b>
+                    <ul>
+                        <small>
+                            <li><a href="{{store url=''}}molly-mae-x-beauty-works-curl-kit.html"
+                                    title="Beauty Works X Molly-Mae Curl Kit">Beauty Works X Molly-Mae Curl Kit</a></li>
+                        </small>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-2019q3/2018-Hair-Awards.jpg'}}" alt="Hair Awards 2018"
-                    title="Hair Awards 2018" />
-            </a>
+        <hr>
+        <!-- Beauty Awards 2019 with ASOS -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="https://www.beauty-magazine.co.uk/the-beauty-awards-2019" target="_blank"
+                    title="Beauty Awards 2019 with ASOS">
+                    <img src="{{media url=&quot;wysiwyg/awards/ASOS_2019_Awards.png&quot;}}" class="card-img-top"
+                        id="beautyAwards2019" loading="lazy" alt="Beauty Awards 2019 with ASOS"
+                        title="Beauty Awards 2019 with ASOS">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="https://www.beauty-magazine.co.uk/the-beauty-awards-2019" target="_blank"
+                        title="Beauty Awards 2019 with ASOS">
+                        <h5 class="card-title">Beauty Awards 2019 with ASOS</h5>
+                    </a>
+                    <p class="card-text"><b>‘New Hair Styling Hero’ - Winner</b></p>
+                    <small>
+                        <a href="{{store url=''}}the-professional-styler.html"
+                            title="Beauty Works Professional Styler">Beauty Works Professional Styler</a> claimed first
+                        prize at the Beauty Awards 2019, sponsored by ASOS.com. The annual awards were judged by a panel
+                        of leading beauty experts including ASOS beauty buyers and the UK’s most recognised influencers.
+                    </small>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}invisi-collection/invisi-tape.html">Best European Hair Extensions - Winner</a>
-            </h3>
-            <br>
-            <p>With its unique weft structure that actually mimics the hairline and a 9 month quality guarantee. We
-                were honoured to be crowned 'Best European Hair Extensions' at the Hair Awards 2018. Shop the 'best hair
-                extensions” <a href="{{store url=''}}invisi-collection/invisi-tape.html">available.</a></p>
+        <hr>
+        <!-- Hair Awards 2019 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2019">
+                    <img src="{{media url='wysiwyg/bw-2019q3/Winner_2019_Hair_Awards.jpg'}}" class="card-img-top"
+                        loading="lazy" alt="Hair Awards 2019" title="Hair Awards 2019">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2019">
+                        <h5 class="card-title">Hair Awards 2019</h5>
+                    </a>
+                    <p class="card-text">
+                        <b>Best European Hair Extensions Winner - <a
+                                href="{{store url=''}}invisi-collection/invisi-tape.html"
+                                title="Invisi®Tape">Invisi®Tape</a></b><br> <b>Best Instant Clip-in hair extensions
+                            Winner - <a href="{{store url=''}}shop-by-collection/beach-waves-express.html"
+                                title=">Beach Wave Double Hair Set">Beach Wave Double Hair Set</a> </b><br><b>Best
+                            Electrical Styler Winner - <a href="{{store url=''}}beauty-works-waver.html"
+                                title="The Waver">The Waver</a></b><br>
+                    </p>
+                    <small>We were honoured to hold the crown again for 'Best European Hair Extensions' at the
+                        Hair Awards 2019 with Invisi®Tape hair extensions. <a
+                            href="{{store url=''}}invisi-collection/invisi-tape.html" title="Invisi®Tape">Discover</a>
+                        the 'best hair extensions' in Europe.<br><br>The Beauty Works Double Hair set Extensions were
+                        again in the industry spotlight with their quality shining through as “Best Instant Clip-in Hair
+                        Extensions”. You can <a href="{{store url=''}}shop-by-collection/beach-waves-express.html"
+                            title=">Beach Wave Double Hair Set">shop</a> our signature collection in a wide selection of
+                        lengths and colours here.<br><br>With a cult influencer and celebrity following, <a
+                            href="{{store url=''}}beauty-works-waver.html" title="The Waver">The Waver</a> was
+                        recognized by industry expert panel at the “Hair Awards” for being the Best Electrical styler in
+                        2019. Were honoured to be recognized in this category.
+                    </small>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://www.marieclaire.co.uk/beauty/hair/marie-claire-hair-awards-446396" rel="nofollow"
-                target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Marie-Claire-Award-2018.png'}}"
-                    alt="Marie Claire Award 2018 winning hair extensions by Beauty Works"
-                    title="Marie Claire Award 2018 winning hair extensions by Beauty Works" />
-            </a>
+        <hr>
+        <!-- Marie Claire Award 2019 -->
+        <!-- <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="" title="">
+                    <img src="{{media url=&quot;wysiwyg/awards/Marie_Claire_Hair_Awards_2019.png&quot;}}"
+                        class="card-img-top" id="marieClaireAward2019" loading="lazy" alt="" title="">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <h5 class="card-title"></h5>
+                    <b></b>
+                    <ul>
+                        <li><a href="{{store url=''}}"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}clip-in-hair-extensions.html">Best Hair Extensions – Winner</a></h3>
-            <h5><a href="{{store url=''}}clip-in-hair-extensions.html">Invisi Clip-In Extensions</a></h5>
-            <h5><a href="http://www.marieclaire.co.uk/beauty/hair/marie-claire-hair-awards-446396" rel="nofollow"
-                    target="_blank">The Marie Claire Hair Awards 2018</a></h5>
-            <br>
-            <p>We were honoured to be crowned 'Best Hair Extensions' at the Marie Claire Awards. Quite the accolade
-                right? Shop the 'best hair extensions' <a href="{{store url=''}}clip-in-hair-extensions.html">right
-                    here!</a></p>
+        <hr> -->
+        <!-- Hair Awards 2018 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2018">
+                    <img src="{{media url='wysiwyg/bw-2019q3/2018-Hair-Awards.jpg'}}" class="card-img-top"
+                        loading="lazy" alt="Hair Awards 2018" title="Hair Awards 2018">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2018">
+                        <h5 class="card-title">Hair Awards 2018</h5>
+                    </a>
+                    <p class="card-text"><b>Best European Hair Extensions Winner - <a
+                                href="{{store url=''}}professional-extensions/tape-extensions/invisi-tape.html"
+                                title="Invisi® Tape Extensions">Invisi® Tape Extensions</a></b></p>
+                    <small>With its unique weft structure that actually mimics the hairline and a 9 month quality
+                        guarantee. We were honoured to be crowned 'Best European Hair Extensions' at the Hair Awards
+                        2018. Shop the 'best hair extensions” <a
+                            href="{{store url=''}}professional-extensions/tape-extensions/invisi-tape.html"
+                            title="Invisi® Tape Extensions">available.</a></small>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2017-Winner.png'}}"
-                    alt="Beauty Works Best European Hair Extensions – Winner - 2017"
-                    title="Beauty Works Best European Hair Extensions – Winner - 2017" />
-            </a>
+        <hr>
+        <!-- Marie Claire Award 2018 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://www.marieclaire.co.uk/beauty/hair/marie-claire-hair-awards-446396"
+                    title="Marie Claire Award 2018">
+                    <img src="{{media url='wysiwyg/bw-cms/Marie-Claire-Award-2018.png'}}" class="card-img-top"
+                        loading="lazy" alt="Marie Claire Award 2018" title="Marie Claire Award 2018">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://www.marieclaire.co.uk/beauty/hair/marie-claire-hair-awards-446396"
+                        title="Marie Claire Award 2018">
+                        <h5 class="card-title">Marie Claire Award 2018</h5>
+                    </a>
+                    <p class="card-text"><b>Best Hair Extensions Winner - <a
+                                href="{{store url=''}}clip-in-hair-extensions.html" title="Clip-In Extensions">Invisi
+                                Clip-In Extensions</a></b>
+                    </p>
+                    <small>We were honoured to be crowned 'Best Hair Extensions' at the Marie Claire Awards. Quite the
+                        accolade right? Shop the 'best hair extensions' <a
+                            href="{{store url=''}}clip-in-hair-extensions.html" title="Clip-In Extensions">right
+                            here!</a>
+                    </small>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}clip-in-hair-extensions.html">Best European Hair Extensions – Winner</a></h3>
-            <h5><a href="{{store url=''}}clip-in-hair-extensions.html">Invisi® Weft</a></h5>
-            <h5><a href="http://thehairawards.com/" rel="nofollow" target="_blank">The Hair Awards 2017</a></h5>
-            <br>
-            <p>Recognized for its seamless design and lightweight structure, Invisi®Weft is crowned “Best European Hair
-                Extensions.” By an industry expert panel at the The Hair Magazine. Take a look at our Invisi-Weft hair
-                extensions <a href="{{store url=''}}clip-in-hair-extensions.html">here</a>.</p>
+        <hr>
+        <!-- Hair Awards 2017 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2017">
+                    <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2017-Winner.png'}}" class="card-img-top"
+                        loading="lazy" alt="Hair Awards 2017" title="Hair Awards 2017">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2017">
+                        <h5 class="card-title">Hair Awards 2017</h5>
+                    </a>
+                    <p class="card-text"><b>Best European Hair Extensions Winner - <a
+                                href="{{store url=''}}professional-extensions/weft-extensions/invisi-weft.html"
+                                title="Invisi® Weft">Invisi® Weft</a></b></p>
+                    <small>Recognized for its seamless design and lightweight structure, Invisi®Weft is crowned “Best
+                        European Hair Extensions.” By an industry expert panel at the The Hair Magazine. Take a look at
+                        our Invisi-Weft hair extensions <a
+                            href="{{store url=''}}professional-extensions/weft-extensions/invisi-weft.html"
+                            title="Invisi® Weft">here</a>.</small>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2016-Winner.png'}}"
-                    alt="Beauty Works Best Instant Extensions (Human Hair) – Winner - 2016"
-                    title="Beauty Works Best Instant Extensions (Human Hair) – Winner - 2016" />
-            </a>
+        <hr>
+        <!-- The Beauty Awards 2016 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://www.beauty-magazine.co.uk/the-beauty-awards-about" title="The Beauty Awards 2016">
+                    <img src="{{media url='wysiwyg/bw-cms/The-Beauty-Awards-2016-Finalist.png'}}" class="card-img-top"
+                        loading="lazy" alt="The Beauty Awards 2016" title="The Beauty Awards 2016">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://www.beauty-magazine.co.uk/the-beauty-awards-about" title="The Beauty Awards 2016">
+                        <h5 class="card-title">The Beauty Awards 2016</h5>
+                    </a>
+                    <p class="card-text"><b>Highly Commended Best New Hair Styling Product Finalist - <a
+                                href="{{store url=''}}large-paddle-brush.html"
+                                title="Beauty Works Large Paddle Brush">Large Paddle Brush</a></b></p>
+                    <small>The <a href="{{store url=''}}large-paddle-brush.html"
+                            title="Beauty Works Large Paddle Brush">Beauty Works Large Paddle Brush</a> is one of the
+                        ultimate tools to keep your hair extensions looking healthy and tangle-free. Make sure you add
+                        it to your hair extensions essentials list.</small>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="https://beautyworksonline.com/clip-in-hair-extensions/double-hair-set/18-double-hair-set.html">Best
-                    Instant Extensions (Human Hair) – Winner</a></h3>
-            <h5><a href="https://beautyworksonline.com/clip-in-hair-extensions/double-hair-set/18-double-hair-set.html">Double
-                    Hair Set Clip-In Extensions</a></h5>
-            <h5><a href="http://thehairawards.com/" rel="nofollow" target="_blank">The Hair Awards 2016</a></h5>
-            <br>
-            <p>The <a
-                    href="https://beautyworksonline.com/clip-in-hair-extensions/double-hair-set/18-double-hair-set.html">Beauty
-                    Works Double Hair Set clip-in hair extensions</a> were voted the best instant human hair extensions
-                in 2016. <a
-                    href="https://beautyworksonline.com/clip-in-hair-extensions/double-hair-set/18-double-hair-set.html">See
-                    how easy they are to fit</a> and <a href="{{store url=''}}shop-by-shade.html">buy your perfect
-                    colour online</a>.</p>
+        <hr>
+        <!-- Hair Awards 2016 - Winner -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2016 - Winner">
+                    <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2016-Winner.png'}}" class="card-img-top"
+                        loading="lazy" alt="Hair Awards 2016 - Winner" title="Hair Awards 2016 - Winner">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2016 - Winner">
+                        <h5 class="card-title">Hair Awards 2016 - Winner</h5>
+                    </a>
+                    <p class="card-text"><b>Best Instant Extensions (Human Hair) Winner - <a
+                                href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/double-hair-set.html"
+                                title="Double Hair Set Clip-In Extensions">Double Hair Set Clip-In Extensions</a></b>
+                    </p>
+                    <small>
+                        The <a href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/double-hair-set.html"
+                            title="Double Hair Set Clip-In Extensions">Beauty Works Double Hair Set clip-in hair
+                            extensions</a> were voted the best instant human hair extensions in 2016. <a
+                            href="https://vimeo.com/522695040" target="_blank"
+                            title="How To Apply Clip-In Hair Extensions">See how easy they are to fit</a> and buy
+                        <a href="{{store url=''}}shop-by-shade.html" title="Beauty Works Shop By Shade">your perfect
+                            colour online</a>.
+                    </small>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/The-Beauty-Awards-2016-Finalist.png'}}"
-                    alt="Beauty Works Highly Commended Best New Hair Styling Product – Finalist - 2016"
-                    title="Beauty Works Highly Commended Best New Hair Styling Product – Finalist - 2016" />
-            </a>
+        <hr>
+        <!-- Hair Awards 2016 - Finalist -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2016 - Finalist">
+                    <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2016-Finalist.png'}}" class="card-img-top"
+                        loading="lazy" alt="Hair Awards 2016 - Finalist" title="Hair Awards 2016 - Finalist">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://thehairawards.com/" target="_blank" title="Hair Awards 2016 - Finalist">
+                        <h5 class="card-title">Hair Awards 2016 - Finalist</h5>
+                    </a>
+                    <p class="card-text"><b>Best European Hair Extensions - <a
+                                href="{{store url=''}}professional-extensions/micro-ring-extensions/stick-tips.html"
+                                title="Celebrity Choice Stick Tip Bonds">Celebrity Choice Stick Tip Bonds</a></b><br>
+                        <b>Best Instant Extensions – <a
+                                href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/deluxe-clip-ins.html"
+                                title="Beauty Works Deluxe Clip-In Extensions">Deluxe Clip-In Extensions</a></b>
+                    </p>
+                    <small>
+                        Available in a range of colours, our <a
+                            href="{{store url=''}}professional-extensions/micro-ring-extensions/stick-tips.html"
+                            title="Celebrity Choice Stick Tip Bonds">Celebrity Choice Soft Stick Tip pre-bonded hair
+                            extensions</a> are the Beauty Works premium range and chosen by many celebrities.<a
+                            href="{{store url=''}}professional-extensions/micro-ring-extensions/stick-tips.html"
+                            title="Celebrity Choice Stick Tip Bonds"> Get that perfect celebrity look yourself
+                            today</a>.<br><br>The <a
+                            href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/deluxe-clip-ins.html"
+                            title="Beauty Works Deluxe Clip-In Extensions">Beauty Works Deluxe Clip-In Hair
+                            Extensions</a> were again in the industry spotlight with their quality shining through. You
+                        can <a href="{{store url=''}}shop-by-shade.html" title="Beauty Works Shop By Shade">match your
+                            colour</a> and <a
+                            href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/deluxe-clip-ins.html"
+                            title="Beauty Works Deluxe Clip-In Extensions">buy online here</a>.
+                    </small>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}haircare/hair-brushes/shop-all-hairbrushes/large-paddle-brush.html">Highly
-                    Commended Best New Hair Styling Product – Finalist</a></h3>
-            <h5><a href="{{store url=''}}haircare/hair-brushes/shop-all-hairbrushes/large-paddle-brush.html">Large
-                    Paddle Brush</a></h5>
-            <h5><a href="http://www.beauty-magazine.co.uk/the-beauty-awards-about" rel="nofollow" target="_blank">The
-                    Beauty Awards 2016</a></h5>
-            <br>
-            <p>The <a href="{{store url=''}}haircare/hair-brushes/shop-all-hairbrushes/large-paddle-brush.html">Beauty
-                    Works Large Paddle Brush</a> is one of the ultimate tools to keep your hair extensions looking
-                healthy and tangle-free. Make sure you add it to your hair extensions essentials list.</p>
+        <hr>
+        <!-- Hair Awards 2015 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://thehairawards.com/" title="Hair Awards 2015">
+                    <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2015-Winner.png'}}" class="card-img-top"
+                        loading="lazy" alt="Hair Awards 2015" title="Hair Awards 2015">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://thehairawards.com/" title="Hair Awards 2015">
+                        <h5 class="card-title">Hair Awards 2015</h5>
+                    </a>
+                    <p class="card-text"><b>Best Instant Extensions (Synthetic Hair) Winner - <a
+                                href="{{store url=''}}18-hair-enhancer.html"
+                                title="Beauty Works Double Volume Hairpiece">Double Volume Hairpiece</a></b></p>
+                    <small>
+                        Not only do we offer quality hair extensions, but we make them really easy to fit and this was
+                        recognised in 2015 for our synthetic hair extensions. <a
+                            href="{{store url=''}}18-hair-enhancer.html"
+                            title="Beauty Works Double Volume Hairpiece">Check them out yourself
+                    </small>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2016-Finalist.png'}}"
-                    alt="Beauty Works Best Human Hair Extensions (European) – Finalist - 2016"
-                    title="Beauty Works Best Human Hair Extensions (European) – Finalist 2016" />
-            </a>
+        <hr>
+        <!-- North East Cheshire Business Awards 2014 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://www.necbawards.co.uk/" target="_blank" title="North East Cheshire Business Awards 2014">
+                    <img src="{{media url='wysiwyg/bw-cms/North-East-Cheshire-Business-Awards.png'}}"
+                        class="card-img-top" loading="lazy" alt="North East Cheshire Business Awards 2014"
+                        title="North East Cheshire Business Awards 2014">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://www.necbawards.co.uk/" target="_blank"
+                        title="North East Cheshire Business Awards 2014">
+                        <h5 class="card-title">North East Cheshire Business Awards 2014</h5>
+                    </a>
+                    <p class="card-text"><b>Excellence in Social Media - Winner</b></p>
+                    <small>
+                        You read that right – social media excellence. So we offer quality human hair extensions with a
+                        quality service and online presence. Stay in touch with us and follow us on <a
+                            href="https://instagram.com/beauty_worksonline" target="_blank"
+                            title="Beauty Works on Instagram">Instagram</a>, <a href="https://twitter.com/beauty_works"
+                            target="_blank" title="Beauty Works on Twitter">Twitter</a>, <a
+                            href="https://www.facebook.com/BeautyWorksOnline/" target="_blank"
+                            title="Beauty Works on Facebook">Facebook</a>, <a href="https://vimeo.com/beautyworks"
+                            target="_blank" title="Beauty Works on Vimeo">Vimeo</a>, <a
+                            href="https://www.youtube.com/user/beautyworks" target="_blank"
+                            title="Beauty Works on YouTube">YouTube</a>,
+                        <a href="https://www.pinterest.com/beautyworkspins/" target="_blank"
+                            title="Beauty Works on Pinterest">Pinterest</a> and our <a
+                            href="http://www.beautyworksblog.com/" target="_blank"
+                            title="Beauty Works Beauty Blog">blog</a>.
+                    </small>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}professional-extensions/micro-ring-extensions/stick-tips.html">Best European
-                    Hair Extensions – Finalist</a></h3>
-            <h5><a href="{{store url=''}}professional-extensions/micro-ring-extensions/stick-tips.html">Celebrity Choice
-                    Stick Tip Bonds</a></h5>
-            <h5><a href="http://thehairawards.com/" rel="nofollow" target="_blank">The Hair Awards 2016</a></h5>
-            <br>
-            <p>Available in a range of colours, our <a
-                    href="{{store url=''}}professional-extensions/micro-ring-extensions/stick-tips.html">
-                    Celebrity Choice Soft Stick Tip pre-bonded hair extensions</a> are the Beauty Works premium range
-                and chosen by many celebrities.<a
-                    href="{{store url=''}}professional-extensions/micro-ring-extensions/stick-tips.html">
-                    Get that perfect celebrity look yourself today</a>.</p>
+        <hr>
+        <!-- Your Hair Awards 2013 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="https://twitter.com/yourhairmag" target="_blank" title="Your Hair Awards 2013">
+                    <img src="{{media url='wysiwyg/bw-cms/Your-Hair-Awards-2013-Winner.png'}}" class="card-img-top"
+                        loading="lazy" alt="Your Hair Awards 2013" title="Your Hair Awards 2013">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="https://twitter.com/yourhairmag" target="_blank" title="Your Hair Awards 2013">
+                        <h5 class="card-title">Your Hair Awards 2013</h5>
+                    </a>
+                    <p class="card-text"><b>Best Luxury Hair Extensions Winner - <a
+                                href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/deluxe-clip-ins.html"
+                                title="Deluxe Clip-In Extensions">Deluxe Clip-In Extensions</a></b></p>
+                    <small>
+                        Our <a href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/deluxe-clip-ins.html"
+                            title="Deluxe Clip-In Extensions">deluxe clip-in hair extensions</a> are the ultimate
+                        do-it-yourself system and come in a range of lengths. <a
+                            href="{{store url=''}}clip-in-hair-extensions/shop-by-collection/deluxe-clip-ins.html"
+                            title="Deluxe Clip-In Extensions">See just how easy they are and buy online here</a>.
+                    </small>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2016-Finalist.png'}}"
-                    alt="Beauty Works Best Instant Extensions Finalist - 2016"
-                    title="Beauty Works Best Instant Extensions Finalist - 2016" />
-            </a>
-        </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}clip-in-hair-extensions/deluxe-clip-ins-16.html">Best Instant Extensions –
-                    Finalist</a></h3>
-            <h5><a href="https://beautyworksonline.com/clip-in-hair-extensions/deluxe-clip-ins/deluxe-clip-ins-18.html">Deluxe
-                    Clip-In Extensions</a></h5>
-            <h5><a href="http://thehairawards.com/" rel="nofollow" target="_blank">The Hair Awards 2016</a></h5>
-            <br>
-            <p>The <a href="{{store url=''}}clip-in-hair-extensions/deluxe-clip-ins-16.html">Beauty Works Deluxe
-                    Clip-In Hair Extensions</a> were again in the industry spotlight with their quality shining through.
-                You can <a href="{{store url=''}}shop-by-shade.html">match your colour</a> and <a
-                    href="{{store url=''}}clip-in-hair-extensions/deluxe-clip-ins-16.html">buy online here</a>.</p>
-        </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Hair-Awards-2015-Winner.png'}}"
-                    alt="Beauty Works Best Hair Extensions (Synthetic Hair) – Winner - 2015 "
-                    title="Beauty Works Best Hair Extensions (Synthetic Hair) – Winner - 2015" />
-            </a>
-        </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="https://beautyworksonline.com/ponytails.html">Best Instant Extensions (Synthetic Hair) –
-                    Winner</a></h3>
-            <h5><a href="https://beautyworksonline.com/ponytails.html">Double Volume Hairpiece</a></h5>
-            <h5><a href="http://thehairawards.com/" rel="nofollow" target="_blank">The Hair Awards 2015</a></h5>
-            <br>
-            <p>Not only do we offer quality hair extensions, but we make them really easy to fit and this was
-                recognised in 2015 for our synthetic hair extensions. <a
-                    href="https://beautyworksonline.com/18-hair-enhancer.html">Check them out yourself</a>.</p>
-        </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="https://twitter.com/yourhairmag" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Your-Hair-Awards-2013-Winner.png'}}"
-                    alt="Beauty Works Best Luxury Hair Extensions – Winner - 2013"
-                    title="Beauty Works Best Luxury Hair Extensions – Winner - 2013" />
-            </a>
-        </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}clip-in-hair-extensions/deluxe-clip-ins-16.html">Best Luxury Hair Extensions –
-                    Winner</a></h3>
-            <h5><a href="https://beautyworksonline.com/clip-in-hair-extensions/deluxe-clip-ins/deluxe-clip-ins-18.html">Deluxe
-                    Clip-In Extensions</a></h5>
-            <h5><a href="https://twitter.com/yourhairmag" rel="nofollow" target="_blank">Your Hair Awards 2013</a></h5>
-            <br>
-            <p>Our <a href="{{store url=''}}clip-in-hair-extensions/deluxe-clip-ins-16.html">deluxe clip-in hair
-                    extensions</a> are the ultimate do-it-yourself system and come in a range of lengths.
-                <a href="{{store url=''}}clip-in-hair-extensions/deluxe-clip-ins-16.html">
-                    See just how easy they are and buy online here</a>.
-            </p>
-        </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://thehairawards.com/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/Your-Hair-Awards-2012-Winner.png'}}"
-                    alt="Beauty Works Best Clip-Ins Range – Winner 2012"
-                    title="Beauty Works Best Clip-Ins Range – Winner - 2012" />
-            </a>
-        </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="{{store url=''}}clip-in-hair-extensions.html">Best Luxury Hair Extensions – Winner</a></h3>
-            <h5><a href="{{store url=''}}clip-in-hair-extensions.html">Best Clip-In Range</a></h5>
-            <h5><a href="http://thehairawards.com/" rel="nofollow" target="_blank">The Hair Awards 2012</a></h5>
-            <br>
-            <p>Our first hair extensions award which would pave the way for many more, we’re proud our
-                <a href="{{store url=''}}clip-in-hair-extensions.html">clip-in hair extensions</a> were recognised as
-                the best. You can buy them online with <a href="delivery-information">next day delivery available</a>.
-            </p>
-        </div>
-    </div>
-
-    <div class="row ie-row">
-        <div class="col-xs-12 col-md-3">
-            <a href="http://www.necbawards.co.uk/" rel="nofollow" target="_blank">
-                <img src="{{media url='wysiwyg/bw-cms/North-East-Cheshire-Business-Awards.png'}}"
-                    alt="Beauty Works Excellence in Social Media – Winner - 2014"
-                    title="Beauty Works Excellence in Social Media – Winner - 2014" />
-            </a>
-        </div>
-        <div class="col-xs-12 col-md-9">
-            <br><br>
-            <h3><a href="https://beautyworksonline.com/shop-social">Excellence in Social Media – Winner </a></h3>
-            <h5><a href="http://www.necbawards.co.uk/" rel="nofollow" target="_blank">North East Cheshire Business
-                    Awards 2014</a></h5>
-            <br>
-            <p>You read that right – social media excellence. So we offer quality human hair extensions with a quality
-                service and online presence. Stay in touch with us and follow us on <a
-                    href="https://instagram.com/beauty_worksonline">Instagram</a>, <a
-                    href="https://twitter.com/#!/beauty_works">Twitter</a>, <a
-                    href="https://ssl.facebook.com/pages/Beauty-Works-Online/138066019563558">Facebook</a>, <a
-                    href="https://plus.google.com/111047467882307747862">Google+</a>, <a
-                    href="https://www.youtube.com/user/beautyworks">YouTube</a>, <a
-                    href="https://www.pinterest.com/beautyworkspins/">Pinterest</a> and our <a
-                    href="http://www.beautyworksblog.com/">blog</a>.</p>
+        <hr>
+        <!-- Hair Awards 2012 -->
+        <div class="card">
+            <div class="col-md-4 col-xs-12">
+                <a href="http://thehairawards.com/" title="Hair Awards 2012">
+                    <img src="{{media url='wysiwyg/bw-cms/Your-Hair-Awards-2012-Winner.png'}}" class="card-img-top"
+                        loading="lazy" alt="Hair Awards 2012" title="Hair Awards 2012">
+                </a>
+            </div>
+            <div class="col-md-8 col-xs-12 card-body">
+                <div class="card-text">
+                    <a href="http://thehairawards.com/" title="Hair Awards 2012">
+                        <h5 class="card-title">Hair Awards 2012</h5>
+                    </a>
+                    <p class="card-text"><b>Best Luxury Hair Extensions Winner – <a
+                                href="{{store url=''}}clip-in-hair-extensions.html"
+                                title="Beauty Works Clip-In Hair Extensions">Best Clip-In Range</a></b></p>
+                    <small>
+                        Our first hair extensions award which would pave the way for many more, we’re proud our
+                        <a href="{{store url=''}}clip-in-hair-extensions.html"
+                            title="Beauty Works Clip-In Hair Extensions">clip-in hair extensions</a> were
+                        recognised as the best. You can buy them online with <a
+                            href="{{store url=''}}delivery-information" title="Beauty Works Delivery Information">next
+                            day delivery available</a>.
+                    </small>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-<style>
-    .page-main {
-        padding-top: 0 !important;
-    }
-
-    .container {
-        display: grid;
-    }
-
-    .ie-row {
-        display: -ms-inline-flexbox;
-    }
-
-    #hairAwards2019Winner {
-        margin-top: 70px;
-    }
-
-    @media only screen and (max-width: 425px) {
-        h1.page-title {
-            letter-spacing: 0.25em;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        #hairAwards2019Winner {
-            margin-top: 0px;
-        }
-    }
-</style>
