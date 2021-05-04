@@ -1,6 +1,14 @@
 <div class="container jumbotron">
     <div class="container jumbotron">
         <div class="row">
+            <div class="col-xs-12">
+                <h2 id="trendingHeading">Trending Hairstyles</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container jumbotron">
+        <div class="row">
             <div class="col-md-6 col-xs-12">
                 <div class="cta-block">
                     <a href="{{store url=''}}trending/insta-glam.html">
@@ -156,6 +164,14 @@
 </div>
 
 <style>
+    #trendingHeading {
+        font-size: 3.6rem;
+        font-family: 'Muli', sans-serif;
+        color: #373737;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
     a {
         text-decoration: none;
     }
@@ -288,6 +304,10 @@
     }
 
     @media only screen and (max-width: 600px) {
+        #trendingHeading {
+            font-size: 2.5rem;
+        }
+
         .cms-page-view .page-main {
             padding-top: 15px;
         }
