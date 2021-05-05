@@ -1,20 +1,74 @@
 <!-- Expired Course JS -->
 {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="78"}}
 
-<!-- No Dates Notification -->
-{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="86"}}
-
-<!-- MAY 04th -->
-<!-- <div class="container" id="cmrcMay04">
+<!-- MAY 10th -->
+<div class="container" id="cmrcMay10">
     <div class="row">
         <div class="col-xs-3">
             <div class="calOutline">
                 <div class="calMonth">May</div>
-                <div class="calDay">04</div>
+                <div class="calDay">10</div>
             </div>
         </div>
         <div class="col-xs-9">
-          >-  Manchester Facility Info ->>
+            <!-- London Facility Info -->
+            {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="77"}}
+        </div>
+        <div class="col-xs-12 eventInfo">
+            <p>The Complete Micro-ring course at our Training Academy in London. Price
+                for the full day course is £549.99. Reserve your place now, limited spaces available.
+            </p>
+            <p class="bookNow">
+                <b>Book Now: </b> <i class="fa fa-envelope" aria-hidden="true"></i> <a
+                    href="mailto:trade@beautyworks.co.uk?subject=The Complete Micro Ring Training Course - 10/05/2021">trade@beautyworks.co.uk</a>
+                | <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:01614853602">0161 485 3602</a>
+            </p>
+            <hr>
+        </div>
+    </div>
+</div>
+<script>
+    const may10E = document.getElementById('cmrcMay10');
+    const may10EDate = new Date(2021, 4, 10);
+    expireListing(may10E, may10EDate);
+</script>
+<!-- JSON-LD -->
+<script type='application/ld+json'>
+    {
+        "@context": "https://www.schema.org",
+        "@type": "Event",
+        "name": "The Complete Micro Ring Course",
+        "url": "https://beautyworks.com/complete-micro-ring-course",
+        "description": "Focus on the popular micro ring application methods and bring the very latest Nano Ring system back to your clients.With no braid, no glue and no heat, micro ring applications have taken the hair extension industry by storm. Speeding up more traditional methods of application and being recognised as a safer alternative.",
+        "startDate": "10/05/2021 09:30AM",
+        "endDate": "10/05/2021 17:00PM",
+        "location": {
+            "@type": "Place",
+            "name": "Beauty Works HQ London, UK",
+            "sameAs": "https://beautyworksonline.com/",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "George Street",
+            "addressLocality": "Marylebone",
+            "addressRegion": "London",
+            "postalCode": "W1H 8AQ",
+            "addressCountry": "Great Britain"
+            }
+        }
+    }
+</script>
+
+<!-- JUNE 21st -->
+<div class="container" id="cmrcJune21">
+    <div class="row">
+        <div class="col-xs-3">
+            <div class="calOutline">
+                <div class="calMonth">June</div>
+                <div class="calDay">21</div>
+            </div>
+        </div>
+        <div class="col-xs-9">
+            <!-- Manchester Facility Info -->
             {{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="76"}}
         </div>
         <div class="col-xs-12 eventInfo">
@@ -23,7 +77,7 @@
             </p>
             <p class="bookNow">
                 <b>Book Now: </b> <i class="fa fa-envelope" aria-hidden="true"></i> <a
-                    href="mailto:trade@beautyworks.co.uk?subject=The Complete Micro Ring Training Course - 04/05/2020">trade@beautyworks.co.uk</a>
+                    href="mailto:trade@beautyworks.co.uk?subject=The Complete Micro Ring Training Course - 21/06/2021">trade@beautyworks.co.uk</a>
                 | <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:01614853602">0161 485 3602</a>
             </p>
             <hr>
@@ -31,20 +85,20 @@
     </div>
 </div>
 <script>
-    const may04E = document.getElementById('cmrcMay04');
-    const may04EDate = new Date(2021, 4, 4);
-    expireListing(may04E, may04EDate);
-</script> -->
+    const june21E = document.getElementById('cmrcJune21');
+    const june21EDate = new Date(2021, 5, 21);
+    expireListing(june21E, june21EDate);
+</script>
 <!-- JSON-LD -->
-<!-- <script type='application/ld+json'>
+<script type='application/ld+json'>
     {
         "@context": "https://www.schema.org",
         "@type": "Event",
         "name": "The Complete Micro Ring Course",
-        "url": "https://beautyworks.co.uk/the-complete-micro-ring-training-course",
+        "url": "https://beautyworks.com/complete-micro-ring-course",
         "description": "Focus on the popular micro ring application methods and bring the very latest Nano Ring system back to your clients.With no braid, no glue and no heat, micro ring applications have taken the hair extension industry by storm. Speeding up more traditional methods of application and being recognised as a safer alternative.",
-        "startDate": "04/05/2021 09:30AM",
-        "endDate": "04/05/2021 17:00PM",
+        "startDate": "21/06/2021 09:30AM",
+        "endDate": "21/06/2021 17:00PM",
         "location": {
             "@type": "Place",
             "name": "Beauty Works HQ Manchester, UK",
@@ -59,4 +113,4 @@
             }
         }
     }
-</script> -->
+</script>
