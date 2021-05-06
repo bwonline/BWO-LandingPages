@@ -228,7 +228,7 @@
     </div>
 
     <!-- Application Form -->
-    <div class="container" style="background-color: #DADADA;padding: 2rem;">
+    <div class="container" style="background-color: #DADADA;padding: 2rem; display: flow-root;color: black;">
         <div class="row">
             <div class="col-xs-12" style="text-align: center;">
                 <h3>APPLY FOR A TRADE ACCOUNT TODAY!</h3>
@@ -247,6 +247,7 @@
                 <div class="col-md-6 col-xs-12">
                     <label>Business Type<span class="required">*</span>:</label>
                     <select id="Business Type" name="Business Type" required>
+                        <option value="" style="color: grey;">--Please choose an option--</option>
                         <option value="Hair & Beauty">Hair & Beauty</option>
                         <option value="Hairdressing">Hairdressing</option>
                         <option value="Mobile Hairdresser">Mobile Hairdresser</option>
@@ -288,6 +289,7 @@
                 <div class="col-md-6 col-xs-12">
                     <label>How Did You Hear About Us<span class="required">*</span>:</label>
                     <select id="How Did You Hear About Us" name="How Did You Hear About Us" required>
+                        <option value="" style="color: grey;">--Please choose an option--</option>
                         <option value="Beauty Works Catalogue">Beauty Works Catalogue</option>
                         <option value="Print Media & Magazines">Print Media & Magazines</option>
                         <option value="Google">Google</option>
@@ -299,13 +301,20 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
+                <div class="col-md-6 col-xs-12">
+                    <label>Nature of Enquiry:<span class="required">*</span>:</label>
+                    <select id="Nature of Enquiry" name="Nature of Enquiry" required>
+                        <option value="" style="color: grey;">--Please choose an option--</option>
+                        <option value="Beauty Works Catalogue">Training and Trade Account Opening</option>
+                        <option value="Print Media & Magazines">Trade Account Opening Only</option>
+                    </select>
+                </div>
                 <div class="col-xs-12" style="text-align: center;">
                     <br>
                     <label id="formConsent"><small><input type="checkbox" name="formConsent" required>I agree to my
-                            personal
-                            data being stored. Please see our <a href="{{store url=''}}privacy-policy">privacy
-                                notice</a> to
-                            seehow we manage your data.<span class="required">*</span></small></label>
+                            personal data being stored. Please see our <a href="{{store url=''}}privacy-policy">privacy
+                                notice</a> to see how we manage your data.<span
+                                class="required">*</span></small></label>
                     <br><br>
                     <button id="fs-frm-button">Submit</button>
                 </div>
@@ -564,6 +573,7 @@
     }
 </style>
 
+<!-- Next Day Delivery JS Counter -->
 <script>
     const convertMS = milliseconds => {
         let day;
@@ -636,6 +646,58 @@
     }, 1000);
 </script>
 
+<!-- Trade Application Form JS -->
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        // get the form elements defined in your form HTML above
+
+        const form = document.getElementById('fs-frm');
+        const button = document.getElementById('fs-frm-button');
+        const status = document.getElementById('fs-frm-status');
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+            form.reset();
+            form.style = 'display: none ';
+            button.style = 'display: none ';
+            status.innerHTML =
+                'Thanks for your enquiry, our team will be in touch soon!';
+        }
+
+        function error() {
+            status.innerHTML =
+                'There was a problem, some information is missing from your message';
+        }
+
+        // handle the form submission event
+
+        form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            const data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+        const xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
+</script>
+
+<!-- Vimeo Embed Styling -->
 <style>
     .embed-container {
         position: relative;

@@ -52,10 +52,12 @@
 
     <div class="row">
         <div class="col-md-6 col-xs-12">
-            <img src="{{media url='wysiwyg/wholesale-trade/Beauty_Works_Training_Course1.jpg'}}" alt="" />
+            <img src="{{media url='wysiwyg/wholesale-trade/Beauty_Works_Training_Course1.jpg'}}" loading="lazy"
+                alt="Beauty Works provided Habia approved Professional Hair Extension Courses" />
         </div>
         <div class="col-md-6 col-xs-12" style="margin-bottom: 1rem;">
-            <img src="{{media url='wysiwyg/wholesale-trade/Beauty_Works_Training_Course2.jpg'}}" alt="" />
+            <img src="{{media url='wysiwyg/wholesale-trade/Beauty_Works_Training_Course2.jpg'}}" loading="lazy"
+                alt="Beauty Works provided Habia approved Professional Hair Extension Courses" />
         </div>
     </div>
 
@@ -69,7 +71,7 @@
     </div>
 
     <div class="row">
-        <form id="fs-frm" action="https://formspree.io/f/mvownbqw" method="POST">
+        <form id="fs-frm" action="https://formspree.io/f/mvownbqw" method="POST" style="color: black;">
 
             <div class="col-md-6 col-xs-12">
                 <label>Name<span class="required">*</span>:</label>
@@ -83,6 +85,7 @@
             <div class="col-md-6 col-xs-12">
                 <label>Business Type<span class="required">*</span>:</label>
                 <select id="Business Type" name="Business Type" required>
+                    <option value="" style="color: grey;">--Please choose an option--</option>
                     <option value="Hair & Beauty">Hair & Beauty</option>
                     <option value="Hairdressing">Hairdressing</option>
                     <option value="Mobile Hairdresser">Mobile Hairdresser</option>
@@ -124,6 +127,7 @@
             <div class="col-md-6 col-xs-12">
                 <label>How Did You Hear About Us<span class="required">*</span>:</label>
                 <select id="How Did You Hear About Us" name="How Did You Hear About Us" required>
+                    <option value="" style="color: grey;">--Please choose an option--</option>
                     <option value="Beauty Works Catalogue">Beauty Works Catalogue</option>
                     <option value="Print Media & Magazines">Print Media & Magazines</option>
                     <option value="Google">Google</option>
@@ -135,7 +139,14 @@
                     <option value="Other">Other</option>
                 </select>
             </div>
-
+            <div class="col-md-6 col-xs-12">
+                <label>Nature of Enquiry:<span class="required">*</span>:</label>
+                <select id="Nature of Enquiry" name="Nature of Enquiry" required>
+                    <option value="" style="color: grey;">--Please choose an option--</option>
+                    <option value="Beauty Works Catalogue">Training and Trade Account Opening</option>
+                    <option value="Print Media & Magazines">Trade Account Opening Only</option>
+                </select>
+            </div>
             <div class="col-xs-12">
                 <label id="formConsent"><input type="checkbox" name="formConsent" required>I agree to my personal data
                     being stored. Please see our <a href="{{store url=''}}privacy-policy">privacy notice</a> to see how
