@@ -7,23 +7,22 @@
     <div class="row">
         <div class="col-md-6 col-xs-12">
             <div class="card largeCTAs">
-                <a href="{{store url=''}}molly-mae-x-beauty-works-curl-kit.html"
-                    title="Beauty Works x Molly-Mae Curl Kit">
-                    <img src="{{media url='wysiwyg/bw_x_molly_mae/Beauty-Works-Luxury-Hair-Extensions-Molly-Mae-Curl-Kit.jpg'}}"
-                        class="card-img-top" loading="lazy" alt="Beauty Works x Molly-Mae Curl Kit"
-                        title="Beauty Works x Molly-Mae Curl Kit">
+                <a href="{{store url=''}}beauty-works-x-molly-mae-gloss-and-go-haircare-kit.html"
+                    title="Beauty Works X Molly-Mae Gloss & Go Hair Care Kit">
+                    <img src="{{media url=&quot;wysiwyg/bw_x_molly_mae/Molly_Mae_Gloss_Go_Haircare_Kit_CTA.jpg&quot;}}"
+                        class="card-img-top" loading="lazy" alt="Beauty Works X Molly-Mae Gloss & Go Hair Care Kit"
+                        title="Beauty Works X Molly-Mae Gloss & Go Hair Care Kit">
                 </a>
                 <div class="card-body">
-                    <a href="{{store url=''}}molly-mae-x-beauty-works-curl-kit.html"
-                        title="Beauty Works x Molly-Mae Curl Kit">
-                        <h5 class="card-title">The Curl Kit</h5>
+                    <a href="{{store url=''}}beauty-works-x-molly-mae-gloss-and-go-haircare-kit.html"
+                        title="Beauty Works X Molly-Mae Gloss & Go Hair Care Kit">
+                        <h5 class="card-title">Molly-Mae Gloss & Go Hair Care Kit</h5>
                     </a>
-                    <p class="card-text">Designed by Molly-Mae Hague. Prep, set and Curl in one kit with the <b>​ Beauty
-                            Works x Molly-Mae Curl Kit​</b> - containing the full hair styling essentials to achieving
-                        her bouncy curls.
+                    <p class="card-text">Designed by Molly-Mae, shop her first ever haircare range. Maintain soft,
+                        dreamy, enviable locks with this Molly-Mae approved, signature, summer haircare edit.
                     </p>
-                    <a href="{{store url=''}}molly-mae-x-beauty-works-curl-kit.html" class="card-btn"
-                        title="Beauty Works x Molly-Mae Curl Kit">Shop Now</a>
+                    <a href="{{store url=''}}beauty-works-x-molly-mae-gloss-and-go-haircare-kit.html" class="card-btn"
+                        title="Beauty Works X Molly-Mae Gloss & Go Hair Care Kit">Shop Now</a>
                 </div>
             </div>
         </div>
@@ -196,6 +195,16 @@
         height: 100%;
     }
 
+    .largeCTAs .card-text {
+        height: 6rem;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .largeCTAs .card-text {
+            height: 7rem;
+        }
+    }
+
     @media only screen and (max-width: 800px) {
         .largeCTAs .card-title {
             height: 3rem;
@@ -213,6 +222,10 @@
         }
 
         .largeCTAs .card-title {
+            height: auto;
+        }
+
+        .largeCTAs .card-text {
             height: auto;
         }
     }
